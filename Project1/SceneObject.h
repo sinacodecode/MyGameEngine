@@ -5,7 +5,7 @@
 #include "Model.h"
 
 #include "camera.h"
-
+#include "Light.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -40,7 +40,7 @@ private:
     std::pair<float, glm::vec3> m_rotation{ 0.0f, glm::vec3(1.0f, 1.0f, 1.0f)};
     glm::vec3 m_location{};
     Camera& m_camera;
-    glm::vec3 m_lightPos{ 2.0f, 2.0f, 1.5f };
+    Light m_light{ glm::vec3(2.0f, 2.0f, 1.5f) };
 
 };
 #endif

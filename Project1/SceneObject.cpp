@@ -21,7 +21,7 @@ void Object::draw(Camera& camera)
 
     m_ourShader.setVec3("diffuseLightColor", 1.7f, 1.5f, 1.3f);
     m_ourShader.setVec3("ambientLightColor", 0.3f, 0.5f, 1.0f);
-    m_ourShader.setVec3("lightPos", m_lightPos);
+    m_ourShader.setVec3("lightPos", m_light.getPosition().x, m_light.getPosition().y, m_light.getPosition().z);
     m_ourShader.setVec3("viewPos", camera.Position);
     m_ourShader.setVec3("lightSpecular", glm::vec3(1.0f, 1.0f, 1.0f));
 
@@ -49,7 +49,7 @@ void Object::drawAt(Camera& camera, glm::vec3 loc)
 
     m_ourShader.setVec3("diffuseLightColor", 1.7f, 1.5f, 1.3f);
     m_ourShader.setVec3("ambientLightColor", 0.3f, 0.5f, 1.0f);
-    m_ourShader.setVec3("lightPos", m_lightPos);
+    m_ourShader.setVec3("lightPos", m_light.getPosition().x, m_light.getPosition().y, m_light.getPosition().z);
     m_ourShader.setVec3("viewPos", camera.Position);
     m_ourShader.setVec3("lightSpecular", glm::vec3(1.0f, 1.0f, 1.0f));
 

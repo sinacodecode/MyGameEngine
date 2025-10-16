@@ -8,6 +8,8 @@
 #include <sstream>
 #include <iostream>
 
+#include "Light.h"
+
 class Shader
 {
 public:
@@ -136,6 +138,20 @@ public:
     void setMat4(const std::string& name, const glm::mat4& mat) const
     {
         glUniformMatrix4fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, &mat[0][0]);
+    }
+    // ------------------------------------------------------------------------
+    void setLight(const std::string& name, Light light) const
+    {
+        glUniform3f(glGetUniformLocation(ID, name.c_str()), light.getPosition().x, light.getPosition().y, light.getPosition().z);
+        glUniform3f(glGetUniformLocation(ID, name.c_str()), light.getDirection().x, light.getDirection().y, light.getDirection().z);
+        //setLightAttenuation(name, light.getLightAttenuation());
+    }
+
+    void setLightAttenuation(const std::string& name, Light::Attenuation attenuation)
+    {
+        glUniform1f(glGetUniformLocation(ID, name.c_str()), attenuation.m_constant);
+        glUniform1f(glGetUniformLocation(ID, name.c_str()), attenuation.m_linear);
+        glUniform1f(glGetUniformLocation(ID, name.c_str()), attenuation.m_quadratic);
     }
 
 private:
