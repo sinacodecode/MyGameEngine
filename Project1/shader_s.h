@@ -142,16 +142,13 @@ public:
     // ------------------------------------------------------------------------
     void setLight(const std::string& name, Light light) const
     {
-        glUniform3f(glGetUniformLocation(ID, name.c_str()), light.getPosition().x, light.getPosition().y, light.getPosition().z);
-        glUniform3f(glGetUniformLocation(ID, name.c_str()), light.getDirection().x, light.getDirection().y, light.getDirection().z);
-        //setLightAttenuation(name, light.getLightAttenuation());
-    }
-
-    void setLightAttenuation(const std::string& name, Light::Attenuation attenuation)
-    {
-        glUniform1f(glGetUniformLocation(ID, name.c_str()), attenuation.m_constant);
-        glUniform1f(glGetUniformLocation(ID, name.c_str()), attenuation.m_linear);
-        glUniform1f(glGetUniformLocation(ID, name.c_str()), attenuation.m_quadratic);
+        glUniform3f(glGetUniformLocation(ID, (name + ".position").c_str()), light.getPosition().x, light.getPosition().y, light.getPosition().z);
+        glUniform3f(glGetUniformLocation(ID, (name + ".direction").c_str()), light.getDirection().x, light.getDirection().y, light.getDirection().z);
+        glUniform1f(glGetUniformLocation(ID, (name + ".constant").c_str()), light.getLightAttenuation().m_constant);
+        glUniform1f(glGetUniformLocation(ID, (name + ".linear").c_str()), light.getLightAttenuation().m_linear);
+        glUniform1f(glGetUniformLocation(ID, (name + ".quadratic").c_str()), light.getLightAttenuation().m_quadratic);
+        glUniform1f(glGetUniformLocation(ID, (name + ".specular").c_str()), light.getSpecularity());
+        glUniform1f(glGetUniformLocation(ID, (name + ".cutOff").c_str()), light.getCutOff());
     }
 
 private:

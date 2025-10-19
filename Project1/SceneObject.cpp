@@ -1,11 +1,11 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#include <glm/gtx/string_cast.hpp>
+//#include <glm/gtx/string_cast.hpp>
 #include <iostream>
 #include "SceneObject.h"
 
-void Object::draw(Camera& camera)
+void Object::draw(Camera& camera, const Light& light)
 {
     m_ourShader.use();
 
@@ -21,7 +21,8 @@ void Object::draw(Camera& camera)
 
     m_ourShader.setVec3("diffuseLightColor", 1.7f, 1.5f, 1.3f);
     m_ourShader.setVec3("ambientLightColor", 0.3f, 0.5f, 1.0f);
-    m_ourShader.setVec3("lightPos", m_light.getPosition().x, m_light.getPosition().y, m_light.getPosition().z);
+
+    m_ourShader.setLight("light", light);
     m_ourShader.setVec3("viewPos", camera.Position);
     m_ourShader.setVec3("lightSpecular", glm::vec3(1.0f, 1.0f, 1.0f));
 
@@ -29,7 +30,7 @@ void Object::draw(Camera& camera)
 
 }
 
-void Object::drawAt(Camera& camera, glm::vec3 loc)
+void Object::drawAt(Camera& camera, glm::vec3 loc,const Light& light)
 {
     m_ourShader.use();
 
@@ -49,7 +50,8 @@ void Object::drawAt(Camera& camera, glm::vec3 loc)
 
     m_ourShader.setVec3("diffuseLightColor", 1.7f, 1.5f, 1.3f);
     m_ourShader.setVec3("ambientLightColor", 0.3f, 0.5f, 1.0f);
-    m_ourShader.setVec3("lightPos", m_light.getPosition().x, m_light.getPosition().y, m_light.getPosition().z);
+
+    m_ourShader.setLight("light", light);
     m_ourShader.setVec3("viewPos", camera.Position);
     m_ourShader.setVec3("lightSpecular", glm::vec3(1.0f, 1.0f, 1.0f));
 
@@ -61,5 +63,4 @@ void Object::rotate(float degrees, glm::vec3 axis)
 {
     this->m_rotation.first = degrees;
     this->m_rotation.second = axis;
-    std::cout << this->m_rotation.first << ' ' << this->m_rotation.second.x << '\n';
 }

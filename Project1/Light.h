@@ -16,7 +16,7 @@ public:
 	};
 
 	//constructor for point light
-	Light(glm::vec3 position, Attenuation& attenuation)
+	Light(glm::vec3 position, Attenuation attenuation)
 		:m_position{position}, m_attenuation{attenuation}
 	{
 		std::cout << "Point Light made!\n";
@@ -37,17 +37,32 @@ public:
 		std::cout << "Spot Light made!\n";
 	}
 
-	glm::vec3 getPosition()
+	void setPosition(glm::vec3 pos)
+	{
+		m_position = pos;
+	}
+
+	glm::vec3& getPosition()
 	{
 		return m_position;
 	}
 
-	glm::vec3 getDirection()
+	glm::vec3 getDirection() const
 	{
 		return m_direction;
 	}
 
-	Attenuation getLightAttenuation()
+	float getCutOff() const
+	{
+		return m_cutOff;
+	}
+
+	float getSpecularity() const
+	{
+		return m_specularity;
+	}
+
+	Attenuation getLightAttenuation() const
 	{
 		return m_attenuation;
 	}
@@ -58,6 +73,7 @@ private:
 	Attenuation m_attenuation{};
 
 	float m_cutOff{};
+	float m_specularity{};
 };
 
 #endif

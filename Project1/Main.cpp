@@ -1,15 +1,17 @@
+
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
+
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
 #include "Model.h"
-
 #include <string>
 #include "shader_s.h"
 #include "camera.h"
@@ -17,6 +19,7 @@
 #include "stb_image.h"
 #include "SceneObject.h"
 #include <array>
+
 
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -100,14 +103,15 @@ int main()
     ImGui_ImplOpenGL3_Init();
 
     Shader ourShader{ "modelLoader.vs", "modelLoader.fs" };
-    Model ourModel{ std::string("C://Users/Sina/source/repos/Project1/Project1/Backpack/backpack.obj") };
+    Model ourModel{ std::string("C://Users/Administrator/source/repos/MyGameEngine1/Project1/Backpack/Backpack.obj") };
+    Light::Attenuation atten{ 1.0f,1.0f,1.0f };
+    Light lig{ lightPos, { 1.0f,1.0f,1.0f } };
     // draw in wireframe
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-    Object backpack2{ ourShader, ourModel, glm::vec3(0.0, 0.0, 0.0), camera };
+    Object backpack2{ ourShader, ourModel, glm::vec3(0.0, 0.0, 0.0), camera, lig};
     float x{};
     float y{};
     float z{};
-
     float degree{};
     float rx{ 1 };
     float ry{};
@@ -140,14 +144,21 @@ int main()
         ImGui::InputFloat("Location x: ", &x, 0.0f, 0.0f, "%.1f");
         ImGui::InputFloat("Location y: ", &y, 0.0f, 0.0f, "%.1f");
         ImGui::InputFloat("Location z: ", &z, 0.0f, 0.0f, "%.1f");
-        backpack2.drawAt(camera, glm::vec3(x, y, z));
-
+        backpack2.drawAt(camera, glm::vec3(x, y, z), lig);
+        //backpack2.draw(camera, lig);
         ImGui::InputFloat("rotation x: ", &rx, 0.0f, 0.0f, "%.1f");
         ImGui::InputFloat("rotation y: ", &ry, 0.0f, 0.0f, "%.1f");
         ImGui::InputFloat("rotation z: ", &rz, 0.0f, 0.0f, "%.1f");
 
         ImGui::InputFloat("degree: ", &degree, 0.0f, 0.0f, "%.1f");
         backpack2.rotate(degree, glm::vec3(rx, ry, rz));
+
+        ImGui::InputFloat("light Location x: ", &lig.getPosition().x, 0.0f, 0.0f, "%.1f");
+        ImGui::InputFloat("light Location y: ", &lig.getPosition().y, 0.0f, 0.0f, "%.1f");
+        ImGui::InputFloat("light Location z: ", &lig.getPosition().z, 0.0f, 0.0f, "%.1f");
+        ImGui::InputFloat("linear: ", &atten.m_linear, 0.0f, 0.0f, "%.1f");
+        ImGui::InputFloat("constant: ", &atten.m_constant, 0.0f, 0.0f, "%.1f");
+        ImGui::InputFloat("quadratic: ", &atten.m_quadratic, 0.0f, 0.0f, "%.1f");
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
