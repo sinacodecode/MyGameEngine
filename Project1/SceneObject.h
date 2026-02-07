@@ -10,8 +10,8 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 //#include <glm/gtx/string_cast.hpp>
-const unsigned int SCR_WIDTH = 1280;
-const unsigned int SCR_HEIGHT = 720;
+
+#include "ConfigValues.h"
 
 class Object {
 
@@ -28,7 +28,7 @@ public:
         std::cout << "object made\n";
     }
 
-    void draw(Camera& camera, const Light& light);
+    void draw(Camera& camera, Light& light);
 
     void drawAt(Camera& camera, glm::vec3 loc, const Light& light);
 

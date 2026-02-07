@@ -145,6 +145,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="ConfigValues.cpp" />
+    <ClCompile Include="Gui.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Model.cpp" />
@@ -163,6 +165,9 @@
     <ClInclude Include="..\..\..\..\Desktop\OPENGL PROJECTS\imgui\imstb_textedit.h" />
     <ClInclude Include="..\..\..\..\Desktop\OPENGL PROJECTS\imgui\imstb_truetype.h" />
     <ClInclude Include="camera.h" />
+    <ClInclude Include="ConfigValues.h" />
+    <ClInclude Include="Gui.h" />
+    <ClInclude Include="InputFunctions.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />

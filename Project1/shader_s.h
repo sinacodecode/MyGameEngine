@@ -147,7 +147,7 @@ public:
         glUniform1f(glGetUniformLocation(ID, (name + ".constant").c_str()), light.getLightAttenuation().m_constant);
         glUniform1f(glGetUniformLocation(ID, (name + ".linear").c_str()), light.getLightAttenuation().m_linear);
         glUniform1f(glGetUniformLocation(ID, (name + ".quadratic").c_str()), light.getLightAttenuation().m_quadratic);
-        glUniform1f(glGetUniformLocation(ID, (name + ".specular").c_str()), light.getSpecularity());
+        glUniform1f(glGetUniformLocation(ID, (name + ".specularity").c_str()), light.getSpecularity());
         glUniform1f(glGetUniformLocation(ID, (name + ".cutOff").c_str()), light.getCutOff());
     }
 

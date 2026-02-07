@@ -8,36 +8,36 @@ class Light
 {
 public:
 	struct Attenuation {
-		float m_constant{};
-		float m_linear{};
-		float m_quadratic{};
+		float m_constant{ 1.0f };
+		float m_linear{ 0.09f };
+		float m_quadratic{ 0.032f };
 
 
 	};
 
 	//constructor for point light
-	Light(glm::vec3 position, Attenuation attenuation)
+	Light(glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f), Attenuation attenuation = {1.0f , 0.09f, 0.032f})
 		:m_position{position}, m_attenuation{attenuation}
 	{
 		std::cout << "Point Light made!\n";
 	}
 	//constructor for directional light
-	Light(glm::vec3 direction)
-		:m_direction{direction}
-	{
-		std::cout << "Directional Light made!\n";
-	}
+	//Light(glm::vec3 direction)
+	//	:m_direction{direction}
+	//{
+	//	std::cout << "Directional Light made!\n";
+	//}
 	//constructor for spot light
-	Light(glm::vec3 position, glm::vec3 direction, Attenuation& attenuation, float cutOff)
-		:m_position{ position },
-		m_direction{ direction },
-		m_attenuation{ attenuation },
-		m_cutOff{ cutOff }
-	{
-		std::cout << "Spot Light made!\n";
-	}
+	//Light(glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3 direction, Attenuation attenuation = { 1.0f , 0.09f, 0.032f }, float cutOff)
+	//	:m_position{ position },
+	//	m_direction{ direction },
+	//	m_attenuation{ attenuation },
+	//	m_cutOff{ cutOff }
+	//{
+	//	std::cout << "Spot Light made!\n";
+	//}
 
-	void setPosition(glm::vec3 pos)
+	void setPosition(glm::vec3 pos = glm::vec3(0.0f, 0.0f, 0.0f))
 	{
 		m_position = pos;
 	}
@@ -57,20 +57,33 @@ public:
 		return m_cutOff;
 	}
 
-	float getSpecularity() const
+	float& getSpecularity()
 	{
 		return m_specularity;
 	}
 
-	Attenuation getLightAttenuation() const
+	Attenuation& getLightAttenuation()
 	{
 		return m_attenuation;
+	}
+
+	glm::vec3 getAmbientColor()
+	{
+		return m_ambientColor;
+	}
+
+	glm::vec3 getDiffuseColor()
+	{
+		return m_diffuseColor;
 	}
 
 private:
 	glm::vec3 m_position{};
 	glm::vec3 m_direction{};
-	Attenuation m_attenuation{};
+	Attenuation m_attenuation{ 1.0f , 0.09f, 0.032f};
+
+	glm::vec3 m_diffuseColor{1.0f, 0.8f, 0.5f};
+	glm::vec3 m_ambientColor{0.4f, 0.4f, 0.8f};
 
 	float m_cutOff{};
 	float m_specularity{};
