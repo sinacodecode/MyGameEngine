@@ -67,12 +67,12 @@ public:
 		return m_attenuation;
 	}
 
-	glm::vec3 getAmbientColor()
+	glm::vec3 getAmbientColor() const
 	{
 		return m_ambientColor;
 	}
 
-	glm::vec3 getDiffuseColor()
+	glm::vec3 getDiffuseColor() const
 	{
 		return m_diffuseColor;
 	}

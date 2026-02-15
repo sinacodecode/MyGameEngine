@@ -5,7 +5,7 @@
 #include <iostream>
 #include "SceneObject.h"
 
-void Object::draw(Camera& camera, Light& light)
+void Object::draw(const Camera& camera, const Light& light)
 {
     m_ourShader.use();
 
@@ -30,7 +30,7 @@ void Object::draw(Camera& camera, Light& light)
 
 }
 
-void Object::drawAt(Camera& camera, glm::vec3 loc,const Light& light)
+void Object::drawAt(const Camera& camera, glm::vec3 loc,const Light& light)
 {
     m_ourShader.use();
 
