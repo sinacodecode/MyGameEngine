@@ -49,6 +49,9 @@ void Gui::drawObject(Object& object, Camera& camera, Light& light)
             ImGui::InputFloat("light Location x: ", &light.getPosition().x, 0.0f, 0.0f, "%.1f");
             ImGui::InputFloat("light Location y: ", &light.getPosition().y, 0.0f, 0.0f, "%.1f");
             ImGui::InputFloat("light Location z: ", &light.getPosition().z, 0.0f, 0.0f, "%.1f");
+            ImGui::ColorEdit3("Diffuse Color: ", &light.getDiffuseRef().x);
+            ImGui::ColorEdit3("Ambient Color: ", &light.getAmbientRef().x);
+            ImGui::ColorEdit3("Specular Color: ", &light.getSpecularRef().x);
             ImGui::InputFloat("linear: ", &light.getLightAttenuation().m_linear, 0.0f, 0.0f, "%.1f");
             ImGui::InputFloat("constant: ", &light.getLightAttenuation().m_constant, 0.0f, 0.0f, "%.1f");
             ImGui::InputFloat("quadratic: ", &light.getLightAttenuation().m_quadratic, 0.0f, 0.0f, "%.1f");

@@ -19,8 +19,8 @@ void Object::draw(const Camera& camera, const Light& light)
     m_ourShader.setMat4("view", view);
     m_ourShader.setMat4("model", model);
 
-    m_ourShader.setVec3("diffuseLightColor", light.getDiffuseColor());
-    m_ourShader.setVec3("ambientLightColor", light.getAmbientColor());
+    //m_ourShader.setVec3("diffuseLightColor", light.getDiffuseColor());
+    //m_ourShader.setVec3("ambientLightColor", light.getAmbientColor());
 
     m_ourShader.setLight("light", light);
     m_ourShader.setVec3("viewPos", camera.Position);
@@ -48,8 +48,8 @@ void Object::drawAt(const Camera& camera, glm::vec3 loc,const Light& light)
     m_ourShader.setMat4("view", view);
     m_ourShader.setMat4("model", model);
 
-    m_ourShader.setVec3("diffuseLightColor", 1.7f, 1.5f, 1.3f);
-    m_ourShader.setVec3("ambientLightColor", 0.3f, 0.5f, 1.0f);
+    //m_ourShader.setVec3("diffuseLightColor", 1.7f, 1.5f, 1.3f);
+    //m_ourShader.setVec3("ambientLightColor", 0.3f, 0.5f, 1.0f);
 
     m_ourShader.setLight("light", light);
     m_ourShader.setVec3("viewPos", camera.Position);

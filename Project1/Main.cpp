@@ -51,10 +51,9 @@ int main()
     glfwSetFramebufferSizeCallback(window, InputFunctions::framebuffer_size_callback);
     //glfwSetCursorPosCallback(window, NULL);
     //glfwSetScrollCallback(window, NULL);
-
+    glfwSetKeyCallback(window, InputFunctions::key_callback);
     glfwSetCursorPosCallback(window, InputFunctions::mouse_callback);
     glfwSetScrollCallback(window, InputFunctions::scroll_callback);
-
     // tell GLFW to capture our mouse
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 
@@ -74,7 +73,8 @@ int main()
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_STENCIL_TEST);
     Shader ourShader{ "modelLoader.vs", "modelLoader.fs" };
-    Model ourModel{ std::string("C://Users/Sina/source/repos/Project1/Project1/Backpack/Backpack.obj") };
+    //Model ourModel{ std::string("C://Users/Administrator/source/repos/sinacodecode/MyGameEngine/Project1/Backpack/Backpack.obj") };
+    Model ourModel {std::string("C://Users/Administrator/Desktop/ngl_props/Barrel/Barrel.obj")};
     Light light{ glm::vec3(0.0f, 0.0f, 0.0f) };
     Light::Attenuation atten{};
     Object backpack{ ourShader , ourModel , glm::vec3(0.0f, 0.0f, 0.0f),Rendering::camera , light };
@@ -92,6 +92,12 @@ int main()
 
         // input
         // -----
+        ImGuiIO& io = ImGui::GetIO();
+
+        if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
+            InputFunctions::ToggleInputMode(window);
+        }
+        // Logic: Only move camera if NOT paused AND ImGui doesn't want the mouse
         InputFunctions::processInput(window);
         gui.newWindow();
 

@@ -67,14 +67,34 @@ public:
 		return m_attenuation;
 	}
 
-	glm::vec3 getAmbientColor() const
+	glm::vec3 getAmbient() const 
 	{
-		return m_ambientColor;
+		return m_ambient;
 	}
 
-	glm::vec3 getDiffuseColor() const
+	glm::vec3& getAmbientRef()
 	{
-		return m_diffuseColor;
+		return m_ambient;
+	}
+
+	glm::vec3 getDiffuse() const 
+	{
+		return m_diffuse;
+	}
+
+	glm::vec3& getDiffuseRef()
+	{
+		return m_diffuse;
+	}
+
+	glm::vec3 getSpecular() const
+	{
+		return m_specular;
+	}
+
+	glm::vec3& getSpecularRef()
+	{
+		return m_specular;
 	}
 
 private:
@@ -82,9 +102,9 @@ private:
 	glm::vec3 m_direction{};
 	Attenuation m_attenuation{ 1.0f , 0.09f, 0.032f};
 
-	glm::vec3 m_diffuseColor{1.0f, 0.8f, 0.5f};
-	glm::vec3 m_ambientColor{0.4f, 0.4f, 0.8f};
-
+	glm::vec3 m_diffuse {1.0f, 0.8f, 0.5f};
+	glm::vec3 m_ambient {0.4f, 0.4f, 0.8f};
+	glm::vec3 m_specular{ 1.0f, 1.0f, 1.0f };
 	float m_cutOff{};
 	float m_specularity{};
 };
