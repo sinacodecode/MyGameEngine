@@ -16,6 +16,7 @@
 #include <iostream>
 #include "stb_image.h"
 #include "SceneObject.h"
+#include "Scene.h"
 #include <array>
 
 //#include "ConfigValues.h"
@@ -72,12 +73,20 @@ int main()
     // -----------------------------
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_STENCIL_TEST);
+    glDepthMask(GL_TRUE);
+    //glDepthFunc(GL_ALWAYS);
+
     Shader ourShader{ "modelLoader.vs", "modelLoader.fs" };
-    //Model ourModel{ std::string("C://Users/Administrator/source/repos/sinacodecode/MyGameEngine/Project1/Backpack/Backpack.obj") };
-    Model ourModel {std::string("C://Users/Administrator/Desktop/ngl_props/Barrel/Barrel.obj")};
+    Model ourModel{ std::string("C://Users/Administrator/source/repos/sinacodecode/MyGameEngine/Project1/Backpack/Backpack.obj") };
+    //Model ourModel {std::string("C://Users/Administrator/Desktop/ngl_props/Barrel/Barrel.obj")};
     Light light{ glm::vec3(0.0f, 0.0f, 0.0f) };
     Light::Attenuation atten{};
-    Object backpack{ ourShader , ourModel , glm::vec3(0.0f, 0.0f, 0.0f),Rendering::camera , light };
+    Object backpack{ ourShader , ourModel , glm::vec3(0.0f, 0.0f, 0.0f), light };
+
+    std::vector<Object> objects {backpack};
+    std::vector<Light> lights {light};
+
+    Scene mainScene{ Rendering::camera, objects, lights };
     Gui gui{window};
 
     // render loop

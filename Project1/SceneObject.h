@@ -17,11 +17,10 @@ class Object {
 
 public:
 
-    Object(Shader& shader, Model& model, const glm::vec3& location, Camera& camera, const Light& light)
+    Object(Shader& shader, Model& model, const glm::vec3& location, const Light& light)
         : m_ourShader(shader)
         , m_ourModel(model)
         , m_location(location)
-        , m_camera (camera)
         , m_light (light)
     {
         //setShaderUniforms();
@@ -40,7 +39,6 @@ private:
 
     std::pair<float, glm::vec3> m_rotation{ 0.0f, glm::vec3(1.0f, 1.0f, 1.0f)};
     glm::vec3 m_location{};
-    Camera& m_camera;
     const Light::Attenuation m_attenuation{1.0f, 0.09f, 0.032f};
     const Light& m_light;
 

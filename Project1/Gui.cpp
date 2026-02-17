@@ -4,6 +4,73 @@
 
 #include "SceneObject.h"
 #include "InputFunctions.h"
+#include "Scene.h"
+
+void Gui::drawScene(Scene& scene)
+{
+    //ImGui::InputFloat("Location x: ", &location.x, 0.0f, 0.0f, "%.1f");
+    //ImGui::InputFloat("Location y: ", &location.y, 0.0f, 0.0f, "%.1f");
+    //ImGui::InputFloat("Location z: ", &location.z, 0.0f, 0.0f, "%.1f");
+
+    //ImGui::InputFloat("rotation x: ", &rx, 0.0f, 0.0f, "%.1f");
+    //ImGui::InputFloat("rotation y: ", &ry, 0.0f, 0.0f, "%.1f");
+    //ImGui::InputFloat("rotation z: ", &rz, 0.0f, 0.0f, "%.1f");
+
+    //ImGui::InputFloat("degree: ", &degree, 0.0f, 0.0f, "%.1f");
+    ImGuiIO& m_io = ImGui::GetIO();
+    m_io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
+    //m_io.WantCaptureMouse || glfwGetKey(m_window, GLFW_KEY_C)
+    //if (glfwGetKey(m_window, GLFW_KEY_C))
+    //{
+    //    glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+    //    glfwSetCursorPosCallback(m_window, InputFunctions::mouse_callback);
+    //    glfwSetScrollCallback(m_window, InputFunctions::scroll_callback);
+
+    //    std::cout << "Ain't gettin' shit\n";
+
+    //}
+    //else
+    //{
+    //    glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+    //    glfwSetCursorPosCallback(m_window, NULL);
+    //    glfwSetScrollCallback(m_window, NULL);
+
+    //    std::cout << "gettin' mouse input\n";
+    //}
+
+    if (ImGui::TreeNode("Scene"))
+    {
+        if (ImGui::CollapsingHeader("Model", ImGuiTreeNodeFlags_None))
+        {
+            ImGui::Text("TBA");
+            ImGui::Text("Window Pos: (%g, %g)", ImGui::GetWindowPos().x, ImGui::GetWindowPos().y);
+        }
+        if (ImGui::CollapsingHeader("Light", ImGuiTreeNodeFlags_None))
+        {
+            ImGui::InputFloat("light Location x: ", &scene.getSceneLights()[0].getPosition().x, 0.0f, 0.0f, "%.1f");
+            ImGui::InputFloat("light Location y: ", &scene.getSceneLights()[0].getPosition().y, 0.0f, 0.0f, "%.1f");
+            ImGui::InputFloat("light Location z: ", &scene.getSceneLights()[0].getPosition().z, 0.0f, 0.0f, "%.1f");
+            ImGui::ColorEdit3("Diffuse Color: ", &scene.getSceneLights()[0].getDiffuseRef().x);
+            ImGui::ColorEdit3("Ambient Color: ", &scene.getSceneLights()[0].getAmbientRef().x);
+            ImGui::ColorEdit3("Specular Color: ", &scene.getSceneLights()[0].getSpecularRef().x);
+            ImGui::InputFloat("linear: ", &scene.getSceneLights()[0].getLightAttenuation().m_linear, 0.0f, 0.0f, "%.1f");
+            ImGui::InputFloat("constant: ", &scene.getSceneLights()[0].getLightAttenuation().m_constant, 0.0f, 0.0f, "%.1f");
+            ImGui::InputFloat("quadratic: ", &scene.getSceneLights()[0].getLightAttenuation().m_quadratic, 0.0f, 0.0f, "%.1f");
+            ImGui::InputFloat("specular: ", &scene.getSceneLights()[0].getSpecularity(), 0.0f, 0.0f, "%.1f");
+        }
+        ImGui::TreePop();
+    }
+
+    ImGui::Text("mouse Pos: (%g, %g)", ImGui::GetMousePos().x, ImGui::GetMousePos().y);
+
+    ImGui::Render();
+    for (auto& o : scene.getSceneObjects())
+    {
+        //renders one light. for now.
+        o.draw(scene.getSceneCamera(), scene.getSceneLights()[0]);
+    }
+        //o.draw(camera, light);
+}
 
 void Gui::drawObject(Object& object, Camera& camera, Light& light)
 {

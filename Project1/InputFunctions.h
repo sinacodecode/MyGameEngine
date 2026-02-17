@@ -21,6 +21,14 @@ public:
     // ---------------------------------------------------------------------------------------------------------
     static void processInput(GLFWwindow* window)
     {
+        ImGuiIO& io = ImGui::GetIO();
+
+        int cursorMode = glfwGetInputMode(window, GLFW_CURSOR);
+        if (io.WantCaptureMouse && cursorMode == GLFW_CURSOR_NORMAL || Rendering::isPaused)
+        {
+            return;
+        }
+
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, true);
 
@@ -39,8 +47,10 @@ public:
             // This block only runs ONCE per tap
             Rendering::isPaused = !Rendering::isPaused;
             ToggleInputMode(window);
+            KeyEvents::pWasPressed = pIsPressed; // Update previous state
+
         }
-        KeyEvents::pWasPressed = pIsPressed; // Update previous state
+        //KeyEvents::pWasPressed = pIsPressed; // Update previous state
     }
 
     static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
@@ -107,6 +117,14 @@ public:
     // ----------------------------------------------------------------------
     static void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
     {
+        ImGuiIO& io = ImGui::GetIO();
+
+        int cursorMode = glfwGetInputMode(window, GLFW_CURSOR);
+        if (io.WantCaptureMouse && cursorMode == GLFW_CURSOR_NORMAL || Rendering::isPaused)
+        {
+            return;
+        }
+
         Rendering::camera.ProcessMouseScroll(static_cast<float>(yoffset));
     }
 

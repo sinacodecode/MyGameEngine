@@ -5,6 +5,7 @@
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
 
+#include "Scene.h"
 #include "SceneObject.h"
 #include "camera.h"
 
@@ -25,6 +26,7 @@ public:
 		ImGui_ImplGlfw_InitForOpenGL(m_window, true);          // Second param install_callback=true will install GLFW callbacks and chain to existing ones.
 		ImGui_ImplOpenGL3_Init();
 	}
+	void drawScene(Scene& scene);
 	void drawObject(Object& object, Camera& camera, Light& light);
 	void newWindow();
 	void renderWindow();

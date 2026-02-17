@@ -4,10 +4,10 @@
 class Renderer
 {
 public:
-	Renderer(const Object& object, const Light& light)
-	{
-		draw(object, light)
-	}
+	//Renderer(const Object& object, const Light& light)
+	//{
+	//	draw(object, light)
+	//}
 };
 
 #endif
