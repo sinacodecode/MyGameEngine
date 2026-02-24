@@ -151,6 +151,7 @@
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="Render.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="SceneObject.cpp" />
     <ClCompile Include="shader_s.cpp" />
     <ClCompile Include="texture_loader.cpp" />

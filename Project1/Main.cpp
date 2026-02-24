@@ -17,6 +17,7 @@
 #include "stb_image.h"
 #include "SceneObject.h"
 #include "Scene.h"
+#include "Renderer.h"
 #include <array>
 
 //#include "ConfigValues.h"
@@ -81,7 +82,7 @@ int main()
     //Model ourModel {std::string("C://Users/Administrator/Desktop/ngl_props/Barrel/Barrel.obj")};
     Light light{ glm::vec3(0.0f, 0.0f, 0.0f) };
     Light::Attenuation atten{};
-    Object backpack{ ourShader , ourModel , glm::vec3(0.0f, 0.0f, 0.0f), light };
+    Object backpack{ourModel};
 
     std::vector<Object> objects {backpack};
     std::vector<Light> lights {light};
@@ -89,6 +90,8 @@ int main()
     Scene mainScene{ Rendering::camera, objects, lights };
     Gui gui{window};
 
+    Renderer renderer{ mainScene , ourShader };
+    renderer.render();
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))
@@ -116,7 +119,7 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
         glStencilMask(0xFF); // each bit is written to as is
         glStencilMask(0x00);
-        gui.drawObject(backpack, Rendering::camera, light);
+        gui.renderScene(renderer);
         gui.renderWindow();
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------

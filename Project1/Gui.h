@@ -8,6 +8,7 @@
 #include "Scene.h"
 #include "SceneObject.h"
 #include "camera.h"
+#include "Renderer.h"
 
 class Gui
 {
@@ -28,6 +29,7 @@ public:
 	}
 	void drawScene(Scene& scene);
 	void drawObject(Object& object, Camera& camera, Light& light);
+	void renderScene(Renderer& renderer);
 	void newWindow();
 	void renderWindow();
 	bool closable_group{ true };

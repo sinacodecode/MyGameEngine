@@ -6,7 +6,7 @@
 #include "InputFunctions.h"
 #include "Scene.h"
 
-void Gui::drawScene(Scene& scene)
+void Gui::renderScene(Renderer& renderer)
 {
     //ImGui::InputFloat("Location x: ", &location.x, 0.0f, 0.0f, "%.1f");
     //ImGui::InputFloat("Location y: ", &location.y, 0.0f, 0.0f, "%.1f");
@@ -47,16 +47,16 @@ void Gui::drawScene(Scene& scene)
         }
         if (ImGui::CollapsingHeader("Light", ImGuiTreeNodeFlags_None))
         {
-            ImGui::InputFloat("light Location x: ", &scene.getSceneLights()[0].getPosition().x, 0.0f, 0.0f, "%.1f");
-            ImGui::InputFloat("light Location y: ", &scene.getSceneLights()[0].getPosition().y, 0.0f, 0.0f, "%.1f");
-            ImGui::InputFloat("light Location z: ", &scene.getSceneLights()[0].getPosition().z, 0.0f, 0.0f, "%.1f");
-            ImGui::ColorEdit3("Diffuse Color: ", &scene.getSceneLights()[0].getDiffuseRef().x);
-            ImGui::ColorEdit3("Ambient Color: ", &scene.getSceneLights()[0].getAmbientRef().x);
-            ImGui::ColorEdit3("Specular Color: ", &scene.getSceneLights()[0].getSpecularRef().x);
-            ImGui::InputFloat("linear: ", &scene.getSceneLights()[0].getLightAttenuation().m_linear, 0.0f, 0.0f, "%.1f");
-            ImGui::InputFloat("constant: ", &scene.getSceneLights()[0].getLightAttenuation().m_constant, 0.0f, 0.0f, "%.1f");
-            ImGui::InputFloat("quadratic: ", &scene.getSceneLights()[0].getLightAttenuation().m_quadratic, 0.0f, 0.0f, "%.1f");
-            ImGui::InputFloat("specular: ", &scene.getSceneLights()[0].getSpecularity(), 0.0f, 0.0f, "%.1f");
+            ImGui::InputFloat("light Location x: ", &renderer.getScene().getSceneLights()[0].getPosition().x, 0.0f, 0.0f, "%.1f");
+            ImGui::InputFloat("light Location y: ", &renderer.getScene().getSceneLights()[0].getPosition().y, 0.0f, 0.0f, "%.1f");
+            ImGui::InputFloat("light Location z: ", &renderer.getScene().getSceneLights()[0].getPosition().z, 0.0f, 0.0f, "%.1f");
+            ImGui::ColorEdit3("Diffuse Color: ", &renderer.getScene().getSceneLights()[0].getDiffuseRef().x);
+            ImGui::ColorEdit3("Ambient Color: ", &renderer.getScene().getSceneLights()[0].getAmbientRef().x);
+            ImGui::ColorEdit3("Specular Color: ", &renderer.getScene().getSceneLights()[0].getSpecularRef().x);
+            ImGui::InputFloat("linear: ", &renderer.getScene().getSceneLights()[0].getLightAttenuation().m_linear, 0.0f, 0.0f, "%.1f");
+            ImGui::InputFloat("constant: ", &renderer.getScene().getSceneLights()[0].getLightAttenuation().m_constant, 0.0f, 0.0f, "%.1f");
+            ImGui::InputFloat("quadratic: ", &renderer.getScene().getSceneLights()[0].getLightAttenuation().m_quadratic, 0.0f, 0.0f, "%.1f");
+            ImGui::InputFloat("specular: ", &renderer.getScene().getSceneLights()[0].getSpecularity(), 0.0f, 0.0f, "%.1f");
         }
         ImGui::TreePop();
     }
@@ -64,11 +64,14 @@ void Gui::drawScene(Scene& scene)
     ImGui::Text("mouse Pos: (%g, %g)", ImGui::GetMousePos().x, ImGui::GetMousePos().y);
 
     ImGui::Render();
-    for (auto& o : scene.getSceneObjects())
-    {
-        //renders one light. for now.
-        o.draw(scene.getSceneCamera(), scene.getSceneLights()[0]);
-    }
+
+    renderer.render();
+    //for (auto& o : scene.getSceneObjects())
+    //{
+    //    //renders one light. for now.
+    //    o.draw(scene.getSceneCamera(), scene.getSceneLights()[0]);
+    //}
+    
         //o.draw(camera, light);
 }
 
@@ -130,7 +133,6 @@ void Gui::drawObject(Object& object, Camera& camera, Light& light)
     ImGui::Text("mouse Pos: (%g, %g)", ImGui::GetMousePos().x, ImGui::GetMousePos().y);
 
     ImGui::Render();
-    object.draw(camera, light);
 }
 
 //#include "InputFunctions.h"
