@@ -78,7 +78,7 @@ int main()
     //glDepthFunc(GL_ALWAYS);
 
     Shader ourShader{ "modelLoader.vs", "modelLoader.fs" };
-    Model ourModel{ std::string("C://Users/Administrator/source/repos/sinacodecode/MyGameEngine/Project1/Backpack/Backpack.obj") };
+    Model ourModel{ std::string("C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Backpack/Backpack.obj") };
     //Model ourModel {std::string("C://Users/Administrator/Desktop/ngl_props/Barrel/Barrel.obj")};
     Light light{ glm::vec3(0.0f, 0.0f, 0.0f) };
     Light::Attenuation atten{};

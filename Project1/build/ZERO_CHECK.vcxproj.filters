@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\build\CMakeFiles\9602bfe65454545c7a9fcf881708a92b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CCE02B94-3181-3B99-8F99-C32FA06B8FD8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
