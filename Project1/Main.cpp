@@ -68,7 +68,7 @@ int main()
     }
 
     // tell stb_image.h to flip loaded texture's on the y-axis (before loading model).
-    stbi_set_flip_vertically_on_load(true);
+    stbi_set_flip_vertically_on_load(false);
 
     // configure global opengl state
     // -----------------------------
@@ -77,14 +77,16 @@ int main()
     glDepthMask(GL_TRUE);
     //glDepthFunc(GL_ALWAYS);
 
-    Shader ourShader{ "modelLoader.vs", "modelLoader.fs" };
+    Shader ourShader{ "C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/modelLoader.vs", "C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/modelLoader.fs"};
     Model ourModel{ std::string("C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Backpack/Backpack.obj") };
-    //Model ourModel {std::string("C://Users/Administrator/Desktop/ngl_props/Barrel/Barrel.obj")};
-    Light light{ glm::vec3(0.0f, 0.0f, 0.0f) };
+    Model roomModel{ std::string("C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Room/Room.obj") };
+
+    Light light{ glm::vec3(4.0f, 5.0f, 4.0f) };
     Light::Attenuation atten{};
     Object backpack{ourModel};
+    Object room{ roomModel };
 
-    std::vector<Object> objects {backpack};
+    std::vector<Object> objects {room, backpack};
     std::vector<Light> lights {light};
 
     Scene mainScene{ Rendering::camera, objects, lights };
@@ -111,6 +113,8 @@ int main()
         }
         // Logic: Only move camera if NOT paused AND ImGui doesn't want the mouse
         InputFunctions::processInput(window);
+        if (glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS)
+            mainScene.popObject(1);
         gui.newWindow();
 
         // render

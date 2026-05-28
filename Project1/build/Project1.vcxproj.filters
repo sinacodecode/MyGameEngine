@@ -107,5 +107,25 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{6ABBD8AC-F8BC-3B7A-B755-D8EF97EA4F4C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{68d6dcd9-2569-4f7b-a091-5e150df16608}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\lightcubeshader.fs">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\modelLoader.vs">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\modelLoader.fs">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="outLiner.fs">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="outLiner.vs">
+      <Filter>Resources</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -1,7 +1,9 @@
 #include "Renderer.h"
 
+//NEEDS REFACTORING !!!
 void Renderer::render()
 {
+    
     m_shader.use();
 
     glm::mat4 projection = glm::perspective(glm::radians(m_scene.getSceneCamera().Zoom), (float)Rendering::SCR_WIDTH / (float)Rendering::SCR_HEIGHT, 0.1f, 100.0f);
@@ -21,5 +23,11 @@ void Renderer::render()
     m_shader.setVec3("viewPos", m_scene.getSceneCamera().Position);
     //m_ourShader.setVec3("lightSpecular", glm::vec3(1.0f, 1.0f, 1.0f));
 
-    m_scene.getSceneObjects()[0].getObjectModel().Draw(m_shader);
+    //int i{ 0 };
+    //for (i = 0; i < 2; i++) {
+    //m_scene.getSceneObjects()[i].getObjectModel().Draw(m_shader);
+    //}
+
+    for (auto object : m_scene.getSceneObjects())
+        object.getObjectModel().Draw(m_shader);
 }

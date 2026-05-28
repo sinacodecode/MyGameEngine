@@ -15,6 +15,17 @@ public:
 	}
 	Scene(Scene&) = delete;
 
+	//FROM HERE !
+	void popObject(int index)
+	{
+		m_objects.erase(m_objects.begin() + index);
+	}
+	void pushObject(const Object& object)
+	{
+		m_objects.push_back(object);
+	}
+
+	//access functions
 	std::vector<Object>& getSceneObjects() { return m_objects; }
 	std::vector<Light>& getSceneLights() { return m_lights; }
 	Camera& getSceneCamera() { return m_camera; }

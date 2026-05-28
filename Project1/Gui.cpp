@@ -42,6 +42,7 @@ void Gui::renderScene(Renderer& renderer)
     {
         if (ImGui::CollapsingHeader("Model", ImGuiTreeNodeFlags_None))
         {
+            //ImGui::Checkbox("backpack", )
             ImGui::Text("TBA");
             ImGui::Text("Window Pos: (%g, %g)", ImGui::GetWindowPos().x, ImGui::GetWindowPos().y);
         }
