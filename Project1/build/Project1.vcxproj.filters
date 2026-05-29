@@ -1,99 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Main.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\camera.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\ConfigValues.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\ConfigValues.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Gui.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\Gui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Mesh.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\Mesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Model.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\Model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Render.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\Render.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Renderer.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\Renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\SceneObject.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\SceneObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\shader_s.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\shader_s.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\texture_loader.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\texture_loader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\imgui.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\external\imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\imgui_demo.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\external\imgui_demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\imgui_draw.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\external\imgui_draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\imgui_tables.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\external\imgui_tables.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\imgui_widgets.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\external\imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\imgui_impl_glfw.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\external\imgui_impl_glfw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\imgui_impl_opengl3.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\external\imgui_impl_opengl3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\camera.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\ConfigValues.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\ConfigValues.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Gui.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\Gui.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\InputFunctions.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\InputFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Light.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\Light.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Mesh.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\Mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Model.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\Model.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Render.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\Render.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Renderer.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\Renderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\Scene.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\Scene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\SceneObject.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\SceneObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\shader_s.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\shader_s.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\resource.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -107,25 +107,5 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{6ABBD8AC-F8BC-3B7A-B755-D8EF97EA4F4C}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resources">
-      <UniqueIdentifier>{68d6dcd9-2569-4f7b-a091-5e150df16608}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\lightcubeshader.fs">
-      <Filter>Resources</Filter>
-    </None>
-    <None Include="..\modelLoader.vs">
-      <Filter>Resources</Filter>
-    </None>
-    <None Include="..\modelLoader.fs">
-      <Filter>Resources</Filter>
-    </None>
-    <None Include="outLiner.fs">
-      <Filter>Resources</Filter>
-    </None>
-    <None Include="outLiner.vs">
-      <Filter>Resources</Filter>
-    </None>
   </ItemGroup>
 </Project>

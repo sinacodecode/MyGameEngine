@@ -5,7 +5,7 @@ events:
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:5 (project)"
     message: |
       The system is: Windows - 10.0.26200 - AMD64
   -
@@ -14,7 +14,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:5 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler:  
@@ -23,8 +23,8 @@ events:
       
       The output was:
       0
-      MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 5/22/2026 1:24:08 AM.
+      MSBuild version 17.14.40+3e7442088 for .NET Framework
+      Build started 5/29/2026 1:57:46 PM.
       
       Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\3.30.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -60,7 +60,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:15.74
+      Time Elapsed 00:00:00.93
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -75,12 +75,12 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:5 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-pwgzbx"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-pwgzbx"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-g09749"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-g09749"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -92,34 +92,34 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-pwgzbx'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-g09749'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fb3ff.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 5/22/2026 1:24:24 AM.
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_91ec5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/29/2026 1:57:48 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pwgzbx\\cmTC_fb3ff.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g09749\\cmTC_91ec5.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_fb3ff.dir\\Debug\\".
+          Creating directory "cmTC_91ec5.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pwgzbx\\Debug\\".
-          Creating directory "cmTC_fb3ff.dir\\Debug\\cmTC_fb3ff.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g09749\\Debug\\".
+          Creating directory "cmTC_91ec5.dir\\Debug\\cmTC_91ec5.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_fb3ff.dir\\Debug\\cmTC_fb3ff.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_fb3ff.dir\\Debug\\cmTC_fb3ff.tlog\\unsuccessfulbuild".
+          Creating "cmTC_91ec5.dir\\Debug\\cmTC_91ec5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_91ec5.dir\\Debug\\cmTC_91ec5.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fb3ff.dir\\Debug\\\\" /Fd"cmTC_fb3ff.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_91ec5.dir\\Debug\\\\" /Fd"cmTC_91ec5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fb3ff.dir\\Debug\\\\" /Fd"cmTC_fb3ff.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_91ec5.dir\\Debug\\\\" /Fd"cmTC_91ec5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pwgzbx\\Debug\\cmTC_fb3ff.exe" /INCREMENTAL /ILK:"cmTC_fb3ff.dir\\Debug\\cmTC_fb3ff.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-pwgzbx/Debug/cmTC_fb3ff.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-pwgzbx/Debug/cmTC_fb3ff.lib" /MACHINE:X64  /machine:x64 cmTC_fb3ff.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_fb3ff.vcxproj -> C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pwgzbx\\Debug\\cmTC_fb3ff.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g09749\\Debug\\cmTC_91ec5.exe" /INCREMENTAL /ILK:"cmTC_91ec5.dir\\Debug\\cmTC_91ec5.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-g09749/Debug/cmTC_91ec5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-g09749/Debug/cmTC_91ec5.lib" /MACHINE:X64  /machine:x64 cmTC_91ec5.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_91ec5.vcxproj -> C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g09749\\Debug\\cmTC_91ec5.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_fb3ff.dir\\Debug\\cmTC_fb3ff.tlog\\unsuccessfulbuild".
-          Touching "cmTC_fb3ff.dir\\Debug\\cmTC_fb3ff.tlog\\cmTC_fb3ff.lastbuildstate".
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pwgzbx\\cmTC_fb3ff.vcxproj" (default targets).
+          Deleting file "cmTC_91ec5.dir\\Debug\\cmTC_91ec5.tlog\\unsuccessfulbuild".
+          Touching "cmTC_91ec5.dir\\Debug\\cmTC_91ec5.tlog\\cmTC_91ec5.lastbuildstate".
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g09749\\cmTC_91ec5.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
@@ -133,7 +133,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:5 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
@@ -151,10 +151,10 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:5 (project)"
     message: |
       Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.44.35219.0
+      Microsoft (R) Incremental Linker Version 14.44.35227.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
@@ -167,12 +167,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
       - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
       - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)"
-      - "CMakeLists.txt:14 (find_package)"
+      - "CMakeLists.txt:16 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-loto80"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-loto80"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-e6ytiv"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-e6ytiv"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
@@ -183,35 +183,35 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-loto80'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-e6ytiv'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_362d8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 5/22/2026 1:24:24 AM.
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0bd8f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/29/2026 1:57:48 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-loto80\\cmTC_362d8.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6ytiv\\cmTC_0bd8f.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_362d8.dir\\Debug\\".
+          Creating directory "cmTC_0bd8f.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-loto80\\Debug\\".
-          Creating directory "cmTC_362d8.dir\\Debug\\cmTC_362d8.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6ytiv\\Debug\\".
+          Creating directory "cmTC_0bd8f.dir\\Debug\\cmTC_0bd8f.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_362d8.dir\\Debug\\cmTC_362d8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_362d8.dir\\Debug\\cmTC_362d8.tlog\\unsuccessfulbuild".
+          Creating "cmTC_0bd8f.dir\\Debug\\cmTC_0bd8f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_0bd8f.dir\\Debug\\cmTC_0bd8f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_362d8.dir\\Debug\\\\" /Fd"cmTC_362d8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-loto80\\src.cxx"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0bd8f.dir\\Debug\\\\" /Fd"cmTC_0bd8f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6ytiv\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_362d8.dir\\Debug\\\\" /Fd"cmTC_362d8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-loto80\\src.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_0bd8f.dir\\Debug\\\\" /Fd"cmTC_0bd8f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6ytiv\\src.cxx"
           src.cxx
-        C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-loto80\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-loto80\\cmTC_362d8.vcxproj]
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-loto80\\cmTC_362d8.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6ytiv\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6ytiv\\cmTC_0bd8f.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6ytiv\\cmTC_0bd8f.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-loto80\\cmTC_362d8.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6ytiv\\cmTC_0bd8f.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-loto80\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-loto80\\cmTC_362d8.vcxproj]
+          C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6ytiv\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e6ytiv\\cmTC_0bd8f.vcxproj]
         
             0 Warning(s)
             1 Error(s)
@@ -229,12 +229,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
       - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
       - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)"
-      - "CMakeLists.txt:14 (find_package)"
+      - "CMakeLists.txt:16 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-lv5820"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-lv5820"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4indf8"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4indf8"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
@@ -245,37 +245,37 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-lv5820'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4indf8'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5912a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 5/22/2026 1:24:25 AM.
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_59784.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/29/2026 1:57:49 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv5820\\cmTC_5912a.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4indf8\\cmTC_59784.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_5912a.dir\\Debug\\".
+          Creating directory "cmTC_59784.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv5820\\Debug\\".
-          Creating directory "cmTC_5912a.dir\\Debug\\cmTC_5912a.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4indf8\\Debug\\".
+          Creating directory "cmTC_59784.dir\\Debug\\cmTC_59784.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_5912a.dir\\Debug\\cmTC_5912a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_5912a.dir\\Debug\\cmTC_5912a.tlog\\unsuccessfulbuild".
+          Creating "cmTC_59784.dir\\Debug\\cmTC_59784.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_59784.dir\\Debug\\cmTC_59784.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_5912a.dir\\Debug\\\\" /Fd"cmTC_5912a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv5820\\CheckFunctionExists.cxx"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_59784.dir\\Debug\\\\" /Fd"cmTC_59784.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4indf8\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_5912a.dir\\Debug\\\\" /Fd"cmTC_5912a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv5820\\CheckFunctionExists.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_59784.dir\\Debug\\\\" /Fd"cmTC_59784.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4indf8\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv5820\\Debug\\cmTC_5912a.exe" /INCREMENTAL /ILK:"cmTC_5912a.dir\\Debug\\cmTC_5912a.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-lv5820/Debug/cmTC_5912a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-lv5820/Debug/cmTC_5912a.lib" /MACHINE:X64  /machine:x64 cmTC_5912a.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv5820\\cmTC_5912a.vcxproj]
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv5820\\cmTC_5912a.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4indf8\\Debug\\cmTC_59784.exe" /INCREMENTAL /ILK:"cmTC_59784.dir\\Debug\\cmTC_59784.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4indf8/Debug/cmTC_59784.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4indf8/Debug/cmTC_59784.lib" /MACHINE:X64  /machine:x64 cmTC_59784.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4indf8\\cmTC_59784.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4indf8\\cmTC_59784.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv5820\\cmTC_5912a.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4indf8\\cmTC_59784.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lv5820\\cmTC_5912a.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4indf8\\cmTC_59784.vcxproj]
         
             0 Warning(s)
             1 Error(s)
@@ -293,12 +293,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
       - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
       - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)"
-      - "CMakeLists.txt:14 (find_package)"
+      - "CMakeLists.txt:16 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4t6f8w"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4t6f8w"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4dhi92"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4dhi92"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
@@ -309,37 +309,37 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4t6f8w'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4dhi92'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_15c63.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 5/22/2026 1:24:25 AM.
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_41749.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/29/2026 1:57:49 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4t6f8w\\cmTC_15c63.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dhi92\\cmTC_41749.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_15c63.dir\\Debug\\".
+          Creating directory "cmTC_41749.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4t6f8w\\Debug\\".
-          Creating directory "cmTC_15c63.dir\\Debug\\cmTC_15c63.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dhi92\\Debug\\".
+          Creating directory "cmTC_41749.dir\\Debug\\cmTC_41749.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_15c63.dir\\Debug\\cmTC_15c63.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_15c63.dir\\Debug\\cmTC_15c63.tlog\\unsuccessfulbuild".
+          Creating "cmTC_41749.dir\\Debug\\cmTC_41749.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_41749.dir\\Debug\\cmTC_41749.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_15c63.dir\\Debug\\\\" /Fd"cmTC_15c63.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4t6f8w\\CheckFunctionExists.cxx"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_41749.dir\\Debug\\\\" /Fd"cmTC_41749.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dhi92\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_15c63.dir\\Debug\\\\" /Fd"cmTC_15c63.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4t6f8w\\CheckFunctionExists.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_41749.dir\\Debug\\\\" /Fd"cmTC_41749.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dhi92\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4t6f8w\\Debug\\cmTC_15c63.exe" /INCREMENTAL /ILK:"cmTC_15c63.dir\\Debug\\cmTC_15c63.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4t6f8w/Debug/cmTC_15c63.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4t6f8w/Debug/cmTC_15c63.lib" /MACHINE:X64  /machine:x64 cmTC_15c63.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4t6f8w\\cmTC_15c63.vcxproj]
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4t6f8w\\cmTC_15c63.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dhi92\\Debug\\cmTC_41749.exe" /INCREMENTAL /ILK:"cmTC_41749.dir\\Debug\\cmTC_41749.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4dhi92/Debug/cmTC_41749.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4dhi92/Debug/cmTC_41749.lib" /MACHINE:X64  /machine:x64 cmTC_41749.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dhi92\\cmTC_41749.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dhi92\\cmTC_41749.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4t6f8w\\cmTC_15c63.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dhi92\\cmTC_41749.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4t6f8w\\cmTC_15c63.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dhi92\\cmTC_41749.vcxproj]
         
             0 Warning(s)
             1 Error(s)
