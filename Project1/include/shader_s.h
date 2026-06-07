@@ -10,6 +10,14 @@
 
 #include "Light.h"
 
+template<class ... Ts>
+struct overloaded :Ts ...
+{
+    using Ts::operator()...;
+};
+template<class ... Ts>
+overloaded(Ts ...) -> overloaded<Ts...>;
+
 class Shader
 {
 public:
@@ -139,22 +147,70 @@ public:
     {
         glUniformMatrix4fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, &mat[0][0]);
     }
-    // ------------------------------------------------------------------------
-    void setLight(const std::string& name, Light light) const
+    //-------------------------------------------------------------------------
+    void setAttenuation(const std::string& name, const Light::Attenuation& attenuation) const
     {
-        glUniform3f(glGetUniformLocation(ID, (name + ".position").c_str()), light.getPosition().x, light.getPosition().y, light.getPosition().z);
-        glUniform3f(glGetUniformLocation(ID, (name + ".direction").c_str()), light.getDirection().x, light.getDirection().y, light.getDirection().z);
-
-        glUniform3f(glGetUniformLocation(ID, (name + ".ambient").c_str()), light.getAmbient().x, light.getAmbient().y, light.getAmbient().z);
-        glUniform3f(glGetUniformLocation(ID, (name + ".diffuse").c_str()), light.getDiffuse().x, light.getDiffuse().y, light.getDiffuse().z);
-        glUniform3f(glGetUniformLocation(ID, (name + ".specular").c_str()), light.getSpecular().x, light.getSpecular().y, light.getSpecular().z);
-
-        glUniform1f(glGetUniformLocation(ID, (name + ".constant").c_str()), light.getLightAttenuation().m_constant);
-        glUniform1f(glGetUniformLocation(ID, (name + ".linear").c_str()), light.getLightAttenuation().m_linear);
-        glUniform1f(glGetUniformLocation(ID, (name + ".quadratic").c_str()), light.getLightAttenuation().m_quadratic);
-        glUniform1f(glGetUniformLocation(ID, (name + ".specularity").c_str()), light.getSpecularity());
-        glUniform1f(glGetUniformLocation(ID, (name + ".cutOff").c_str()), light.getCutOff());
+        setFloat(name + ".constant", attenuation.constant);
+        setFloat(name + ".linear", attenuation.linear);
+        setFloat(name + ".quadratic", attenuation.quadratic);
     }
+    // ------------------------------------------------------------------------
+    void setLight(const std::string& name, const Light::LightVariant& light) const
+    {
+        std::visit(overloaded
+                    {
+                    [&](const Light::PointLight& l)
+                    {
+                        setVec3(name + ".position", l.position);
+
+                        setVec3(name + ".ambient", l.color.ambient);
+                        setVec3(name + ".diffuse", l.color.diffuse);
+                        setVec3(name + ".specular", l.color.specular);
+
+                        setAttenuation(name, l.attenuation);
+                        std::cout << name + ".ambient: " << l.color.ambient.x << '\n';
+                    },
+                    [&](const Light::DirectionalLight& l)
+                    {
+                        setVec3(name + ".direction", l.direction);
+
+                        setVec3(name + ".ambient", l.color.ambient);
+                        setVec3(name + ".diffuse", l.color.diffuse);
+                        setVec3(name + ".specular", l.color.specular);
+                    },
+                    [&](const Light::SpotLight& l)
+                    {
+                        setVec3(name + ".position", l.position);
+                        setVec3(name + ".direction", l.direction);
+
+                        setFloat(name + ".cutOff", glm::cos(glm::radians(l.cutOff)));
+                        setFloat(name + ".outerCutOff", glm::cos(glm::radians(l.outerCutOff)));
+
+                        setVec3(name + ".ambient", l.color.ambient);
+                        setVec3(name + ".diffuse", l.color.diffuse);
+                        setVec3(name + ".specular", l.color.specular);
+
+                        setAttenuation(name, l.attenuation);
+                    }
+                    }, light);
+    }
+
+
+    //void setLight(const std::string& name,const Light::LightVariant& light) const
+    //{
+    //    glUniform3f(glGetUniformLocation(ID, (name + ".position").c_str()), light.position.x, light.position.y, light.position.z);
+    //    glUniform3f(glGetUniformLocation(ID, (name + ".direction").c_str()), light.getDirection().x, light.getDirection().y, light.getDirection().z);
+
+    //    glUniform3f(glGetUniformLocation(ID, (name + ".ambient").c_str()), light.getAmbient().x, light.getAmbient().y, light.getAmbient().z);
+    //    glUniform3f(glGetUniformLocation(ID, (name + ".diffuse").c_str()), light.getDiffuse().x, light.getDiffuse().y, light.getDiffuse().z);
+    //    glUniform3f(glGetUniformLocation(ID, (name + ".specular").c_str()), light.getSpecular().x, light.getSpecular().y, light.getSpecular().z);
+
+    //    glUniform1f(glGetUniformLocation(ID, (name + ".constant").c_str()), light.getLightAttenuation().m_constant);
+    //    glUniform1f(glGetUniformLocation(ID, (name + ".linear").c_str()), light.getLightAttenuation().m_linear);
+    //    glUniform1f(glGetUniformLocation(ID, (name + ".quadratic").c_str()), light.getLightAttenuation().m_quadratic);
+    //    glUniform1f(glGetUniformLocation(ID, (name + ".specularity").c_str()), light.getSpecularity());
+    //    glUniform1f(glGetUniformLocation(ID, (name + ".cutOff").c_str()), light.getCutOff());
+    //}
 
 private:
     // utility function for checking shader compilation/linking errors.

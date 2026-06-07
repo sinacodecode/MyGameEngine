@@ -9,7 +9,7 @@
 class Scene
 {
 public:
-	Scene(Camera& camera, std::vector<Object> objects, std::vector<Light> lights)
+	Scene(Camera& camera, std::vector<Object> objects, std::vector<Light::LightVariant> lights)
 		:m_camera{camera},m_objects {objects}, m_lights{ lights }
 	{
 	}
@@ -26,13 +26,15 @@ public:
 	}
 
 	//access functions
+	int m_pointLightCount{};
 	std::vector<Object>& getSceneObjects() { return m_objects; }
-	std::vector<Light>& getSceneLights() { return m_lights; }
+	std::vector<Light::LightVariant>& getSceneLights() { return m_lights; }
 	Camera& getSceneCamera() { return m_camera; }
 private:
 	std::vector<Object> m_objects{};
-	std::vector<Light> m_lights{};
+	std::vector<Light::LightVariant> m_lights{};
 	Camera& m_camera;
+
 };
 
 #endif

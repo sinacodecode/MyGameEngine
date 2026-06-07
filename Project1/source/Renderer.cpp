@@ -1,6 +1,7 @@
-#include "Renderer.h"
-
+#include "include/Renderer.h"
+#include <variant>
 //NEEDS REFACTORING !!!
+
 void Renderer::render()
 {
     
@@ -19,7 +20,30 @@ void Renderer::render()
     //m_ourShader.setVec3("diffuseLightColor", light.getDiffuseColor());
     //m_ourShader.setVec3("ambientLightColor", light.getAmbientColor());
 
-    m_shader.setLight("light", m_scene.getSceneLights()[0]);
+    //needs more refactoring
+    for (auto& l : m_scene.getSceneLights())
+    {
+        std::visit(overloaded
+            {
+                [&](Light::PointLight light)
+                {
+                    for(int i=0; i<m_scene.m_pointLightCount;i++)
+                        m_shader.setLight("pointLights[" + std::to_string(i) + "]", light);
+                    std::cout << "void Renderer::render() FROM RENDERER!\t" << light.position.x << '\n';
+                },
+                [&](Light::DirectionalLight light)
+                {
+                    m_shader.setLight("dirLight", light);
+                    std::cout << "CALLED m_shader.setLight(\"dirLight\", light); FROM RENDERER!\n";
+                },
+                [&](Light::SpotLight light)
+                {
+                    m_shader.setLight("spotLight", light);
+                    std::cout << "CALLED m_shader.setLight(\"spotLight\", light); FROM RENDERER!\n";
+                }
+            }, l);
+    }
+    m_shader.setLight("spotLight", m_scene.getSceneLights()[0]);
     m_shader.setVec3("viewPos", m_scene.getSceneCamera().Position);
     //m_ourShader.setVec3("lightSpecular", glm::vec3(1.0f, 1.0f, 1.0f));
 
@@ -28,6 +52,6 @@ void Renderer::render()
     //m_scene.getSceneObjects()[i].getObjectModel().Draw(m_shader);
     //}
 
-    for (auto object : m_scene.getSceneObjects())
+    for (auto& object : m_scene.getSceneObjects())
         object.getObjectModel().Draw(m_shader);
 }

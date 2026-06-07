@@ -28,7 +28,7 @@ public:
 		ImGui_ImplOpenGL3_Init();
 	}
 	void drawScene(Scene& scene);
-	void drawObject(Object& object, Camera& camera, Light& light);
+	//void drawObject(Object& object, Camera& camera, Light& light);
 	void renderScene(Renderer& renderer);
 	void newWindow();
 	void renderWindow();

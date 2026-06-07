@@ -17,7 +17,7 @@
 #include "stb_image.h"
 #include "include/SceneObject.h"
 #include "include/Scene.h"
-#include "Renderer.h"
+#include "include/Renderer.h"
 #include <array>
 
 //#include "ConfigValues.h"
@@ -78,18 +78,31 @@ int main()
     //glDepthFunc(GL_ALWAYS);
 
     Shader ourShader{ "C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.vs", "C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.fs"};
-    Model ourModel{ std::string("C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/ModelsBackpack/Backpack.obj") };
+    Model ourModel{ std::string("C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/Models/Backpack/Backpack.obj") };
     Model roomModel{ std::string("C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/Models/Room/Room.obj") };
 
-    Light light{ glm::vec3(4.0f, 5.0f, 4.0f) };
+    Light::Color color{ {1.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 1.0f} };
+    Light::PointLight light1{color, glm::vec3(4.0f, 5.0f, 4.0f) };
+    Light::PointLight light2{ color, glm::vec3(2.0f, -1.0f, 1.0f) };
+    Light::PointLight light3{ color, glm::vec3(-1.0f, 3.0f, 6.0f) };
+    Light::PointLight light4{ color, glm::vec3(7.0f, 3.0f, 4.0f) };
+    
     Light::Attenuation atten{};
+
+    Light::DirectionalLight dirlight{ color, {1.0f, 1.0f, 1.0f} };
+    Light::SpotLight spotlight{ color, {1.0f, 1.0f, 1.0f}, {1.0f, 1.0f, -1.0f}, atten, 1.0f, 2.0f};
+
+
     Object backpack{ourModel};
     Object room{ roomModel };
 
     std::vector<Object> objects {room, backpack};
-    std::vector<Light> lights {light};
+    std::vector<Light::LightVariant> lights{ light1, light2, light3};
+
+    //std::vector<Light::LightVariant> lights{ spotlight};
 
     Scene mainScene{ Rendering::camera, objects, lights };
+    mainScene.m_pointLightCount = 4;
     Gui gui{window};
 
     Renderer renderer{ mainScene , ourShader };

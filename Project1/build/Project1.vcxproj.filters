@@ -4,7 +4,7 @@
     <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\camera.cpp">
+    <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\source\ConfigValues.cpp">
@@ -57,7 +57,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\camera.h">
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\ConfigValues.h">
