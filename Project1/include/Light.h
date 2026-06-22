@@ -44,10 +44,10 @@ namespace Light
 		glm::vec3 direction;
 		Attenuation attenuation;
 
-		float cutOff;
-		float outerCutOff;
-		//float cutOff{ glm::cos(glm::radians(12.5f)) };
-		//float outerCutOff{ glm::cos(glm::radians(15.0f)) };
+		//float cutOff;
+		//float outerCutOff;
+		float cutOff{ glm::cos(glm::radians(12.5f)) };
+		float outerCutOff{ glm::cos(glm::radians(15.0f)) };
 	};
 
 	using LightVariant = std::variant< PointLight, DirectionalLight, SpotLight> ;

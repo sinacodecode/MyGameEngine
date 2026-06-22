@@ -18,6 +18,8 @@ struct overloaded :Ts ...
 template<class ... Ts>
 overloaded(Ts ...) -> overloaded<Ts...>;
 
+std::string compileShaderWithMacros(const Light::LightVariant& light, const std::string& rawSourceCode);
+
 class Shader
 {
 public:
@@ -27,8 +29,8 @@ public:
     Shader(const char* vertexPath, const char* fragmentPath)
     {
         // 1. retrieve the vertex/fragment source code from filePath
-        std::string vertexCode;
-        std::string fragmentCode;
+        //std::string vertexCode;
+        //std::string fragmentCode;
         std::ifstream vShaderFile;
         std::ifstream fShaderFile;
         // ensure ifstream objects can throw exceptions:
@@ -56,6 +58,7 @@ public:
         }
         const char* vShaderCode = vertexCode.c_str();
         const char* fShaderCode = fragmentCode.c_str();
+
         // 2. compile shaders
         unsigned int vertex, fragment;
         // vertex shader
@@ -155,45 +158,7 @@ public:
         setFloat(name + ".quadratic", attenuation.quadratic);
     }
     // ------------------------------------------------------------------------
-    void setLight(const std::string& name, const Light::LightVariant& light) const
-    {
-        std::visit(overloaded
-                    {
-                    [&](const Light::PointLight& l)
-                    {
-                        setVec3(name + ".position", l.position);
-
-                        setVec3(name + ".ambient", l.color.ambient);
-                        setVec3(name + ".diffuse", l.color.diffuse);
-                        setVec3(name + ".specular", l.color.specular);
-
-                        setAttenuation(name, l.attenuation);
-                        std::cout << name + ".ambient: " << l.color.ambient.x << '\n';
-                    },
-                    [&](const Light::DirectionalLight& l)
-                    {
-                        setVec3(name + ".direction", l.direction);
-
-                        setVec3(name + ".ambient", l.color.ambient);
-                        setVec3(name + ".diffuse", l.color.diffuse);
-                        setVec3(name + ".specular", l.color.specular);
-                    },
-                    [&](const Light::SpotLight& l)
-                    {
-                        setVec3(name + ".position", l.position);
-                        setVec3(name + ".direction", l.direction);
-
-                        setFloat(name + ".cutOff", glm::cos(glm::radians(l.cutOff)));
-                        setFloat(name + ".outerCutOff", glm::cos(glm::radians(l.outerCutOff)));
-
-                        setVec3(name + ".ambient", l.color.ambient);
-                        setVec3(name + ".diffuse", l.color.diffuse);
-                        setVec3(name + ".specular", l.color.specular);
-
-                        setAttenuation(name, l.attenuation);
-                    }
-                    }, light);
-    }
+    void setLight(const std::string& name, const Light::LightVariant& light) const;
 
 
     //void setLight(const std::string& name,const Light::LightVariant& light) const
@@ -213,6 +178,8 @@ public:
     //}
 
 private:
+    std::string vertexCode;
+    std::string fragmentCode;
     // utility function for checking shader compilation/linking errors.
     // ------------------------------------------------------------------------
     void checkCompileErrors(GLuint shader, std::string type)

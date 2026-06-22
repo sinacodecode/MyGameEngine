@@ -20,6 +20,7 @@ void Renderer::render()
     //m_ourShader.setVec3("diffuseLightColor", light.getDiffuseColor());
     //m_ourShader.setVec3("ambientLightColor", light.getAmbientColor());
 
+    int pointLightIndex{ 0 };
     //needs more refactoring
     for (auto& l : m_scene.getSceneLights())
     {
@@ -27,9 +28,10 @@ void Renderer::render()
             {
                 [&](Light::PointLight light)
                 {
-                    for(int i=0; i<m_scene.m_pointLightCount;i++)
-                        m_shader.setLight("pointLights[" + std::to_string(i) + "]", light);
+                    
+                    m_shader.setLight("pointLights[" + std::to_string(pointLightIndex) + "]", light);
                     std::cout << "void Renderer::render() FROM RENDERER!\t" << light.position.x << '\n';
+                    ++pointLightIndex;
                 },
                 [&](Light::DirectionalLight light)
                 {
@@ -43,7 +45,8 @@ void Renderer::render()
                 }
             }, l);
     }
-    m_shader.setLight("spotLight", m_scene.getSceneLights()[0]);
+    m_shader.setInt("numberOfPointLights", pointLightIndex);
+    //m_shader.setLight("spotLight", m_scene.getSceneLights()[0]);
     m_shader.setVec3("viewPos", m_scene.getSceneCamera().Position);
     //m_ourShader.setVec3("lightSpecular", glm::vec3(1.0f, 1.0f, 1.0f));
 
