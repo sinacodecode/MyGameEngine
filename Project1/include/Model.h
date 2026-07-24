@@ -73,7 +73,7 @@ public:
     }
 
     // draws the model, and thus all its meshes
-    void Draw(Shader& shader);
+    void Draw(Shader& shader) const;
 
 private:
     // loads a model with supported ASSIMP extensions from file and stores the resulting meshes in the meshes vector.

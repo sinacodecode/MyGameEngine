@@ -1,6 +1,8 @@
 #ifndef SCENEOBJECT_H
 #define SCENEOBJECT_H
 
+#include <utility>
+#include <memory>
 #include "shader_s.h"
 #include "Model.h"
 
@@ -17,16 +19,27 @@ class Object {
 
 public:
 
-    Object(Model& model)
-        : m_ourModel(model)
+    Object() = default;
+
+    //Object(Object&) = delete;
+    //Object& operator =(Object&) = delete;
+
+    Object(std::unique_ptr<Model> model)
+        : m_ourModel(std::move(model))
     {
         //setShaderUniforms();
         std::cout << "object made\n";
     }
 
-    Model& getObjectModel() const { return m_ourModel; }
+    const Model& getObjectModel() const
+    { 
+        if (!m_ourModel)
+            throw std::runtime_error("Model Is Empty");
+            
+        return *m_ourModel;
+    }
 
 private:
-    Model& m_ourModel;
+    std::unique_ptr<Model> m_ourModel;
 };
 #endif

@@ -77,38 +77,37 @@ int main()
     glDepthMask(GL_TRUE);
     //glDepthFunc(GL_ALWAYS);
 
-    Shader ourShader{ "C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.vs", "C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.fs"};
+    Shader ourShader{ "../Resources/modelLoader.vs", "../Resources/modelLoader.fs"};
     
-    Model ourModel{ std::string("Resources/Models/Backpack/Backpack.obj") };
-    Model roomModel{ std::string("Resources/Models/Room/Room.obj") };
-    //Model ourModel{ std::string("C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/Models/Backpack/Backpack.obj") };
-    //Model roomModel{ std::string("C://Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/Models/Room/Room.obj") };
+    Model ourModel{ std::string("../Resources/Models/Backpack/Backpack.obj")};
+    Model roomModel{ std::string("../Resources/Models/Room/Room.obj") };
 
-    Light::Color color{ {1.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 1.0f}, {1.0f, 1.0f, 1.0f} };
-    Light::PointLight light1{color, glm::vec3(4.0f, 5.0f, 4.0f) };
-    Light::PointLight light2{ color, glm::vec3(2.0f, -1.0f, 1.0f) };
-    Light::PointLight light3{ color, glm::vec3(-1.0f, 3.0f, 6.0f) };
-    Light::PointLight light4{ color, glm::vec3(7.0f, 3.0f, 4.0f) };
+    Light::Color color{ {0.2f, 0.3f, 0.4f}, {0.6f, 0.6f, 0.3f}, {1.0f, 1.0f, 1.0f} };
+    Light::PointLight light1{color, glm::vec3(0.4f, 0.5f, 0.4f) };
+    Light::PointLight light2{ color, glm::vec3(0.2f, 0.1f, 0.1f) };
+    Light::PointLight light3{ color, glm::vec3(0.9f, 0.3f, 0.6f) };
+    Light::PointLight light4{ color, glm::vec3(0.3f, 0.7f, 0.4f) };
     
     Light::Attenuation atten{};
 
     Light::DirectionalLight dirlight{ color, {1.0f, 1.0f, 1.0f} };
     Light::SpotLight spotlight{ color, {1.0f, 1.0f, 1.0f}, {1.0f, -1.0f, -1.0f}, atten, 1.0f, 2.0f};
 
+    std::vector<std::unique_ptr<Object>> objects;
+    objects.push_back(std::make_unique<Object>(std::make_unique<Model>(std::move(roomModel))));
 
-    Object backpack{ourModel};
-    Object room{ roomModel };
-
-    std::vector<Object> objects {room, backpack};
-    std::vector<Light::LightVariant> lights{light1, light2, dirlight, spotlight};
-
+    std::vector<std::unique_ptr<Light::LightVariant>> lights;
+    lights.push_back(std::make_unique<Light::LightVariant>(light1));
+    lights.push_back(std::make_unique<Light::LightVariant>(light2));
+    lights.push_back(std::make_unique<Light::LightVariant>(dirlight));
+    lights.push_back(std::make_unique<Light::LightVariant>(spotlight));
     //std::vector<Light::LightVariant> lights{ spotlight};
 
-    Scene mainScene{ Rendering::camera, objects, lights };
-    mainScene.m_pointLightCount = 4;
+    std::unique_ptr<Scene> mainScene{ std::make_unique<Scene>(Rendering::camera, std::move(objects), std::move(lights)) };
+    mainScene->m_pointLightCount = 4;
     Gui gui{window};
 
-    Renderer renderer{ mainScene , ourShader };
+    Renderer renderer{ std::move(mainScene), ourShader };
     renderer.render();
     // render loop
     // -----------
@@ -130,6 +129,11 @@ int main()
         // Logic: Only move camera if NOT paused AND ImGui doesn't want the mouse
         InputFunctions::processInput(window);
         gui.newWindow();
+        if (glfwGetKey(window, GLFW_KEY_X) == GLFW_PRESS) {
+            renderer.getScene()->pushObject(std::make_unique<Object>(
+                std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj")
+            ));
+        }
 
         // render
         // ------

@@ -1,6 +1,6 @@
 #include "include/Model.h"
 
-void Model::Draw(Shader& shader)
+void Model::Draw(Shader& shader) const
 {
     for (unsigned int i = 0; i < m_meshes.size(); i++)
         m_meshes[i].Draw(shader);
