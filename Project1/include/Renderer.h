@@ -7,15 +7,19 @@
 class Renderer
 {
 public:
-	Renderer(Scene& scene, Shader& shader)
-		:m_scene { scene }, m_shader{ shader }
+
+	Renderer(Renderer&) = delete;
+	Renderer& operator = (Renderer&) = delete;
+
+	Renderer(std::unique_ptr<Scene> scene, Shader& shader)
+		:m_scene { std::move(scene) }, m_shader{ shader }
 	{
 	}
 
-	Scene& getScene() { return m_scene; };
+	std::unique_ptr<Scene>& getScene() { return m_scene; };
 	void render();
 private:
-	Scene& m_scene;
+	std::unique_ptr<Scene> m_scene;
 	Shader& m_shader;
 };
 

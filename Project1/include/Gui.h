@@ -13,6 +13,9 @@
 class Gui
 {
 public:
+
+	
+
 	Gui(GLFWwindow* window)
 		:m_window{window}
 	{
@@ -37,5 +40,6 @@ private:
 	//ImGuiIO& io = ImGui::GetIO();
 	GLFWwindow* m_window;
 };
+
 
 #endif

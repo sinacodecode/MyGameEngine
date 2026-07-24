@@ -4,6 +4,9 @@
 #include "camera.h"
 
 namespace Rendering {
+
+	extern bool isBackpackRendered;
+
 	extern const unsigned int SCR_WIDTH;
 	extern const unsigned int SCR_HEIGHT;
 

@@ -27,8 +27,7 @@ void Gui::renderScene(Renderer& renderer)
 {
     ImGuiIO& m_io = ImGui::GetIO();
     m_io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
-    
-    auto& lights = renderer.getScene().getSceneLights();
+    auto& lights = renderer.getScene()->getSceneLights();
     if (ImGui::TreeNode("Scene"))
     {
         if (ImGui::CollapsingHeader("Model", ImGuiTreeNodeFlags_None))
@@ -36,10 +35,11 @@ void Gui::renderScene(Renderer& renderer)
             //ImGui::Checkbox("backpack", )
             ImGui::Text("TBA");
             ImGui::Text("Window Pos: (%g, %g)", ImGui::GetWindowPos().x, ImGui::GetWindowPos().y);
+            ImGui::Checkbox("Backpack", &Rendering::isBackpackRendered);
         }
         if (ImGui::CollapsingHeader("Light", ImGuiTreeNodeFlags_None))
         {
-            auto& lights = renderer.getScene().getSceneLights();
+            auto& lights = renderer.getScene()->getSceneLights();
 
             for (size_t i = 0; i < lights.size(); i++)
             {
@@ -81,7 +81,7 @@ void Gui::renderScene(Renderer& renderer)
 
                             attenuationGUI(sl.attenuation);
                         },
-                    }, lights[i]);
+                    }, *lights[i]);
 
                 ImGui::Separator();
                 ImGui::PopID();

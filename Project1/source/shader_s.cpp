@@ -31,7 +31,6 @@ void Shader::setLight(const std::string& name, const Light::LightVariant& light)
             setVec3(name + ".specular", l.color.specular);
 
             setAttenuation(name, l.attenuation);
-            std::cout << name + ".ambient: " << l.color.ambient.x << '\n';
         },
         [&](const Light::DirectionalLight& l)
         {

@@ -49,7 +49,7 @@ public:
 		setupMesh();
 	}
 
-	void Draw(Shader& shader);
+	void Draw(Shader& shader) const ;
 	unsigned int getVAO()
 	{
 		return VAO;
