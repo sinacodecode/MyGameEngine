@@ -101,6 +101,7 @@ int main()
     lights.emplace_back(std::make_unique<Light::LightVariant>(light2));
     lights.emplace_back(std::make_unique<Light::LightVariant>(dirlight));
     lights.emplace_back(std::make_unique<Light::LightVariant>(spotlight));
+
     //std::vector<Light::LightVariant> lights{ spotlight};
 
     std::unique_ptr<Scene> mainScene{ std::make_unique<Scene>(Rendering::camera, std::move(objects), std::move(lights)) };
@@ -128,7 +129,6 @@ int main()
         }
         // Logic: Only move camera if NOT paused AND ImGui doesn't want the mouse
         InputFunctions::processInput(window);
-        gui.newWindow();
         if (glfwGetKey(window, GLFW_KEY_X) == GLFW_PRESS) {
             renderer.getScene()->pushObject(std::make_unique<Object>(
                 std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj")
@@ -153,6 +153,7 @@ int main()
         if (glfwGetKey(window, GLFW_KEY_Z) == GLFW_PRESS) {
             renderer.getScene()->popObject();
         }
+
         // render
         // ------
         glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
