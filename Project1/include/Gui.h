@@ -30,7 +30,7 @@ public:
 		ImGui_ImplGlfw_InitForOpenGL(m_window, true);          // Second param install_callback=true will install GLFW callbacks and chain to existing ones.
 		ImGui_ImplOpenGL3_Init();
 	}
-	void drawScene(Scene& scene);
+	//void drawScene(Scene& scene);
 	//void drawObject(Object& object, Camera& camera, Light& light);
 	void renderScene(Renderer& renderer);
 	void newWindow();

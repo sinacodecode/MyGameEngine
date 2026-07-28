@@ -109,26 +109,24 @@ int main()
     Gui gui{window};
 
     Renderer renderer{ std::move(mainScene), ourShader };
-    renderer.render();
-    // render loop
-    // -----------
+
+
     while (!glfwWindowShouldClose(window))
     {
-        // per-frame time logic
-        // --------------------
+
         float currentFrame = static_cast<float>(glfwGetTime());
         Rendering::deltaTime = currentFrame - Rendering::lastFrame;
         Rendering::lastFrame = currentFrame;
 
-        // input
-        // -----
         ImGuiIO& io = ImGui::GetIO();
-
+       
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
             InputFunctions::ToggleInputMode(window);
         }
-        // Logic: Only move camera if NOT paused AND ImGui doesn't want the mouse
+
         InputFunctions::processInput(window);
+        
+
         if (glfwGetKey(window, GLFW_KEY_X) == GLFW_PRESS) {
             renderer.getScene()->pushObject(std::make_unique<Object>(
                 std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj")
@@ -144,32 +142,33 @@ int main()
             std::cout << "isBackpackRendered true\n";
             renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj")));
         }
-        //if (!Rendering::isBackpackRendered)
-        //{
-        //    std::cout << "isBackpackRendered false\n";
-        //    renderer.getScene()->popObject();
-        //}
         
         if (glfwGetKey(window, GLFW_KEY_Z) == GLFW_PRESS) {
-            renderer.getScene()->popObject();
+            renderer.getScene()->popLights();
         }
 
-        // render
-        // ------
+        if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS)
+        {
+            renderer.getScene()->pushLight(std::make_unique<Light::LightVariant>(light2));
+        }
+
         glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
-        glStencilMask(0xFF); // each bit is written to as is
+        glStencilMask(0xFF);
         glStencilMask(0x00);
+
+        gui.newWindow();
+
         gui.renderScene(renderer);
+
+        renderer.render();
+
         gui.renderWindow();
-        // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
-        // -------------------------------------------------------------------------------
+
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
 
-    // glfw: terminate, clearing all previously allocated GLFW resources.
-    // ------------------------------------------------------------------
     glfwTerminate();
     return 0;
 }

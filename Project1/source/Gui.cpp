@@ -28,6 +28,9 @@ void Gui::renderScene(Renderer& renderer)
     ImGuiIO& m_io = ImGui::GetIO();
     m_io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
     auto& lights = renderer.getScene()->getSceneLights();
+
+	static const char* lightTypes[] = { "Point Light", "Directional Light", "Spot Light" };
+    static int selectedLight = 0;
     if (ImGui::TreeNode("Scene"))
     {
         if (ImGui::CollapsingHeader("Model", ImGuiTreeNodeFlags_None))
@@ -35,7 +38,12 @@ void Gui::renderScene(Renderer& renderer)
             //ImGui::Checkbox("backpack", )
             ImGui::Text("TBA");
             ImGui::Text("Window Pos: (%g, %g)", ImGui::GetWindowPos().x, ImGui::GetWindowPos().y);
-            ImGui::Checkbox("Backpack", &Rendering::isBackpackRendered);
+            if (ImGui::Button("AddBackpack"))
+            {
+                renderer.getScene()->pushObject(std::make_unique<Object>(
+                    std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj")
+                ));
+            }
         }
         if (ImGui::CollapsingHeader("Light", ImGuiTreeNodeFlags_None))
         {
@@ -83,8 +91,35 @@ void Gui::renderScene(Renderer& renderer)
                         },
                     }, *lights[i]);
 
+                ImGui::SameLine();
+                if (ImGui::Button("Remove"))
+                {
+                    // Remove the light from the Scene. Adjust loop index to account for element shift.
+                    renderer.getScene()->removeLightAt(i);
+                    ImGui::PopID();
+                    if (i != 0) --i; // step back so next iteration won't skip an element
+                    continue;
+                }
+
                 ImGui::Separator();
                 ImGui::PopID();
+            }
+            if (ImGui::Combo("Add Lights", &selectedLight, lightTypes, IM_ARRAYSIZE(lightTypes)))
+            {
+                // Code here runs instantly when a new item is clicked
+                printf("Selected item changed to: %s\n", lightTypes[selectedLight]);
+                switch (selectedLight)
+                {
+                    case 0:
+                        renderer.getScene()->pushLight(std::make_unique<Light::LightVariant>(Light::PointLight{}));
+						break;
+                    case 1:
+                        renderer.getScene()->pushLight(std::make_unique<Light::LightVariant>(Light::DirectionalLight{}));
+                        break;
+                    case 2:
+                        renderer.getScene()->pushLight(std::make_unique<Light::LightVariant>(Light::SpotLight{}));
+                        break;
+                }
             }
         }
         ImGui::TreePop();
@@ -92,44 +127,8 @@ void Gui::renderScene(Renderer& renderer)
 
     ImGui::Text("mouse Pos: (%g, %g)", ImGui::GetMousePos().x, ImGui::GetMousePos().y);
 
-    ImGui::Render();
-
-    renderer.render();
+    //renderer.render();
 }
-
-//void Gui::drawObject(Object& object, Camera& camera, Light& light)
-//{
-//
-//    ImGuiIO& m_io = ImGui::GetIO();
-//    m_io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
-//
-//    if (ImGui::TreeNode("Scene"))
-//    {
-//        if (ImGui::CollapsingHeader("Model", ImGuiTreeNodeFlags_None))
-//        {
-//            ImGui::Text("TBA");
-//            ImGui::Text("Window Pos: (%g, %g)", ImGui::GetWindowPos().x, ImGui::GetWindowPos().y);
-//        }
-//        if (ImGui::CollapsingHeader("Light", ImGuiTreeNodeFlags_None))
-//        {
-//            ImGui::InputFloat("light Location x: ", &light.getPosition().x, 0.0f, 0.0f, "%.1f");
-//            ImGui::InputFloat("light Location y: ", &light.getPosition().y, 0.0f, 0.0f, "%.1f");
-//            ImGui::InputFloat("light Location z: ", &light.getPosition().z, 0.0f, 0.0f, "%.1f");
-//            ImGui::ColorEdit3("Diffuse Color: ", &light.getDiffuseRef().x);
-//            ImGui::ColorEdit3("Ambient Color: ", &light.getAmbientRef().x);
-//            ImGui::ColorEdit3("Specular Color: ", &light.getSpecularRef().x);
-//            ImGui::InputFloat("linear: ", &light.getLightAttenuation().m_linear, 0.0f, 0.0f, "%.1f");
-//            ImGui::InputFloat("constant: ", &light.getLightAttenuation().m_constant, 0.0f, 0.0f, "%.1f");
-//            ImGui::InputFloat("quadratic: ", &light.getLightAttenuation().m_quadratic, 0.0f, 0.0f, "%.1f");
-//            ImGui::InputFloat("specular: ", &light.getSpecularity(), 0.0f, 0.0f, "%.1f");
-//        }
-//        ImGui::TreePop();
-//    }
-//
-//    ImGui::Text("mouse Pos: (%g, %g)", ImGui::GetMousePos().x, ImGui::GetMousePos().y);
-//
-//    ImGui::Render();
-//}
 
 //#include "InputFunctions.h"
 void Gui::newWindow()
