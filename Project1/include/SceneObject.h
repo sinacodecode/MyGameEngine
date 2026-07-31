@@ -39,8 +39,10 @@ public:
         return *m_ourModel;
     }
 
+    glm::vec3 m_pos = glm::vec3{ 0.0f ,0.0f , 0.0f };
+    glm::vec3 m_rotationAxis = glm::vec3{ 0.0f ,0.0f , 0.0f };
+    float m_rotation = 0.0f;
 private:
     std::unique_ptr<Model> m_ourModel;
-    bool m_isLoaded = true;
 };
 #endif

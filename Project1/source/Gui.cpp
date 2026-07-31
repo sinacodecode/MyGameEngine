@@ -44,6 +44,10 @@ void Gui::renderScene(Renderer& renderer)
                     std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj")
                 ));
             }
+            ImGui::Text("Window Pos: (%g)", renderer.getScene()->getSceneObjects().back()->m_pos.x);
+            ImGui::DragFloat3("Position:", &renderer.getScene()->getSceneObjects().back()->m_pos.x);
+            ImGui::DragFloat3("rotation Axis:", &renderer.getScene()->getSceneObjects().back()->m_rotationAxis.x, 0.01f, 0.0f, 1.0f);
+            ImGui::DragFloat("Rotation", &renderer.getScene()->getSceneObjects().back()->m_rotation, 1.0f, -360.0f, 360.0f);
         }
         if (ImGui::CollapsingHeader("Light", ImGuiTreeNodeFlags_None))
         {

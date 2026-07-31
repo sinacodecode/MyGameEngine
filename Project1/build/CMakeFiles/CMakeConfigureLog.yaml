@@ -56,7 +56,6 @@ events:
         - "C:\\Program Files (x86)\\Graphviz\\bin"
         - "D:\\Program Files\\nodejs\\"
         - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
@@ -68,6 +67,8 @@ events:
         - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
         - "D:\\Program Files\\nodejs"
         - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "message-v1"
@@ -85,7 +86,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 6/7/2026 12:57:02 AM.
+      Build started 7/31/2026 6:57:11 PM.
       
       Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -108,6 +109,10 @@ events:
         CompilerIdCXX.vcxproj -> C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.exe
       AppLocalFromInstalled:
         pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -121,7 +126,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.16
+      Time Elapsed 00:00:00.69
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -172,7 +177,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -183,6 +187,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/Scripts/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/"
@@ -202,7 +207,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -213,6 +217,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/Program Files/Python313/Scripts/"
       - "C:/Program Files/Python313/"
@@ -232,7 +237,6 @@ events:
       - "C:/Program Files (x86)/Graphviz/bin/"
       - "D:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -243,6 +247,7 @@ events:
       - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
     searched_directories:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
@@ -301,9 +306,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/link"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/link.com"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/link.exe"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/link"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link"
@@ -334,6 +336,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/link"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link"
@@ -391,9 +396,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/link"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/link.com"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/link.exe"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/link"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/link"
@@ -424,6 +426,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/link.com"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/link.exe"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/link"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
@@ -457,7 +462,6 @@ events:
         - "C:\\Program Files (x86)\\Graphviz\\bin"
         - "D:\\Program Files\\nodejs\\"
         - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
@@ -469,6 +473,8 @@ events:
         - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
         - "D:\\Program Files\\nodejs"
         - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "find-v1"
@@ -511,7 +517,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -522,6 +527,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/Scripts/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/"
@@ -541,7 +547,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -552,6 +557,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/Program Files/Python313/Scripts/"
       - "C:/Program Files/Python313/"
@@ -571,7 +577,6 @@ events:
       - "C:/Program Files (x86)/Graphviz/bin/"
       - "D:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -582,6 +587,7 @@ events:
       - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
     searched_directories:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
@@ -640,9 +646,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/lld-link"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/lld-link.com"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/lld-link.exe"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/lld-link"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lld-link"
@@ -673,6 +676,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/lld-link"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lld-link.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lld-link.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lld-link"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
@@ -730,9 +736,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/lld-link"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/lld-link.com"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/lld-link.exe"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/lld-link"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/lld-link"
@@ -763,6 +766,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/lld-link"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lld-link.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lld-link.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lld-link"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
@@ -820,9 +826,6 @@ events:
       - "C:/ProgramData/chocolatey/bin/lld-link.com"
       - "C:/ProgramData/chocolatey/bin/lld-link.exe"
       - "C:/ProgramData/chocolatey/bin/lld-link"
-      - "C:/Program Files/PowerShell/7/lld-link.com"
-      - "C:/Program Files/PowerShell/7/lld-link.exe"
-      - "C:/Program Files/PowerShell/7/lld-link"
       - "C:/Program Files/CMake/bin/lld-link.com"
       - "C:/Program Files/CMake/bin/lld-link.exe"
       - "C:/Program Files/CMake/bin/lld-link"
@@ -853,6 +856,9 @@ events:
       - "C:/Users/Sina/.dotnet/tools/lld-link.com"
       - "C:/Users/Sina/.dotnet/tools/lld-link.exe"
       - "C:/Users/Sina/.dotnet/tools/lld-link"
+      - "C:/Program Files/wkhtmltopdf/bin/lld-link.com"
+      - "C:/Program Files/wkhtmltopdf/bin/lld-link.exe"
+      - "C:/Program Files/wkhtmltopdf/bin/lld-link"
     found: false
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -885,7 +891,6 @@ events:
         - "C:\\Program Files (x86)\\Graphviz\\bin"
         - "D:\\Program Files\\nodejs\\"
         - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
@@ -897,6 +902,8 @@ events:
         - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
         - "D:\\Program Files\\nodejs"
         - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "find-v1"
@@ -937,7 +944,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -948,6 +954,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/Scripts/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/"
@@ -967,7 +974,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -978,6 +984,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/Program Files/Python313/Scripts/"
       - "C:/Program Files/Python313/"
@@ -997,7 +1004,6 @@ events:
       - "C:/Program Files (x86)/Graphviz/bin/"
       - "D:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1008,6 +1014,7 @@ events:
       - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
     searched_directories:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
@@ -1066,9 +1073,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/link"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/link.com"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/link.exe"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/link"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/link"
@@ -1099,6 +1103,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/link"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link"
@@ -1156,9 +1163,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/link"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/link.com"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/link.exe"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/link"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/link"
@@ -1189,6 +1193,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/link.com"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/link.exe"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/link"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
@@ -1222,7 +1229,6 @@ events:
         - "C:\\Program Files (x86)\\Graphviz\\bin"
         - "D:\\Program Files\\nodejs\\"
         - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
@@ -1234,6 +1240,8 @@ events:
         - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
         - "D:\\Program Files\\nodejs"
         - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "find-v1"
@@ -1274,7 +1282,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1285,6 +1292,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/Scripts/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/"
@@ -1304,7 +1312,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1315,6 +1322,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/Program Files/Python313/Scripts/"
       - "C:/Program Files/Python313/"
@@ -1334,7 +1342,6 @@ events:
       - "C:/Program Files (x86)/Graphviz/bin/"
       - "D:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1345,6 +1352,7 @@ events:
       - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
     searched_directories:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
@@ -1403,9 +1411,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/mt.com"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/mt.exe"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/mt"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/mt.com"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/mt.exe"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/mt"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/mt.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/mt.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/mt"
@@ -1436,6 +1441,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/mt.com"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/mt.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/mt"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/mt.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/mt.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/mt"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
@@ -1493,9 +1501,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/mt.com"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/mt.exe"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/mt"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/mt.com"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/mt.exe"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/mt"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/mt.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/mt.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/mt"
@@ -1526,6 +1531,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/mt.com"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/mt.exe"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/mt"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/mt.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/mt.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/mt"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
@@ -1583,9 +1591,6 @@ events:
       - "C:/ProgramData/chocolatey/bin/mt.com"
       - "C:/ProgramData/chocolatey/bin/mt.exe"
       - "C:/ProgramData/chocolatey/bin/mt"
-      - "C:/Program Files/PowerShell/7/mt.com"
-      - "C:/Program Files/PowerShell/7/mt.exe"
-      - "C:/Program Files/PowerShell/7/mt"
       - "C:/Program Files/CMake/bin/mt.com"
       - "C:/Program Files/CMake/bin/mt.exe"
       - "C:/Program Files/CMake/bin/mt"
@@ -1616,6 +1621,9 @@ events:
       - "C:/Users/Sina/.dotnet/tools/mt.com"
       - "C:/Users/Sina/.dotnet/tools/mt.exe"
       - "C:/Users/Sina/.dotnet/tools/mt"
+      - "C:/Program Files/wkhtmltopdf/bin/mt.com"
+      - "C:/Program Files/wkhtmltopdf/bin/mt.exe"
+      - "C:/Program Files/wkhtmltopdf/bin/mt"
     found: false
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -1648,7 +1656,6 @@ events:
         - "C:\\Program Files (x86)\\Graphviz\\bin"
         - "D:\\Program Files\\nodejs\\"
         - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
@@ -1660,6 +1667,8 @@ events:
         - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
         - "D:\\Program Files\\nodejs"
         - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "find-v1"
@@ -1700,7 +1709,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1711,6 +1719,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/Scripts/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/"
@@ -1730,7 +1739,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1741,6 +1749,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/Program Files/Python313/Scripts/"
       - "C:/Program Files/Python313/"
@@ -1760,7 +1769,6 @@ events:
       - "C:/Program Files (x86)/Graphviz/bin/"
       - "D:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -1771,6 +1779,7 @@ events:
       - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
     searched_directories:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
@@ -1829,9 +1838,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/lib.com"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/lib.exe"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/lib"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/lib.com"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/lib.exe"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/lib"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lib.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lib.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/lib"
@@ -1862,6 +1868,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/lib.com"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/lib.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/lib"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lib.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lib.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lib"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib"
@@ -1919,9 +1928,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/lib.com"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/lib.exe"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/lib"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/lib.com"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/lib.exe"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/lib"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/lib.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/lib.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/lib"
@@ -1952,6 +1958,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/lib.com"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/lib.exe"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/lib"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lib.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lib.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lib"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
     search_context:
@@ -1985,7 +1994,6 @@ events:
         - "C:\\Program Files (x86)\\Graphviz\\bin"
         - "D:\\Program Files\\nodejs\\"
         - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
@@ -1997,6 +2005,8 @@ events:
         - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
         - "D:\\Program Files\\nodejs"
         - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "find-v1"
@@ -2052,7 +2062,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -2063,6 +2072,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/sbin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/"
@@ -2106,7 +2116,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files (x86)/Graphviz/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/nodejs/"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -2117,6 +2126,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/sbin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/"
@@ -2160,7 +2170,6 @@ events:
       - "C:/Program Files (x86)/Graphviz/bin/"
       - "D:/Program Files/nodejs/"
       - "C:/ProgramData/chocolatey/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
@@ -2171,6 +2180,7 @@ events:
       - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -2277,9 +2287,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/debug/ProgramData/chocolatey/bin/rc"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/rc.com"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/rc.exe"
-      - "C:/vcpkg/installed/x64-windows/debug/Program Files/PowerShell/7/rc"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/CMake/bin/rc"
@@ -2310,6 +2317,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/rc.com"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/rc.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/rc"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/rc.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/rc.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/rc"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/bin/rc"
@@ -2439,9 +2449,6 @@ events:
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/ProgramData/chocolatey/bin/rc"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/rc.com"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/rc.exe"
-      - "C:/vcpkg/installed/x64-windows/Program Files/PowerShell/7/rc"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/CMake/bin/rc"
@@ -2472,6 +2479,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/rc.com"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/rc.exe"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/rc"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/rc.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/rc.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/rc"
       - "C:/vcpkg/installed/x64-windows/Program Files/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/bin/rc"
@@ -2601,9 +2611,6 @@ events:
       - "C:/ProgramData/chocolatey/bin/rc.com"
       - "C:/ProgramData/chocolatey/bin/rc.exe"
       - "C:/ProgramData/chocolatey/bin/rc"
-      - "C:/Program Files/PowerShell/7/rc.com"
-      - "C:/Program Files/PowerShell/7/rc.exe"
-      - "C:/Program Files/PowerShell/7/rc"
       - "C:/Program Files/CMake/bin/rc.com"
       - "C:/Program Files/CMake/bin/rc.exe"
       - "C:/Program Files/CMake/bin/rc"
@@ -2634,6 +2641,9 @@ events:
       - "C:/Users/Sina/.dotnet/tools/rc.com"
       - "C:/Users/Sina/.dotnet/tools/rc.exe"
       - "C:/Users/Sina/.dotnet/tools/rc"
+      - "C:/Program Files/wkhtmltopdf/bin/rc.com"
+      - "C:/Program Files/wkhtmltopdf/bin/rc.exe"
+      - "C:/Program Files/wkhtmltopdf/bin/rc"
       - "C:/Program Files/bin/rc.com"
       - "C:/Program Files/bin/rc.exe"
       - "C:/Program Files/bin/rc"
@@ -2702,7 +2712,6 @@ events:
         - "C:\\Program Files (x86)\\Graphviz\\bin"
         - "D:\\Program Files\\nodejs\\"
         - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
@@ -2714,6 +2723,8 @@ events:
         - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
         - "D:\\Program Files\\nodejs"
         - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/Project1"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -2730,8 +2741,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-44y9l5"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-44y9l5"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-ghmikj"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-ghmikj"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -2745,33 +2756,33 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-44y9l5'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-ghmikj'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_88fa6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_17a89.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 6/7/2026 12:57:04 AM.
+        Build started 7/31/2026 6:57:12 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-44y9l5\\cmTC_88fa6.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ghmikj\\cmTC_17a89.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-44y9l5\\Debug\\".
-          Creating directory "cmTC_88fa6.dir\\Debug\\cmTC_88fa6.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ghmikj\\Debug\\".
+          Creating directory "cmTC_17a89.dir\\Debug\\cmTC_17a89.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_88fa6.dir\\Debug\\cmTC_88fa6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_88fa6.dir\\Debug\\cmTC_88fa6.tlog\\unsuccessfulbuild".
+          Creating "cmTC_17a89.dir\\Debug\\cmTC_17a89.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_17a89.dir\\Debug\\cmTC_17a89.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_88fa6.dir\\Debug\\\\" /Fd"cmTC_88fa6.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_17a89.dir\\Debug\\\\" /Fd"cmTC_17a89.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_88fa6.dir\\Debug\\\\" /Fd"cmTC_88fa6.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_17a89.dir\\Debug\\\\" /Fd"cmTC_17a89.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-44y9l5\\Debug\\cmTC_88fa6.exe" /INCREMENTAL /ILK:"cmTC_88fa6.dir\\Debug\\cmTC_88fa6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-44y9l5/Debug/cmTC_88fa6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-44y9l5/Debug/cmTC_88fa6.lib" /MACHINE:X64  /machine:x64 cmTC_88fa6.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_88fa6.vcxproj -> C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-44y9l5\\Debug\\cmTC_88fa6.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ghmikj\\Debug\\cmTC_17a89.exe" /INCREMENTAL /ILK:"cmTC_17a89.dir\\Debug\\cmTC_17a89.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-ghmikj/Debug/cmTC_17a89.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-ghmikj/Debug/cmTC_17a89.lib" /MACHINE:X64  /machine:x64 cmTC_17a89.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_17a89.vcxproj -> C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ghmikj\\Debug\\cmTC_17a89.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_88fa6.dir\\Debug\\cmTC_88fa6.tlog\\unsuccessfulbuild".
-          Touching "cmTC_88fa6.dir\\Debug\\cmTC_88fa6.tlog\\cmTC_88fa6.lastbuildstate".
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-44y9l5\\cmTC_88fa6.vcxproj" (default targets).
+          Deleting file "cmTC_17a89.dir\\Debug\\cmTC_17a89.tlog\\unsuccessfulbuild".
+          Touching "cmTC_17a89.dir\\Debug\\cmTC_17a89.tlog\\cmTC_17a89.lastbuildstate".
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ghmikj\\cmTC_17a89.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
@@ -2824,8 +2835,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-1nm702"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-1nm702"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-jv98nz"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-jv98nz"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
@@ -2838,34 +2849,34 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-1nm702'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-jv98nz'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5df15.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1c03a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 6/7/2026 12:57:05 AM.
+        Build started 7/31/2026 6:57:13 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1nm702\\cmTC_5df15.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\cmTC_1c03a.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1nm702\\Debug\\".
-          Creating directory "cmTC_5df15.dir\\Debug\\cmTC_5df15.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\Debug\\".
+          Creating directory "cmTC_1c03a.dir\\Debug\\cmTC_1c03a.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_5df15.dir\\Debug\\cmTC_5df15.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_5df15.dir\\Debug\\cmTC_5df15.tlog\\unsuccessfulbuild".
+          Creating "cmTC_1c03a.dir\\Debug\\cmTC_1c03a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1c03a.dir\\Debug\\cmTC_1c03a.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_5df15.dir\\Debug\\\\" /Fd"cmTC_5df15.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1nm702\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_1c03a.dir\\Debug\\\\" /Fd"cmTC_1c03a.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_5df15.dir\\Debug\\\\" /Fd"cmTC_5df15.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1nm702\\src.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_1c03a.dir\\Debug\\\\" /Fd"cmTC_1c03a.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\src.cxx"
           src.cxx
-        C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1nm702\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1nm702\\cmTC_5df15.vcxproj]
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1nm702\\cmTC_5df15.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\cmTC_1c03a.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\cmTC_1c03a.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1nm702\\cmTC_5df15.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\cmTC_1c03a.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1nm702\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1nm702\\cmTC_5df15.vcxproj]
+          C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\cmTC_1c03a.vcxproj]
         
             0 Warning(s)
             1 Error(s)
@@ -2888,8 +2899,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-dhav1g"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-dhav1g"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-gaz3j1"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-gaz3j1"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
@@ -2902,41 +2913,41 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-dhav1g'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-gaz3j1'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9f219.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2d538.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 6/7/2026 12:57:05 AM.
+        Build started 7/31/2026 6:57:13 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhav1g\\cmTC_9f219.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\cmTC_2d538.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhav1g\\Debug\\".
-          Creating directory "cmTC_9f219.dir\\Debug\\cmTC_9f219.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\Debug\\".
+          Creating directory "cmTC_2d538.dir\\Debug\\cmTC_2d538.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_9f219.dir\\Debug\\cmTC_9f219.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_9f219.dir\\Debug\\cmTC_9f219.tlog\\unsuccessfulbuild".
+          Creating "cmTC_2d538.dir\\Debug\\cmTC_2d538.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2d538.dir\\Debug\\cmTC_2d538.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_9f219.dir\\Debug\\\\" /Fd"cmTC_9f219.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhav1g\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_2d538.dir\\Debug\\\\" /Fd"cmTC_2d538.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_9f219.dir\\Debug\\\\" /Fd"cmTC_9f219.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhav1g\\CheckFunctionExists.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_2d538.dir\\Debug\\\\" /Fd"cmTC_2d538.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhav1g\\Debug\\cmTC_9f219.exe" /INCREMENTAL /ILK:"cmTC_9f219.dir\\Debug\\cmTC_9f219.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-dhav1g/Debug/cmTC_9f219.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-dhav1g/Debug/cmTC_9f219.lib" /MACHINE:X64  /machine:x64 cmTC_9f219.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhav1g\\cmTC_9f219.vcxproj]
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhav1g\\cmTC_9f219.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\Debug\\cmTC_2d538.exe" /INCREMENTAL /ILK:"cmTC_2d538.dir\\Debug\\cmTC_2d538.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-gaz3j1/Debug/cmTC_2d538.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-gaz3j1/Debug/cmTC_2d538.lib" /MACHINE:X64  /machine:x64 cmTC_2d538.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\cmTC_2d538.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\cmTC_2d538.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhav1g\\cmTC_9f219.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\cmTC_2d538.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dhav1g\\cmTC_9f219.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\cmTC_2d538.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.27
+        Time Elapsed 00:00:00.28
         
       exitCode: 1
   -
@@ -2954,8 +2965,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-nvkh1l"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-nvkh1l"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-55ncjs"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-55ncjs"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
@@ -2968,41 +2979,41 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-nvkh1l'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-55ncjs'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_75cbd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_00b5f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 6/7/2026 12:57:06 AM.
+        Build started 7/31/2026 6:57:13 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvkh1l\\cmTC_75cbd.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\cmTC_00b5f.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvkh1l\\Debug\\".
-          Creating directory "cmTC_75cbd.dir\\Debug\\cmTC_75cbd.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\Debug\\".
+          Creating directory "cmTC_00b5f.dir\\Debug\\cmTC_00b5f.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_75cbd.dir\\Debug\\cmTC_75cbd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_75cbd.dir\\Debug\\cmTC_75cbd.tlog\\unsuccessfulbuild".
+          Creating "cmTC_00b5f.dir\\Debug\\cmTC_00b5f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_00b5f.dir\\Debug\\cmTC_00b5f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_75cbd.dir\\Debug\\\\" /Fd"cmTC_75cbd.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvkh1l\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_00b5f.dir\\Debug\\\\" /Fd"cmTC_00b5f.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_75cbd.dir\\Debug\\\\" /Fd"cmTC_75cbd.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvkh1l\\CheckFunctionExists.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_00b5f.dir\\Debug\\\\" /Fd"cmTC_00b5f.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvkh1l\\Debug\\cmTC_75cbd.exe" /INCREMENTAL /ILK:"cmTC_75cbd.dir\\Debug\\cmTC_75cbd.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-nvkh1l/Debug/cmTC_75cbd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-nvkh1l/Debug/cmTC_75cbd.lib" /MACHINE:X64  /machine:x64 cmTC_75cbd.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvkh1l\\cmTC_75cbd.vcxproj]
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvkh1l\\cmTC_75cbd.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\Debug\\cmTC_00b5f.exe" /INCREMENTAL /ILK:"cmTC_00b5f.dir\\Debug\\cmTC_00b5f.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-55ncjs/Debug/cmTC_00b5f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-55ncjs/Debug/cmTC_00b5f.lib" /MACHINE:X64  /machine:x64 cmTC_00b5f.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\cmTC_00b5f.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\cmTC_00b5f.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvkh1l\\cmTC_75cbd.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\cmTC_00b5f.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvkh1l\\cmTC_75cbd.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\cmTC_00b5f.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.27
+        Time Elapsed 00:00:00.28
         
       exitCode: 1
   -
@@ -3119,7 +3130,6 @@ events:
         - "C:\\Program Files (x86)\\Graphviz\\bin"
         - "D:\\Program Files\\nodejs\\"
         - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
@@ -3131,6 +3141,8 @@ events:
         - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
         - "D:\\Program Files\\nodejs"
         - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/Project1"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3252,7 +3264,6 @@ events:
         - "C:\\Program Files (x86)\\Graphviz\\bin"
         - "D:\\Program Files\\nodejs\\"
         - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
@@ -3264,6 +3275,8 @@ events:
         - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
         - "D:\\Program Files\\nodejs"
         - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/Project1"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3385,7 +3398,6 @@ events:
         - "C:\\Program Files (x86)\\Graphviz\\bin"
         - "D:\\Program Files\\nodejs\\"
         - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
@@ -3397,6 +3409,8 @@ events:
         - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
         - "D:\\Program Files\\nodejs"
         - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/Project1"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3518,7 +3532,6 @@ events:
         - "C:\\Program Files (x86)\\Graphviz\\bin"
         - "D:\\Program Files\\nodejs\\"
         - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
         - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
@@ -3530,6 +3543,8 @@ events:
         - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
         - "D:\\Program Files\\nodejs"
         - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/Project1"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"

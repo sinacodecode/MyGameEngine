@@ -96,6 +96,9 @@
     <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\include\Transformations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\CMakeLists.txt" />

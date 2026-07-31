@@ -56,6 +56,7 @@ set(PROJECT_HEADERS
     include/SceneObject.h
     include/shader_s.h
     include/resource.h
+    include/Transformations.h
 )
 
 add_executable(${PROJECT_NAME}
