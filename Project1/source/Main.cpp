@@ -42,7 +42,7 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow* window = glfwCreateWindow(Rendering::SCR_WIDTH, Rendering::SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(Rendering::SCR_WIDTH, Rendering::SCR_HEIGHT, "MyGameEngine", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -75,10 +75,10 @@ int main()
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_STENCIL_TEST);
     glDepthMask(GL_TRUE);
-    //glDepthFunc(GL_ALWAYS);
+    glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
 
     Shader ourShader{ "../Resources/modelLoader.vs", "../Resources/modelLoader.fs"};
-    
+
     Model ourModel{ std::string("../Resources/Models/Backpack/Backpack.obj")};
     Model roomModel{ std::string("../Resources/Models/Room/Room.obj") };
 
@@ -154,8 +154,6 @@ int main()
 
         glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
-        glStencilMask(0xFF);
-        glStencilMask(0x00);
 
         gui.newWindow();
 

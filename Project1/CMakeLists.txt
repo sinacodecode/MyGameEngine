@@ -160,6 +160,8 @@ if(WIN32)
             ${CMAKE_CURRENT_SOURCE_DIR}/Resources/modelLoader.vs
             ${CMAKE_CURRENT_SOURCE_DIR}/Resources/plane.fs
             ${CMAKE_CURRENT_SOURCE_DIR}/Resources/plane.vs
+            ${CMAKE_CURRENT_SOURCE_DIR}/Resources/outLine.fs
+            ${CMAKE_CURRENT_SOURCE_DIR}/Resources/outLine.vs
             ${CMAKE_CURRENT_SOURCE_DIR}/Resources/shaders.fs
             ${CMAKE_CURRENT_SOURCE_DIR}/Resources/shaders.vs
             $<TARGET_FILE_DIR:${PROJECT_NAME}>

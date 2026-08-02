@@ -27,3 +27,8 @@ namespace KeyEvents
 	bool pWasPressed = false;
 
 }
+
+namespace Shaders
+{
+	float outlineScale = 1.1f;
+}

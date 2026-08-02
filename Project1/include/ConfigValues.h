@@ -2,7 +2,7 @@
 #define CONFIGVALUES_H
 
 #include "camera.h"
-
+#include "shader_s.h"
 namespace Rendering {
 
 	extern bool isBackpackRendered;
@@ -32,4 +32,8 @@ namespace KeyEvents
 
 }
 
+namespace Shaders
+{
+	extern float outlineScale;
+}
 #endif

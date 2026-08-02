@@ -21,6 +21,8 @@ public:
 private:
 	std::unique_ptr<Scene> m_scene;
 	Shader& m_shader;
+
+	std::unique_ptr<Shader> outlineShader = std::make_unique<Shader>("../Resources/outLine.vs", "../Resources/outLine.fs");
 };
 
 #endif
