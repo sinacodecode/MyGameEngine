@@ -1,4 +1,5 @@
 #include <variant>
+#include <charconv>
 
 #include "include/Gui.h"
 
@@ -7,14 +8,6 @@
 #include "include/SceneObject.h"
 #include "include/InputFunctions.h"
 #include "include/Scene.h"
-
-//template<class ... Ts>
-//struct overloaded :Ts ...
-//{
-//    using Ts::operator()...;
-//};
-//template<class ... Ts>
-//overloaded(Ts ...) -> overloaded<Ts...>;
 
 void attenuationGUI(Light::Attenuation& atten)
 {
@@ -25,11 +18,37 @@ void attenuationGUI(Light::Attenuation& atten)
 
 void Gui::renderScene(Renderer& renderer)
 {
+    ImGui::SetNextWindowPos(ImVec2(0.0f, 0.0f), ImGuiCond_FirstUseEver);
+    ImGui::SetNextWindowSize(ImVec2(400.0f, 600.0f), ImGuiCond_FirstUseEver);
+
     ImGuiIO& m_io = ImGui::GetIO();
     m_io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
     auto& lights = renderer.getScene()->getSceneLights();
 
 	static const char* lightTypes[] = { "Point Light", "Directional Light", "Spot Light" };
+    static char stringBuffer[32 * 16];
+    static const char* modelTypes[32]{};
+
+    char* currentBufferPos = stringBuffer;
+    std::size_t i = 0;
+
+    for (const auto& ID : renderer.getScene()->getSceneObjects())
+    {
+        if (i >= 32) break; // Prevent array overflow
+
+        // 2. Call std::to_chars by passing the buffer bounds
+        auto [ptr, ec] = std::to_chars(currentBufferPos, currentBufferPos + 15, ID->m_ID);
+
+        if (ec == std::errc{}) {
+            *ptr = '\0'; // 3. Manually null-terminate for const char* compatibility
+            modelTypes[i] = currentBufferPos;
+            currentBufferPos = ptr + 1; // Move pointer past the null terminator
+        }
+        i++;
+    }
+    static int item_selected_idx = 0;
+    static bool item_highlight = false;
+    int item_highlighted_idx = -1;
     static int selectedLight = 0;
     if (ImGui::TreeNode("Scene"))
     {
@@ -38,16 +57,47 @@ void Gui::renderScene(Renderer& renderer)
             //ImGui::Checkbox("backpack", )
             ImGui::Text("TBA");
             ImGui::Text("Window Pos: (%g, %g)", ImGui::GetWindowPos().x, ImGui::GetWindowPos().y);
-            if (ImGui::Button("AddBackpack"))
+
+            auto& objects = renderer.getScene()->getSceneObjects();
+
+            ImGui::Text("Full-width:");
+            if (ImGui::BeginListBox("##listbox 2", ImVec2(-FLT_MIN, 5 * ImGui::GetTextLineHeightWithSpacing())))
             {
-                renderer.getScene()->pushObject(std::make_unique<Object>(
-                    std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj")
-                ));
+                for (int n = 0; n < objects.size(); n++)
+                {
+                    bool is_selected = (item_selected_idx == n);
+                    ImGuiSelectableFlags flags = (item_highlighted_idx == n) ? ImGuiSelectableFlags_Highlight : 0;
+                    if (ImGui::Selectable(modelTypes[n], is_selected, flags))
+                        item_selected_idx = n;
+
+                    // Set the initial focus when opening the combo (scrolling + keyboard navigation focus)
+                    if (is_selected)
+                    {
+                        ImGui::SetItemDefaultFocus();
+                        Rendering::selectedObject = item_selected_idx;
+                    }
+                }
+                ImGui::EndListBox();
             }
-            ImGui::Text("Window Pos: (%g)", renderer.getScene()->getSceneObjects().back()->m_pos.x);
-            ImGui::DragFloat3("Position:", &renderer.getScene()->getSceneObjects().back()->m_pos.x);
-            ImGui::DragFloat3("rotation Axis:", &renderer.getScene()->getSceneObjects().back()->m_rotationAxis.x, 0.01f, 0.0f, 1.0f);
-            ImGui::DragFloat("Rotation", &renderer.getScene()->getSceneObjects().back()->m_rotation, 1.0f, -360.0f, 360.0f);
+
+            for (size_t i = 0; i < objects.size(); i++)
+            {
+                ImGui::PushID(static_cast<int>(i));
+                if (ImGui::Button("AddBackpack"))
+                {
+                    renderer.getScene()->pushObject(std::make_unique<Object>(
+                        std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj", 1)
+                    ));
+                }
+                ImGui::Text("Model ID: (%g)", objects[i]->m_ID);
+                ImGui::DragFloat3("Position:", &objects[i]->m_pos.x);
+                ImGui::DragFloat3("rotation Axis:", &objects[i]->m_rotationAxis.x, 0.01f, 0.0f, 1.0f);
+                ImGui::DragFloat("Rotation", &objects[i]->m_rotation, 1.0f, -360.0f, 360.0f);
+
+                ImGui::Separator();
+                ImGui::PopID();
+            }
+            
         }
         if (ImGui::CollapsingHeader("Light", ImGuiTreeNodeFlags_None))
         {
@@ -101,6 +151,7 @@ void Gui::renderScene(Renderer& renderer)
                     // Remove the light from the Scene. Adjust loop index to account for element shift.
                     renderer.getScene()->removeLightAt(i);
                     ImGui::PopID();
+
                     if (i != 0) --i; // step back so next iteration won't skip an element
                     continue;
                 }

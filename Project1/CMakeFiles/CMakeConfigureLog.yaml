@@ -1,0 +1,3347 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\Python313\\"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\doxygen\\bin"
+        - "C:\\Program Files (x86)\\Graphviz\\bin"
+        - "D:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\Sina\\Desktop\\OPENGL PROJECTS\\glfw-3.4.bin.WIN64\\lib-vc2022"
+        - "C:\\Users\\Sina\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Python\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2025.3.1.1\\bin"
+        - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
+        - "D:\\Program Files\\nodejs"
+        - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.40+3e7442088 for .NET Framework
+      Build started 8/7/2026 10:48:11 PM.
+      
+      Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      VcpkgCheckManifestRoot:
+        The vcpkg manifest was disabled, but we found a manifest file in C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.00
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/4.3.3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Python313/Scripts/"
+      - "C:/Program Files/Python313/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/doxygen/bin/"
+      - "C:/Program Files (x86)/Graphviz/bin/"
+      - "D:/Program Files/nodejs/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Sina/AppData/Local/Python/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
+      - "C:/Users/Sina/AppData/Roaming/npm/"
+      - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\Python313\\"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\doxygen\\bin"
+        - "C:\\Program Files (x86)\\Graphviz\\bin"
+        - "D:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\Sina\\Desktop\\OPENGL PROJECTS\\glfw-3.4.bin.WIN64\\lib-vc2022"
+        - "C:\\Users\\Sina\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Python\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2025.3.1.1\\bin"
+        - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
+        - "D:\\Program Files\\nodejs"
+        - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Python313/Scripts/"
+      - "C:/Program Files/Python313/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/doxygen/bin/"
+      - "C:/Program Files (x86)/Graphviz/bin/"
+      - "D:/Program Files/nodejs/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Sina/AppData/Local/Python/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
+      - "C:/Users/Sina/AppData/Roaming/npm/"
+      - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files/Python313/Scripts/lld-link.com"
+      - "C:/Program Files/Python313/Scripts/lld-link.exe"
+      - "C:/Program Files/Python313/Scripts/lld-link"
+      - "C:/Program Files/Python313/lld-link.com"
+      - "C:/Program Files/Python313/lld-link.exe"
+      - "C:/Program Files/Python313/lld-link"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/lld-link.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/lld-link.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/lld-link"
+      - "C:/Program Files/doxygen/bin/lld-link.com"
+      - "C:/Program Files/doxygen/bin/lld-link.exe"
+      - "C:/Program Files/doxygen/bin/lld-link"
+      - "C:/Program Files (x86)/Graphviz/bin/lld-link.com"
+      - "C:/Program Files (x86)/Graphviz/bin/lld-link.exe"
+      - "C:/Program Files (x86)/Graphviz/bin/lld-link"
+      - "D:/Program Files/nodejs/lld-link.com"
+      - "D:/Program Files/nodejs/lld-link.exe"
+      - "D:/Program Files/nodejs/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/msys64/ucrt64/bin/lld-link.com"
+      - "C:/msys64/ucrt64/bin/lld-link.exe"
+      - "C:/msys64/ucrt64/bin/lld-link"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/lld-link.com"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/lld-link.exe"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/lld-link"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/lld-link.com"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/lld-link.exe"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/lld-link"
+      - "C:/Users/Sina/AppData/Local/Python/bin/lld-link.com"
+      - "C:/Users/Sina/AppData/Local/Python/bin/lld-link.exe"
+      - "C:/Users/Sina/AppData/Local/Python/bin/lld-link"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/lld-link.com"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/lld-link.exe"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/lld-link"
+      - "C:/Users/Sina/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/Sina/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/Sina/AppData/Roaming/npm/lld-link"
+      - "C:/Users/Sina/.dotnet/tools/lld-link.com"
+      - "C:/Users/Sina/.dotnet/tools/lld-link.exe"
+      - "C:/Users/Sina/.dotnet/tools/lld-link"
+      - "C:/Program Files/wkhtmltopdf/bin/lld-link.com"
+      - "C:/Program Files/wkhtmltopdf/bin/lld-link.exe"
+      - "C:/Program Files/wkhtmltopdf/bin/lld-link"
+      - "D:/Program Files/LLVM/bin/lld-link.com"
+    found: "D:/Program Files/LLVM/bin/lld-link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\Python313\\"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\doxygen\\bin"
+        - "C:\\Program Files (x86)\\Graphviz\\bin"
+        - "D:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\Sina\\Desktop\\OPENGL PROJECTS\\glfw-3.4.bin.WIN64\\lib-vc2022"
+        - "C:\\Users\\Sina\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Python\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2025.3.1.1\\bin"
+        - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
+        - "D:\\Program Files\\nodejs"
+        - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Python313/Scripts/"
+      - "C:/Program Files/Python313/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/doxygen/bin/"
+      - "C:/Program Files (x86)/Graphviz/bin/"
+      - "D:/Program Files/nodejs/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Sina/AppData/Local/Python/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
+      - "C:/Users/Sina/AppData/Roaming/npm/"
+      - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\Python313\\"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\doxygen\\bin"
+        - "C:\\Program Files (x86)\\Graphviz\\bin"
+        - "D:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\Sina\\Desktop\\OPENGL PROJECTS\\glfw-3.4.bin.WIN64\\lib-vc2022"
+        - "C:\\Users\\Sina\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Python\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2025.3.1.1\\bin"
+        - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
+        - "D:\\Program Files\\nodejs"
+        - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Python313/Scripts/"
+      - "C:/Program Files/Python313/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/doxygen/bin/"
+      - "C:/Program Files (x86)/Graphviz/bin/"
+      - "D:/Program Files/nodejs/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Sina/AppData/Local/Python/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
+      - "C:/Users/Sina/AppData/Roaming/npm/"
+      - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/Program Files/Python313/Scripts/mt.com"
+      - "C:/Program Files/Python313/Scripts/mt.exe"
+      - "C:/Program Files/Python313/Scripts/mt"
+      - "C:/Program Files/Python313/mt.com"
+      - "C:/Program Files/Python313/mt.exe"
+      - "C:/Program Files/Python313/mt"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/mt.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/mt.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/mt.com"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/mt.exe"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/mt"
+      - "C:/Program Files/doxygen/bin/mt.com"
+      - "C:/Program Files/doxygen/bin/mt.exe"
+      - "C:/Program Files/doxygen/bin/mt"
+      - "C:/Program Files (x86)/Graphviz/bin/mt.com"
+      - "C:/Program Files (x86)/Graphviz/bin/mt.exe"
+      - "C:/Program Files (x86)/Graphviz/bin/mt"
+      - "D:/Program Files/nodejs/mt.com"
+      - "D:/Program Files/nodejs/mt.exe"
+      - "D:/Program Files/nodejs/mt"
+      - "C:/ProgramData/chocolatey/bin/mt.com"
+      - "C:/ProgramData/chocolatey/bin/mt.exe"
+      - "C:/ProgramData/chocolatey/bin/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/msys64/ucrt64/bin/mt.com"
+      - "C:/msys64/ucrt64/bin/mt.exe"
+      - "C:/msys64/ucrt64/bin/mt"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/mt.com"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/mt.exe"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/mt"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/mt.com"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/mt.exe"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/mt"
+      - "C:/Users/Sina/AppData/Local/Python/bin/mt.com"
+      - "C:/Users/Sina/AppData/Local/Python/bin/mt.exe"
+      - "C:/Users/Sina/AppData/Local/Python/bin/mt"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/mt.com"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/mt.exe"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/mt"
+      - "C:/Users/Sina/AppData/Roaming/npm/mt.com"
+      - "C:/Users/Sina/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/Sina/AppData/Roaming/npm/mt"
+      - "C:/Users/Sina/.dotnet/tools/mt.com"
+      - "C:/Users/Sina/.dotnet/tools/mt.exe"
+      - "C:/Users/Sina/.dotnet/tools/mt"
+      - "C:/Program Files/wkhtmltopdf/bin/mt.com"
+      - "C:/Program Files/wkhtmltopdf/bin/mt.exe"
+      - "C:/Program Files/wkhtmltopdf/bin/mt"
+      - "D:/Program Files/LLVM/bin/mt.com"
+      - "D:/Program Files/LLVM/bin/mt.exe"
+      - "D:/Program Files/LLVM/bin/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\Python313\\"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\doxygen\\bin"
+        - "C:\\Program Files (x86)\\Graphviz\\bin"
+        - "D:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\Sina\\Desktop\\OPENGL PROJECTS\\glfw-3.4.bin.WIN64\\lib-vc2022"
+        - "C:\\Users\\Sina\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Python\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2025.3.1.1\\bin"
+        - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
+        - "D:\\Program Files\\nodejs"
+        - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files/Python313/Scripts/"
+      - "C:/Program Files/Python313/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/doxygen/bin/"
+      - "C:/Program Files (x86)/Graphviz/bin/"
+      - "D:/Program Files/nodejs/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Sina/AppData/Local/Python/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
+      - "C:/Users/Sina/AppData/Roaming/npm/"
+      - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\Python313\\"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\doxygen\\bin"
+        - "C:\\Program Files (x86)\\Graphviz\\bin"
+        - "D:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\Sina\\Desktop\\OPENGL PROJECTS\\glfw-3.4.bin.WIN64\\lib-vc2022"
+        - "C:\\Users\\Sina\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Python\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2025.3.1.1\\bin"
+        - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
+        - "D:\\Program Files\\nodejs"
+        - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:592 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:565 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-CXX.cmake:6 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "CMakeLists.txt:5 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files/Python313/Scripts/"
+      - "C:/Program Files/Python313/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/doxygen/bin/"
+      - "C:/Program Files (x86)/Graphviz/bin/"
+      - "D:/Program Files/nodejs/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/Sina/AppData/Local/Python/bin/"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/"
+      - "C:/Users/Sina/AppData/Roaming/npm/"
+      - "C:/Users/Sina/.dotnet/tools/"
+      - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/Project1/bin/"
+      - "C:/Program Files (x86)/Project1/sbin/"
+      - "C:/Program Files (x86)/Project1/"
+    searched_directories:
+      - "C:/Program Files/Python313/Scripts/rc.com"
+      - "C:/Program Files/Python313/Scripts/rc.exe"
+      - "C:/Program Files/Python313/Scripts/rc"
+      - "C:/Program Files/Python313/rc.com"
+      - "C:/Program Files/Python313/rc.exe"
+      - "C:/Program Files/Python313/rc"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/rc.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/rc.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/bin/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/rc.com"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/rc.exe"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/rc"
+      - "C:/Program Files/doxygen/bin/rc.com"
+      - "C:/Program Files/doxygen/bin/rc.exe"
+      - "C:/Program Files/doxygen/bin/rc"
+      - "C:/Program Files (x86)/Graphviz/bin/rc.com"
+      - "C:/Program Files (x86)/Graphviz/bin/rc.exe"
+      - "C:/Program Files (x86)/Graphviz/bin/rc"
+      - "D:/Program Files/nodejs/rc.com"
+      - "D:/Program Files/nodejs/rc.exe"
+      - "D:/Program Files/nodejs/rc"
+      - "C:/ProgramData/chocolatey/bin/rc.com"
+      - "C:/ProgramData/chocolatey/bin/rc.exe"
+      - "C:/ProgramData/chocolatey/bin/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/msys64/ucrt64/bin/rc.com"
+      - "C:/msys64/ucrt64/bin/rc.exe"
+      - "C:/msys64/ucrt64/bin/rc"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/rc.com"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/rc.exe"
+      - "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/rc"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/rc.com"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/rc.exe"
+      - "C:/Users/Sina/AppData/Local/GitHubDesktop/bin/rc"
+      - "C:/Users/Sina/AppData/Local/Python/bin/rc.com"
+      - "C:/Users/Sina/AppData/Local/Python/bin/rc.exe"
+      - "C:/Users/Sina/AppData/Local/Python/bin/rc"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/rc.com"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/rc.exe"
+      - "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/bin/rc"
+      - "C:/Users/Sina/AppData/Roaming/npm/rc.com"
+      - "C:/Users/Sina/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/Sina/AppData/Roaming/npm/rc"
+      - "C:/Users/Sina/.dotnet/tools/rc.com"
+      - "C:/Users/Sina/.dotnet/tools/rc.exe"
+      - "C:/Users/Sina/.dotnet/tools/rc"
+      - "C:/Program Files/wkhtmltopdf/bin/rc.com"
+      - "C:/Program Files/wkhtmltopdf/bin/rc.exe"
+      - "C:/Program Files/wkhtmltopdf/bin/rc"
+      - "D:/Program Files/LLVM/bin/rc.com"
+      - "D:/Program Files/LLVM/bin/rc.exe"
+      - "D:/Program Files/LLVM/bin/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/Project1/bin/rc.com"
+      - "C:/Program Files (x86)/Project1/bin/rc.exe"
+      - "C:/Program Files (x86)/Project1/bin/rc"
+      - "C:/Program Files (x86)/Project1/sbin/rc.com"
+      - "C:/Program Files (x86)/Project1/sbin/rc.exe"
+      - "C:/Program Files (x86)/Project1/sbin/rc"
+      - "C:/Program Files (x86)/Project1/rc.com"
+      - "C:/Program Files (x86)/Project1/rc.exe"
+      - "C:/Program Files (x86)/Project1/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\Python313\\"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\doxygen\\bin"
+        - "C:\\Program Files (x86)\\Graphviz\\bin"
+        - "D:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\Sina\\Desktop\\OPENGL PROJECTS\\glfw-3.4.bin.WIN64\\lib-vc2022"
+        - "C:\\Users\\Sina\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Python\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2025.3.1.1\\bin"
+        - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
+        - "D:\\Program Files\\nodejs"
+        - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Project1"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/Project1"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-ibqnur"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-ibqnur"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-ibqnur'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_18fc5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 8/7/2026 10:48:12 PM.
+        
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-ibqnur\\cmTC_18fc5.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-ibqnur\\Debug\\".
+          Creating directory "cmTC_18fc5.dir\\Debug\\cmTC_18fc5.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_18fc5.dir\\Debug\\cmTC_18fc5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_18fc5.dir\\Debug\\cmTC_18fc5.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_18fc5.dir\\Debug\\\\" /Fd"cmTC_18fc5.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_18fc5.dir\\Debug\\\\" /Fd"cmTC_18fc5.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-ibqnur\\Debug\\cmTC_18fc5.exe" /INCREMENTAL /ILK:"cmTC_18fc5.dir\\Debug\\cmTC_18fc5.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-ibqnur/Debug/cmTC_18fc5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-ibqnur/Debug/cmTC_18fc5.lib" /MACHINE:X64  /machine:x64 cmTC_18fc5.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_18fc5.vcxproj -> C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-ibqnur\\Debug\\cmTC_18fc5.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-ibqnur\\Debug\\cmTC_18fc5.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_18fc5.dir\\Debug\\cmTC_18fc5.tlog\\cmTC_18fc5.write.1u.tlog" "cmTC_18fc5.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-ibqnur\\Debug\\cmTC_18fc5.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_18fc5.dir\\Debug\\cmTC_18fc5.tlog\\cmTC_18fc5.write.1u.tlog" "cmTC_18fc5.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-ibqnur\\Debug\\cmTC_18fc5.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_18fc5.dir\\Debug\\cmTC_18fc5.tlog\\cmTC_18fc5.write.1u.tlog" "cmTC_18fc5.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_18fc5.dir\\Debug\\cmTC_18fc5.tlog\\unsuccessfulbuild".
+          Touching "cmTC_18fc5.dir\\Debug\\cmTC_18fc5.tlog\\cmTC_18fc5.lastbuildstate".
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-ibqnur\\cmTC_18fc5.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.71
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35227.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:16 (find_package)"
+    name: "glfw3"
+    configs:
+      -
+        filename: "glfw3.cps"
+        kind: "cps"
+      -
+        filename: "glfw3Config.cmake"
+        kind: "cmake"
+      -
+        filename: "glfw3-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "glfw3"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/lib/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/share/cps/glfw3.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\Python313\\"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\doxygen\\bin"
+        - "C:\\Program Files (x86)\\Graphviz\\bin"
+        - "D:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\Sina\\Desktop\\OPENGL PROJECTS\\glfw-3.4.bin.WIN64\\lib-vc2022"
+        - "C:\\Users\\Sina\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Python\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2025.3.1.1\\bin"
+        - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
+        - "D:\\Program Files\\nodejs"
+        - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Project1"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/Project1"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:15 (find_package)"
+    name: "OpenGL"
+    configs:
+      -
+        filename: "OpenGL.cps"
+        kind: "cps"
+      -
+        filename: "opengl.cps"
+        kind: "cps"
+      -
+        filename: "OpenGLConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "opengl-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "OpenGL"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/lib/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/lib/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/share/cps/OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/share/cps/opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\Python313\\"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\doxygen\\bin"
+        - "C:\\Program Files (x86)\\Graphviz\\bin"
+        - "D:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\Sina\\Desktop\\OPENGL PROJECTS\\glfw-3.4.bin.WIN64\\lib-vc2022"
+        - "C:\\Users\\Sina\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Python\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2025.3.1.1\\bin"
+        - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
+        - "D:\\Program Files\\nodejs"
+        - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Project1"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/Project1"
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "C:/vcpkg/packages/glfw3_x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-b78o5h"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-b78o5h"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-b78o5h'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d3eb6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 8/7/2026 11:05:36 PM.
+        
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-b78o5h\\cmTC_d3eb6.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-b78o5h\\Debug\\".
+          Creating directory "cmTC_d3eb6.dir\\Debug\\cmTC_d3eb6.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_d3eb6.dir\\Debug\\cmTC_d3eb6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d3eb6.dir\\Debug\\cmTC_d3eb6.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_d3eb6.dir\\Debug\\\\" /Fd"cmTC_d3eb6.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-b78o5h\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_d3eb6.dir\\Debug\\\\" /Fd"cmTC_d3eb6.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-b78o5h\\src.cxx"
+          src.cxx
+        C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-b78o5h\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-b78o5h\\cmTC_d3eb6.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-b78o5h\\cmTC_d3eb6.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-b78o5h\\cmTC_d3eb6.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-b78o5h\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-b78o5h\\cmTC_d3eb6.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.35
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:238 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "C:/vcpkg/packages/glfw3_x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-f4kfyz"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-f4kfyz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-f4kfyz'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_95960.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 8/7/2026 11:05:37 PM.
+        
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-f4kfyz\\cmTC_95960.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-f4kfyz\\Debug\\".
+          Creating directory "cmTC_95960.dir\\Debug\\cmTC_95960.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_95960.dir\\Debug\\cmTC_95960.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_95960.dir\\Debug\\cmTC_95960.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_95960.dir\\Debug\\\\" /Fd"cmTC_95960.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-f4kfyz\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_95960.dir\\Debug\\\\" /Fd"cmTC_95960.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-f4kfyz\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-f4kfyz\\Debug\\cmTC_95960.exe" /INCREMENTAL /ILK:"cmTC_95960.dir\\Debug\\cmTC_95960.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-f4kfyz/Debug/cmTC_95960.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-f4kfyz/Debug/cmTC_95960.lib" /MACHINE:X64  /machine:x64 cmTC_95960.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-f4kfyz\\cmTC_95960.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-f4kfyz\\cmTC_95960.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-f4kfyz\\cmTC_95960.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-f4kfyz\\cmTC_95960.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.28
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:239 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "C:/vcpkg/packages/glfw3_x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-4md5sy"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-4md5sy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-4md5sy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ec681.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 8/7/2026 11:05:37 PM.
+        
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-4md5sy\\cmTC_ec681.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-4md5sy\\Debug\\".
+          Creating directory "cmTC_ec681.dir\\Debug\\cmTC_ec681.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_ec681.dir\\Debug\\cmTC_ec681.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ec681.dir\\Debug\\cmTC_ec681.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        VcpkgCheckManifestRoot:
+          The vcpkg manifest was disabled, but we found a manifest file in C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_ec681.dir\\Debug\\\\" /Fd"cmTC_ec681.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-4md5sy\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_ec681.dir\\Debug\\\\" /Fd"cmTC_ec681.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-4md5sy\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-4md5sy\\Debug\\cmTC_ec681.exe" /INCREMENTAL /ILK:"cmTC_ec681.dir\\Debug\\cmTC_ec681.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-4md5sy/Debug/cmTC_ec681.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/CMakeScratch/TryCompile-4md5sy/Debug/cmTC_ec681.lib" /MACHINE:X64  /machine:x64 cmTC_ec681.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-4md5sy\\cmTC_ec681.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-4md5sy\\cmTC_ec681.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-4md5sy\\cmTC_ec681.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\CMakeFiles\\CMakeScratch\\TryCompile-4md5sy\\cmTC_ec681.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.27
+        
+      exitCode: 1
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:17 (find_package)"
+    name: "glm"
+    configs:
+      -
+        filename: "glm.cps"
+        kind: "cps"
+      -
+        filename: "glmConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "glm-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "glm"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/CMakeFiles/pkgRedirects/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/Scripts/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Python313/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Eclipse Adoptium/jdk-17.0.17.10-hotspot/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/doxygen/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Graphviz/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/nodejs/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Microsoft/WindowsApps/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Programs/Microsoft VS Code/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/ucrt64/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/Desktop/OPENGL PROJECTS/glfw-3.4.bin.WIN64/lib-vc2022/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/GitHubDesktop/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Local/Python/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/JetBrains/PyCharm 2025.3.1.1/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/Sina/AppData/Roaming/npm/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/wkhtmltopdf/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/Program Files/LLVM/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/glmConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/glm-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/lib/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/share/cps/glm.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\Python313\\"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.17.10-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\doxygen\\bin"
+        - "C:\\Program Files (x86)\\Graphviz\\bin"
+        - "D:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Sina\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\Sina\\Desktop\\OPENGL PROJECTS\\glfw-3.4.bin.WIN64\\lib-vc2022"
+        - "C:\\Users\\Sina\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\Sina\\AppData\\Local\\Python\\bin"
+        - "C:\\Program Files\\JetBrains\\PyCharm 2025.3.1.1\\bin"
+        - "C:\\Users\\Sina\\AppData\\Roaming\\npm"
+        - "D:\\Program Files\\nodejs"
+        - "C:\\Users\\Sina\\.dotnet\\tools"
+        - "C:\\Program Files\\Python313\\Scripts\\"
+        - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Project1"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/Project1"
+...

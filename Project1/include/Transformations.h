@@ -24,7 +24,10 @@ namespace Transformations
 	}
 	void rotateEuler(glm::mat4& model ,float angle = 0.0f ,const glm::vec3 axis = { 0.0f, 0.0f, 1.0f })
 	{
-		model = glm::rotate(model, angle, axis);
+		if (glm::length2(axis) > 0.00001f)
+		{
+			model = glm::rotate(model, angle, axis);
+		}
 	}
 	void scale(glm::mat4& model ,const glm::vec3 scale)
 	{

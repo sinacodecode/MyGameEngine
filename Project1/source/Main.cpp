@@ -94,7 +94,11 @@ int main()
     Light::SpotLight spotlight{ color, {1.0f, 1.0f, 1.0f}, {1.0f, -1.0f, -1.0f}, atten, 1.0f, 2.0f};
 
     std::vector<std::unique_ptr<Object>> objects;
-    objects.emplace_back(std::make_unique<Object>(std::make_unique<Model>(std::move(roomModel))));
+    objects.emplace_back(
+        std::make_unique<Object>(
+            std::make_unique<Model>(std::move(roomModel)),0
+        )
+    );
 
     std::vector<std::unique_ptr<Light::LightVariant>> lights;
     lights.emplace_back(std::make_unique<Light::LightVariant>(light1));
@@ -125,32 +129,6 @@ int main()
         }
 
         InputFunctions::processInput(window);
-        
-
-        if (glfwGetKey(window, GLFW_KEY_X) == GLFW_PRESS) {
-            renderer.getScene()->pushObject(std::make_unique<Object>(
-                std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj")
-            ));
-        }
-        if (glfwGetKey(window, GLFW_KEY_V) == GLFW_PRESS) {
-            renderer.getScene()->pushObject(std::make_unique<Object>(
-                std::make_unique<Model>("../Resources/Models/Room/Room.obj")
-            ));
-        }
-        if (Rendering::isBackpackRendered)
-        {
-            std::cout << "isBackpackRendered true\n";
-            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj")));
-        }
-        
-        if (glfwGetKey(window, GLFW_KEY_Z) == GLFW_PRESS) {
-            renderer.getScene()->popLights();
-        }
-
-        if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS)
-        {
-            renderer.getScene()->pushLight(std::make_unique<Light::LightVariant>(light2));
-        }
 
         glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);

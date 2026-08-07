@@ -24,6 +24,8 @@ namespace Rendering {
 	// timing
 	extern float rotator;
 	extern glm::vec3 lightPos;
+
+	extern int selectedObject;
 }
 
 namespace KeyEvents
@@ -36,4 +38,5 @@ namespace Shaders
 {
 	extern float outlineScale;
 }
+
 #endif

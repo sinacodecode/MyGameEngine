@@ -1,0 +1,12 @@
+Checks: >
+  -*,
+  readability-*,
+  modernize-*,
+  performance-*,
+  -readability-magic-numbers,
+  -readability-convert-member-functions-to-static,
+CheckOptions:
+  - key: readability-identifier-naming.VariableCase
+    value: lower_case
+  - key: readability-identifier-naming.MemberPrefix
+    value: 'm_'

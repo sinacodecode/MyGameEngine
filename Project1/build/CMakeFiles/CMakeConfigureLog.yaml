@@ -69,6 +69,7 @@ events:
         - "C:\\Users\\Sina\\.dotnet\\tools"
         - "C:\\Program Files\\Python313\\Scripts\\"
         - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "message-v1"
@@ -86,7 +87,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 7/31/2026 6:57:11 PM.
+      Build started 8/7/2026 11:44:41 PM.
       
       Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -126,7 +127,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.69
+      Time Elapsed 00:00:00.68
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -188,6 +189,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/Scripts/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/"
@@ -218,6 +220,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/Program Files/Python313/Scripts/"
       - "C:/Program Files/Python313/"
@@ -248,6 +251,7 @@ events:
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
       - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
     searched_directories:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
@@ -339,6 +343,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/link.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/link.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/link"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link"
@@ -429,6 +436,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/link.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/link.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/link"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
@@ -475,6 +485,7 @@ events:
         - "C:\\Users\\Sina\\.dotnet\\tools"
         - "C:\\Program Files\\Python313\\Scripts\\"
         - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "find-v1"
@@ -528,6 +539,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/Scripts/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/"
@@ -558,6 +570,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/Program Files/Python313/Scripts/"
       - "C:/Program Files/Python313/"
@@ -588,6 +601,7 @@ events:
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
       - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
     searched_directories:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
@@ -679,6 +693,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lld-link"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/lld-link.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/lld-link.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/lld-link"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
@@ -769,6 +786,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lld-link"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/lld-link.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/lld-link.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/lld-link"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
@@ -859,7 +879,8 @@ events:
       - "C:/Program Files/wkhtmltopdf/bin/lld-link.com"
       - "C:/Program Files/wkhtmltopdf/bin/lld-link.exe"
       - "C:/Program Files/wkhtmltopdf/bin/lld-link"
-    found: false
+      - "D:/Program Files/LLVM/bin/lld-link.com"
+    found: "D:/Program Files/LLVM/bin/lld-link.exe"
     search_context:
       CMAKE_PROGRAM_PATH:
         - "C:/vcpkg/installed/x64-windows/tools"
@@ -904,6 +925,7 @@ events:
         - "C:\\Users\\Sina\\.dotnet\\tools"
         - "C:\\Program Files\\Python313\\Scripts\\"
         - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "find-v1"
@@ -955,6 +977,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/Scripts/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/"
@@ -985,6 +1008,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/Program Files/Python313/Scripts/"
       - "C:/Program Files/Python313/"
@@ -1015,6 +1039,7 @@ events:
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
       - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
     searched_directories:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
@@ -1106,6 +1131,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/link"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/link.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/link.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/link"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link"
@@ -1196,6 +1224,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/link"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/link.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/link.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/link"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
@@ -1242,6 +1273,7 @@ events:
         - "C:\\Users\\Sina\\.dotnet\\tools"
         - "C:\\Program Files\\Python313\\Scripts\\"
         - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "find-v1"
@@ -1293,6 +1325,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/Scripts/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/"
@@ -1323,6 +1356,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/Program Files/Python313/Scripts/"
       - "C:/Program Files/Python313/"
@@ -1353,6 +1387,7 @@ events:
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
       - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
     searched_directories:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
@@ -1444,6 +1479,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/mt.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/mt.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/mt"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/mt.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/mt.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/mt"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
@@ -1534,6 +1572,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/mt.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/mt.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/mt"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/mt.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/mt.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/mt"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
@@ -1624,6 +1665,9 @@ events:
       - "C:/Program Files/wkhtmltopdf/bin/mt.com"
       - "C:/Program Files/wkhtmltopdf/bin/mt.exe"
       - "C:/Program Files/wkhtmltopdf/bin/mt"
+      - "D:/Program Files/LLVM/bin/mt.com"
+      - "D:/Program Files/LLVM/bin/mt.exe"
+      - "D:/Program Files/LLVM/bin/mt"
     found: false
     search_context:
       CMAKE_PROGRAM_PATH:
@@ -1669,6 +1713,7 @@ events:
         - "C:\\Users\\Sina\\.dotnet\\tools"
         - "C:\\Program Files\\Python313\\Scripts\\"
         - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "find-v1"
@@ -1720,6 +1765,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/Scripts/"
       - "C:/vcpkg/installed/x64-windows/Program Files/Python313/"
@@ -1750,6 +1796,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/Program Files/Python313/Scripts/"
       - "C:/Program Files/Python313/"
@@ -1780,6 +1827,7 @@ events:
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
       - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
     searched_directories:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
@@ -1871,6 +1919,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lib.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lib.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/lib"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/lib.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/lib.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/lib"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib"
@@ -1961,6 +2012,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lib.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lib.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/lib"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/lib.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/lib.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/lib"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
     search_context:
@@ -2007,6 +2061,7 @@ events:
         - "C:\\Users\\Sina\\.dotnet\\tools"
         - "C:\\Program Files\\Python313\\Scripts\\"
         - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
       CMAKE_FIND_ROOT_PATH: "C:/vcpkg/installed/x64-windows/debug;C:/vcpkg/installed/x64-windows"
   -
     kind: "find-v1"
@@ -2073,6 +2128,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/sbin/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/"
@@ -2127,6 +2183,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Users/Sina/AppData/Roaming/npm/"
       - "C:/vcpkg/installed/x64-windows/Users/Sina/.dotnet/tools/"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/bin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/sbin/"
       - "C:/vcpkg/installed/x64-windows/Program Files/"
@@ -2181,6 +2238,7 @@ events:
       - "C:/Users/Sina/AppData/Roaming/npm/"
       - "C:/Users/Sina/.dotnet/tools/"
       - "C:/Program Files/wkhtmltopdf/bin/"
+      - "D:/Program Files/LLVM/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -2320,6 +2378,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/wkhtmltopdf/bin/rc"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/rc.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/rc.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/LLVM/bin/rc"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/bin/rc"
@@ -2482,6 +2543,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/wkhtmltopdf/bin/rc"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/rc.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/rc.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/LLVM/bin/rc"
       - "C:/vcpkg/installed/x64-windows/Program Files/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/bin/rc"
@@ -2644,6 +2708,9 @@ events:
       - "C:/Program Files/wkhtmltopdf/bin/rc.com"
       - "C:/Program Files/wkhtmltopdf/bin/rc.exe"
       - "C:/Program Files/wkhtmltopdf/bin/rc"
+      - "D:/Program Files/LLVM/bin/rc.com"
+      - "D:/Program Files/LLVM/bin/rc.exe"
+      - "D:/Program Files/LLVM/bin/rc"
       - "C:/Program Files/bin/rc.com"
       - "C:/Program Files/bin/rc.exe"
       - "C:/Program Files/bin/rc"
@@ -2725,6 +2792,7 @@ events:
         - "C:\\Users\\Sina\\.dotnet\\tools"
         - "C:\\Program Files\\Python313\\Scripts\\"
         - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/Project1"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -2741,8 +2809,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-ghmikj"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-ghmikj"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-k9594c"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-k9594c"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -2756,33 +2824,33 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-ghmikj'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-k9594c'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_17a89.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f8aa8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 7/31/2026 6:57:12 PM.
+        Build started 8/7/2026 11:44:42 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ghmikj\\cmTC_17a89.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k9594c\\cmTC_f8aa8.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ghmikj\\Debug\\".
-          Creating directory "cmTC_17a89.dir\\Debug\\cmTC_17a89.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k9594c\\Debug\\".
+          Creating directory "cmTC_f8aa8.dir\\Debug\\cmTC_f8aa8.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_17a89.dir\\Debug\\cmTC_17a89.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_17a89.dir\\Debug\\cmTC_17a89.tlog\\unsuccessfulbuild".
+          Creating "cmTC_f8aa8.dir\\Debug\\cmTC_f8aa8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f8aa8.dir\\Debug\\cmTC_f8aa8.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_17a89.dir\\Debug\\\\" /Fd"cmTC_17a89.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_f8aa8.dir\\Debug\\\\" /Fd"cmTC_f8aa8.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_17a89.dir\\Debug\\\\" /Fd"cmTC_17a89.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_f8aa8.dir\\Debug\\\\" /Fd"cmTC_f8aa8.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ghmikj\\Debug\\cmTC_17a89.exe" /INCREMENTAL /ILK:"cmTC_17a89.dir\\Debug\\cmTC_17a89.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-ghmikj/Debug/cmTC_17a89.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-ghmikj/Debug/cmTC_17a89.lib" /MACHINE:X64  /machine:x64 cmTC_17a89.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_17a89.vcxproj -> C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ghmikj\\Debug\\cmTC_17a89.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k9594c\\Debug\\cmTC_f8aa8.exe" /INCREMENTAL /ILK:"cmTC_f8aa8.dir\\Debug\\cmTC_f8aa8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-k9594c/Debug/cmTC_f8aa8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-k9594c/Debug/cmTC_f8aa8.lib" /MACHINE:X64  /machine:x64 cmTC_f8aa8.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_f8aa8.vcxproj -> C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k9594c\\Debug\\cmTC_f8aa8.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_17a89.dir\\Debug\\cmTC_17a89.tlog\\unsuccessfulbuild".
-          Touching "cmTC_17a89.dir\\Debug\\cmTC_17a89.tlog\\cmTC_17a89.lastbuildstate".
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ghmikj\\cmTC_17a89.vcxproj" (default targets).
+          Deleting file "cmTC_f8aa8.dir\\Debug\\cmTC_f8aa8.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f8aa8.dir\\Debug\\cmTC_f8aa8.tlog\\cmTC_f8aa8.lastbuildstate".
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k9594c\\cmTC_f8aa8.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
@@ -2831,12 +2899,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
       - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)"
-      - "CMakeLists.txt:16 (find_package)"
+      - "CMakeLists.txt:18 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-jv98nz"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-jv98nz"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-b8fjua"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-b8fjua"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
@@ -2849,39 +2917,39 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-jv98nz'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-b8fjua'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1c03a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_98c2e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 7/31/2026 6:57:13 PM.
+        Build started 8/7/2026 11:44:42 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\cmTC_1c03a.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b8fjua\\cmTC_98c2e.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\Debug\\".
-          Creating directory "cmTC_1c03a.dir\\Debug\\cmTC_1c03a.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b8fjua\\Debug\\".
+          Creating directory "cmTC_98c2e.dir\\Debug\\cmTC_98c2e.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_1c03a.dir\\Debug\\cmTC_1c03a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_1c03a.dir\\Debug\\cmTC_1c03a.tlog\\unsuccessfulbuild".
+          Creating "cmTC_98c2e.dir\\Debug\\cmTC_98c2e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_98c2e.dir\\Debug\\cmTC_98c2e.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_1c03a.dir\\Debug\\\\" /Fd"cmTC_1c03a.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_98c2e.dir\\Debug\\\\" /Fd"cmTC_98c2e.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b8fjua\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_1c03a.dir\\Debug\\\\" /Fd"cmTC_1c03a.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\src.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_98c2e.dir\\Debug\\\\" /Fd"cmTC_98c2e.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b8fjua\\src.cxx"
           src.cxx
-        C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\cmTC_1c03a.vcxproj]
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\cmTC_1c03a.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b8fjua\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b8fjua\\cmTC_98c2e.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b8fjua\\cmTC_98c2e.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\cmTC_1c03a.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b8fjua\\cmTC_98c2e.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jv98nz\\cmTC_1c03a.vcxproj]
+          C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b8fjua\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b8fjua\\cmTC_98c2e.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.22
+        Time Elapsed 00:00:00.23
         
       exitCode: 1
   -
@@ -2895,12 +2963,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
       - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)"
-      - "CMakeLists.txt:16 (find_package)"
+      - "CMakeLists.txt:18 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-gaz3j1"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-gaz3j1"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4safnf"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4safnf"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
@@ -2913,36 +2981,36 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-gaz3j1'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4safnf'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2d538.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d8761.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 7/31/2026 6:57:13 PM.
+        Build started 8/7/2026 11:44:43 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\cmTC_2d538.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4safnf\\cmTC_d8761.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\Debug\\".
-          Creating directory "cmTC_2d538.dir\\Debug\\cmTC_2d538.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4safnf\\Debug\\".
+          Creating directory "cmTC_d8761.dir\\Debug\\cmTC_d8761.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_2d538.dir\\Debug\\cmTC_2d538.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_2d538.dir\\Debug\\cmTC_2d538.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d8761.dir\\Debug\\cmTC_d8761.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d8761.dir\\Debug\\cmTC_d8761.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_2d538.dir\\Debug\\\\" /Fd"cmTC_2d538.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_d8761.dir\\Debug\\\\" /Fd"cmTC_d8761.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4safnf\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_2d538.dir\\Debug\\\\" /Fd"cmTC_2d538.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\CheckFunctionExists.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_d8761.dir\\Debug\\\\" /Fd"cmTC_d8761.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4safnf\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\Debug\\cmTC_2d538.exe" /INCREMENTAL /ILK:"cmTC_2d538.dir\\Debug\\cmTC_2d538.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-gaz3j1/Debug/cmTC_2d538.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-gaz3j1/Debug/cmTC_2d538.lib" /MACHINE:X64  /machine:x64 cmTC_2d538.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\cmTC_2d538.vcxproj]
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\cmTC_2d538.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4safnf\\Debug\\cmTC_d8761.exe" /INCREMENTAL /ILK:"cmTC_d8761.dir\\Debug\\cmTC_d8761.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4safnf/Debug/cmTC_d8761.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-4safnf/Debug/cmTC_d8761.lib" /MACHINE:X64  /machine:x64 cmTC_d8761.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4safnf\\cmTC_d8761.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4safnf\\cmTC_d8761.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\cmTC_2d538.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4safnf\\cmTC_d8761.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gaz3j1\\cmTC_2d538.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4safnf\\cmTC_d8761.vcxproj]
         
             0 Warning(s)
             1 Error(s)
@@ -2961,12 +3029,12 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake:2 (find_dependency)"
       - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)"
-      - "CMakeLists.txt:16 (find_package)"
+      - "CMakeLists.txt:18 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-55ncjs"
-      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-55ncjs"
+      source: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-vryuko"
+      binary: "C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-vryuko"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
@@ -2979,48 +3047,48 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-55ncjs'
+        Change Dir: 'C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-vryuko'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_00b5f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_311b3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 7/31/2026 6:57:13 PM.
+        Build started 8/7/2026 11:44:43 PM.
         
-        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\cmTC_00b5f.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vryuko\\cmTC_311b3.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\Debug\\".
-          Creating directory "cmTC_00b5f.dir\\Debug\\cmTC_00b5f.tlog\\".
+          Creating directory "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vryuko\\Debug\\".
+          Creating directory "cmTC_311b3.dir\\Debug\\cmTC_311b3.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_00b5f.dir\\Debug\\cmTC_00b5f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_00b5f.dir\\Debug\\cmTC_00b5f.tlog\\unsuccessfulbuild".
+          Creating "cmTC_311b3.dir\\Debug\\cmTC_311b3.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_311b3.dir\\Debug\\cmTC_311b3.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_00b5f.dir\\Debug\\\\" /Fd"cmTC_00b5f.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_311b3.dir\\Debug\\\\" /Fd"cmTC_311b3.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vryuko\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35227 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_00b5f.dir\\Debug\\\\" /Fd"cmTC_00b5f.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\CheckFunctionExists.cxx"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_311b3.dir\\Debug\\\\" /Fd"cmTC_311b3.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vryuko\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\Debug\\cmTC_00b5f.exe" /INCREMENTAL /ILK:"cmTC_00b5f.dir\\Debug\\cmTC_00b5f.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-55ncjs/Debug/cmTC_00b5f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-55ncjs/Debug/cmTC_00b5f.lib" /MACHINE:X64  /machine:x64 cmTC_00b5f.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\cmTC_00b5f.vcxproj]
-        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\cmTC_00b5f.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vryuko\\Debug\\cmTC_311b3.exe" /INCREMENTAL /ILK:"cmTC_311b3.dir\\Debug\\cmTC_311b3.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-vryuko/Debug/cmTC_311b3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/CMakeFiles/CMakeScratch/TryCompile-vryuko/Debug/cmTC_311b3.lib" /MACHINE:X64  /machine:x64 cmTC_311b3.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vryuko\\cmTC_311b3.vcxproj]
+        Done Building Project "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vryuko\\cmTC_311b3.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\cmTC_00b5f.vcxproj" (default target) (1) ->
+        "C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vryuko\\cmTC_311b3.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-55ncjs\\cmTC_00b5f.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Sina\\source\\repos\\sinacodecode\\MyGameEngine\\Project1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vryuko\\cmTC_311b3.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.28
+        Time Elapsed 00:00:00.27
         
       exitCode: 1
   -
     kind: "find_package-v1"
     backtrace:
       - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)"
-      - "CMakeLists.txt:16 (find_package)"
+      - "CMakeLists.txt:18 (find_package)"
     name: "glfw3"
     configs:
       -
@@ -3143,6 +3211,7 @@ events:
         - "C:\\Users\\Sina\\.dotnet\\tools"
         - "C:\\Program Files\\Python313\\Scripts\\"
         - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/Project1"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3154,7 +3223,7 @@ events:
     kind: "find_package-v1"
     backtrace:
       - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)"
-      - "CMakeLists.txt:17 (find_package)"
+      - "CMakeLists.txt:19 (find_package)"
     name: "glm"
     configs:
       -
@@ -3277,6 +3346,7 @@ events:
         - "C:\\Users\\Sina\\.dotnet\\tools"
         - "C:\\Program Files\\Python313\\Scripts\\"
         - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/Project1"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3288,7 +3358,7 @@ events:
     kind: "find_package-v1"
     backtrace:
       - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)"
-      - "CMakeLists.txt:18 (find_package)"
+      - "CMakeLists.txt:20 (find_package)"
     name: "assimp"
     configs:
       -
@@ -3411,6 +3481,7 @@ events:
         - "C:\\Users\\Sina\\.dotnet\\tools"
         - "C:\\Program Files\\Python313\\Scripts\\"
         - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/Project1"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -3422,7 +3493,7 @@ events:
     kind: "find_package-v1"
     backtrace:
       - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:908 (_find_package)"
-      - "CMakeLists.txt:19 (find_package)"
+      - "CMakeLists.txt:21 (find_package)"
     name: "glad"
     configs:
       -
@@ -3545,6 +3616,7 @@ events:
         - "C:\\Users\\Sina\\.dotnet\\tools"
         - "C:\\Program Files\\Python313\\Scripts\\"
         - "C:\\Program Files\\wkhtmltopdf\\bin"
+        - "D:\\Program Files\\LLVM\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/Project1"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"

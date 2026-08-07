@@ -85,32 +85,45 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+    <EnableClangTidyCodeAnalysis>true</EnableClangTidyCodeAnalysis>
+    <ClangTidyChecks>---</ClangTidyChecks>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1;C:\Users\Sina\source\repos\sinacodecode\MyGameEngine\Project1\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <CallingConvention>
+      </CallingConvention>
       <ConformanceMode>true</ConformanceMode>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4251;4996</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;GLFW_DLL;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
@@ -150,7 +163,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/outLine.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/outLine.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -172,14 +185,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalDependencies>opengl32.lib;glu32.lib;C:\vcpkg\installed\x64-windows\debug\lib\glfw3dll.lib;C:\vcpkg\installed\x64-windows\debug\lib\glm.lib;C:\vcpkg\installed\x64-windows\debug\lib\assimp-vc143-mtd.lib;C:\vcpkg\installed\x64-windows\debug\lib\glad.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <DataExecutionPrevention></DataExecutionPrevention>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/lib/Debug/Project1.lib</ImportLibrary>
-      <LinkErrorReporting></LinkErrorReporting>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
       <ProgramDataBaseFile>C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/Debug/Project1.pdb</ProgramDataBaseFile>
-      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -192,25 +209,33 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <CallingConvention>
+      </CallingConvention>
       <ConformanceMode>true</ConformanceMode>
       <DisableSpecificWarnings>4251;4996</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;GLFW_DLL;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
@@ -252,7 +277,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/outLine.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/outLine.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/Release
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -274,14 +299,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalDependencies>opengl32.lib;glu32.lib;C:\vcpkg\installed\x64-windows\lib\glfw3dll.lib;C:\vcpkg\installed\x64-windows\lib\glm.lib;C:\vcpkg\installed\x64-windows\lib\assimp-vc143-mt.lib;C:\vcpkg\installed\x64-windows\lib\glad.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <DataExecutionPrevention></DataExecutionPrevention>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/lib/Release/Project1.lib</ImportLibrary>
-      <LinkErrorReporting></LinkErrorReporting>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
       <ProgramDataBaseFile>C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/Release/Project1.pdb</ProgramDataBaseFile>
-      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -294,25 +323,33 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <CallingConvention>
+      </CallingConvention>
       <ConformanceMode>true</ConformanceMode>
       <DisableSpecificWarnings>4251;4996</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;GLFW_DLL;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
@@ -354,7 +391,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/outLine.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/outLine.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/MinSizeRel
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -376,14 +413,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalDependencies>opengl32.lib;glu32.lib;C:\vcpkg\installed\x64-windows\lib\glfw3dll.lib;C:\vcpkg\installed\x64-windows\lib\glm.lib;C:\vcpkg\installed\x64-windows\lib\assimp-vc143-mt.lib;C:\vcpkg\installed\x64-windows\lib\glad.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <DataExecutionPrevention></DataExecutionPrevention>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/lib/MinSizeRel/Project1.lib</ImportLibrary>
-      <LinkErrorReporting></LinkErrorReporting>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
       <ProgramDataBaseFile>C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/MinSizeRel/Project1.pdb</ProgramDataBaseFile>
-      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -396,26 +437,34 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <CallingConvention>
+      </CallingConvention>
       <ConformanceMode>true</ConformanceMode>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4251;4996</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;GLFW_DLL;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
@@ -455,7 +504,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/lightcubeshader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/modelLoader.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/plane.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/outLine.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/outLine.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.fs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/Resources/shaders.vs C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -477,14 +526,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalDependencies>opengl32.lib;glu32.lib;C:\vcpkg\installed\x64-windows\lib\glfw3dll.lib;C:\vcpkg\installed\x64-windows\lib\glm.lib;C:\vcpkg\installed\x64-windows\lib\assimp-vc143-mt.lib;C:\vcpkg\installed\x64-windows\lib\glad.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <DataExecutionPrevention></DataExecutionPrevention>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/lib/RelWithDebInfo/Project1.lib</ImportLibrary>
-      <LinkErrorReporting></LinkErrorReporting>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
       <ProgramDataBaseFile>C:/Users/Sina/source/repos/sinacodecode/MyGameEngine/Project1/build/bin/RelWithDebInfo/Project1.pdb</ProgramDataBaseFile>
-      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>

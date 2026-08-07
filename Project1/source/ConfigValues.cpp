@@ -20,6 +20,8 @@ namespace Rendering {
 	// timing
 	float rotator{};
 	glm::vec3 lightPos = { 2.0f, 2.0f, 1.5f };
+
+	int selectedObject{};
 }
 
 namespace KeyEvents
@@ -30,5 +32,5 @@ namespace KeyEvents
 
 namespace Shaders
 {
-	float outlineScale = 1.1f;
+	float outlineScale = 1.03f;
 }
