@@ -7,11 +7,15 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 #include "shader_s.h"
-
+#include <utility>
 #include <string>
 #include <vector>
+#include <array>
 
-#define MAX_BONE_INFLUENCE 4
+enum skeleton
+{
+	maxBoneInfluence = 4
+};
 
 
 struct Vertex {
@@ -23,8 +27,8 @@ struct Vertex {
 	glm::vec3 Tangent {};
 	glm::vec3 Bitangent {};
 
-	int m_BoneIDs[MAX_BONE_INFLUENCE] {};
-	float m_Weights[MAX_BONE_INFLUENCE] {};
+	std::array<int, maxBoneInfluence> m_BoneIDs{ -1, -1, -1, -1 };
+	std::array<float, maxBoneInfluence> m_Weights{};
 };
 
 struct Texture {
@@ -41,16 +45,16 @@ public:
 	std::vector<unsigned int> m_indices{};
 
 	std::vector<Texture> m_textures{};
-
+	
 
 	Mesh(std::vector<Vertex> vertices, std::vector<unsigned int> indices, std::vector<Texture> textures)
-		:m_vertices{vertices}, m_indices{indices}, m_textures{textures}
+		:m_vertices{ std::move(vertices) }, m_indices{ std::move(indices) }, m_textures{ std::move(textures) }
 	{
 		setupMesh();
 	}
 
 	void Draw(Shader& shader) const ;
-	unsigned int getVAO()
+	unsigned int const getVAO()
 	{
 		return VAO;
 	}

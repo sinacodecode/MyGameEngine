@@ -24,7 +24,7 @@ public:
 		
 		//io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
 		//io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;         // IF using Docking Branch
-		if (!m_window)
+		if (nullptr==m_window)
 			std::cout << "m_window is null!\n";
 		// Setup Platform/Renderer backends
 		ImGui_ImplGlfw_InitForOpenGL(m_window, true);          // Second param install_callback=true will install GLFW callbacks and chain to existing ones.
@@ -35,7 +35,7 @@ public:
 	void renderScene(Renderer& renderer);
 	void newWindow();
 	void renderWindow();
-	bool closable_group{ true };
+	bool m_closable_group{ true };
 private:
 	//ImGuiIO& io = ImGui::GetIO();
 	GLFWwindow* m_window;

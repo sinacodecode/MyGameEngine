@@ -11,6 +11,9 @@ public:
 	Renderer(Renderer&) = delete;
 	Renderer& operator = (Renderer&) = delete;
 
+	Renderer(Renderer&&) = default;
+	Renderer& operator = (Renderer&&) = default;
+
 	Renderer(std::unique_ptr<Scene> scene, Shader& shader)
 		:m_scene { std::move(scene) }, m_shader{ shader }
 	{
@@ -28,8 +31,8 @@ private:
 	Shader& m_shader;
 
 	std::unique_ptr<Shader> outlineShader = std::make_unique<Shader>("../Resources/outLine.vs", "../Resources/outLine.fs");
-	glm::mat4 projection{ glm::mat4(1.0f) };
-	glm::mat4 view{ glm::mat4(1.0f) };
+	glm::mat4 projection{ glm::mat4(1.0F) };
+	glm::mat4 view{ glm::mat4(1.0F) };
 };
 
 #endif

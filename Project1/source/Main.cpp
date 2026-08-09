@@ -42,17 +42,17 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow* window = glfwCreateWindow(Rendering::SCR_WIDTH, Rendering::SCR_HEIGHT, "MyGameEngine", NULL, NULL);
-    if (window == NULL)
+    GLFWwindow* window = glfwCreateWindow(Rendering::SCR_WIDTH, Rendering::SCR_HEIGHT, "MyGameEngine", nullptr, nullptr);
+    if (window == nullptr)
     {
-        std::cout << "Failed to create GLFW window" << std::endl;
+        std::cout << "Failed to create GLFW window" << '\n';
         glfwTerminate();
         return -1;
     }
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, InputFunctions::framebuffer_size_callback);
-    //glfwSetCursorPosCallback(window, NULL);
-    //glfwSetScrollCallback(window, NULL);
+    //glfwSetCursorPosCallback(window, nullptr);
+    //glfwSetScrollCallback(window, nullptr);
     glfwSetKeyCallback(window, InputFunctions::key_callback);
     glfwSetCursorPosCallback(window, InputFunctions::mouse_callback);
     glfwSetScrollCallback(window, InputFunctions::scroll_callback);
@@ -61,14 +61,14 @@ int main()
 
     // glad: load all OpenGL function pointers
     // ---------------------------------------
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+    if (!gladLoadGLLoader(reinterpret_cast<GLADloadproc>(glfwGetProcAddress)))
     {
-        std::cout << "Failed to initialize GLAD" << std::endl;
+        std::cout << "Failed to initialize GLAD" << '\n';
         return -1;
     }
 
     // tell stb_image.h to flip loaded texture's on the y-axis (before loading model).
-    stbi_set_flip_vertically_on_load(false);
+    stbi_set_flip_vertically_on_load(0);
 
     // configure global opengl state
     // -----------------------------
@@ -82,16 +82,16 @@ int main()
     Model ourModel{ std::string("../Resources/Models/Backpack/Backpack.obj")};
     Model roomModel{ std::string("../Resources/Models/Room/Room.obj") };
 
-    Light::Color color{ {0.2f, 0.3f, 0.4f}, {0.6f, 0.6f, 0.3f}, {1.0f, 1.0f, 1.0f} };
-    Light::PointLight light1{color, glm::vec3(0.4f, 0.5f, 0.4f) };
-    Light::PointLight light2{ color, glm::vec3(0.2f, 0.1f, 0.1f) };
-    Light::PointLight light3{ color, glm::vec3(0.9f, 0.3f, 0.6f) };
-    Light::PointLight light4{ color, glm::vec3(0.3f, 0.7f, 0.4f) };
+    Light::Color color{ {0.2F, 0.3F, 0.4F}, {0.6F, 0.6F, 0.3F}, {1.0F, 1.0F, 1.0F} };
+    Light::PointLight light1{color, glm::vec3(0.4F, 0.5F, 0.4F) };
+    Light::PointLight light2{ color, glm::vec3(0.2F, 0.1F, 0.1F) };
+    Light::PointLight light3{ color, glm::vec3(0.9F, 0.3F, 0.6F) };
+    Light::PointLight light4{ color, glm::vec3(0.3F, 0.7F, 0.4F) };
     
     Light::Attenuation atten{};
 
-    Light::DirectionalLight dirlight{ color, {1.0f, 1.0f, 1.0f} };
-    Light::SpotLight spotlight{ color, {1.0f, 1.0f, 1.0f}, {1.0f, -1.0f, -1.0f}, atten, 1.0f, 2.0f};
+    Light::DirectionalLight dirlight{ color, {1.0F, 1.0F, 1.0F} };
+    Light::SpotLight spotlight{ color, {1.0F, 1.0F, 1.0F}, {1.0F, -1.0F, -1.0F}, atten, 1.0F, 2.0F};
 
     std::vector<std::unique_ptr<Object>> objects;
     objects.emplace_back(
@@ -118,7 +118,7 @@ int main()
     while (!glfwWindowShouldClose(window))
     {
 
-        float currentFrame = static_cast<float>(glfwGetTime());
+        auto currentFrame = static_cast<float>(glfwGetTime());
         Rendering::deltaTime = currentFrame - Rendering::lastFrame;
         Rendering::lastFrame = currentFrame;
 
@@ -130,7 +130,7 @@ int main()
 
         InputFunctions::processInput(window);
 
-        glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
+        glClearColor(0.5F, 0.5F, 0.5F, 1.0F);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
         gui.newWindow();

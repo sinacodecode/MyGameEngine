@@ -18,8 +18,8 @@ void attenuationGUI(Light::Attenuation& atten)
 
 void Gui::renderScene(Renderer& renderer)
 {
-    ImGui::SetNextWindowPos(ImVec2(0.0f, 0.0f), ImGuiCond_FirstUseEver);
-    ImGui::SetNextWindowSize(ImVec2(400.0f, 600.0f), ImGuiCond_FirstUseEver);
+    ImGui::SetNextWindowPos(ImVec2(0.0F, 0.0F), ImGuiCond_FirstUseEver);
+    ImGui::SetNextWindowSize(ImVec2(400.0F, 600.0F), ImGuiCond_FirstUseEver);
 
     ImGuiIO& m_io = ImGui::GetIO();
     m_io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
@@ -91,8 +91,8 @@ void Gui::renderScene(Renderer& renderer)
                 }
                 ImGui::Text("Model ID: (%g)", objects[i]->m_ID);
                 ImGui::DragFloat3("Position:", &objects[i]->m_pos.x);
-                ImGui::DragFloat3("rotation Axis:", &objects[i]->m_rotationAxis.x, 0.01f, 0.0f, 1.0f);
-                ImGui::DragFloat("Rotation", &objects[i]->m_rotation, 1.0f, -360.0f, 360.0f);
+                ImGui::DragFloat3("rotation Axis:", &objects[i]->m_rotationAxis.x, 0.01F, 0.0F, 1.0F);
+                ImGui::DragFloat("Rotation", &objects[i]->m_rotation, 1.0F, -360.0F, 360.0F);
 
                 ImGui::Separator();
                 ImGui::PopID();

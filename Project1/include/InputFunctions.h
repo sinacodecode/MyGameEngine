@@ -30,7 +30,7 @@ public:
         }
 
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-            glfwSetWindowShouldClose(window, true);
+            glfwSetWindowShouldClose(window, 1);
 
         if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
             Rendering::camera.ProcessKeyboard(FORWARD, Rendering::deltaTime);
@@ -41,7 +41,7 @@ public:
         if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
             Rendering::camera.ProcessKeyboard(RIGHT, Rendering::deltaTime);
         if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS)
-            Rendering::rotator += 0.01f;
+            Rendering::rotator += 0.01F;
         bool pIsPressed = glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS;
         if (pIsPressed && !KeyEvents::pWasPressed) {
             // This block only runs ONCE per tap
@@ -67,7 +67,7 @@ public:
 
         // You can also move your Escape/Close logic here
         if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
-            glfwSetWindowShouldClose(window, true);
+            glfwSetWindowShouldClose(window, 1);
     }
     // glfw: whenever the window size changed (by OS or user resize) this callback function executes 
     // ---------------------------------------------------------------------------------------------
@@ -94,8 +94,8 @@ public:
             return;
         }
 
-        float xpos = static_cast<float>(xposIn);
-        float ypos = static_cast<float>(yposIn);
+        auto xpos = static_cast<float>(xposIn);
+        auto ypos = static_cast<float>(yposIn);
 
         if (Rendering::firstMouse)
         {

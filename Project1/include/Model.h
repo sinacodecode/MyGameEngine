@@ -25,11 +25,13 @@ inline unsigned int TextureFromFile(const char* path, const string& directory, b
     unsigned int textureID;
     glGenTextures(1, &textureID);
 
-    int width, height, nrComponents;
+    int width{};
+    int height{};
+    int nrComponents{};
     unsigned char* data = stbi_load(filename.c_str(), &width, &height, &nrComponents, 0);
-    if (data)
+    if (nullptr != data)
     {
-        GLenum format;
+        GLenum format{};
         if (nrComponents == 1)
             format = GL_RED;
         else if (nrComponents == 3)
@@ -50,7 +52,7 @@ inline unsigned int TextureFromFile(const char* path, const string& directory, b
     }
     else
     {
-        std::cout << "Texture failed to load at path: " << path << std::endl;
+        std::cout << "Texture failed to load at path: " << path << '\n';
         stbi_image_free(data);
     }
 
