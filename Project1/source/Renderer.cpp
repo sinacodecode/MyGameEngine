@@ -11,7 +11,7 @@ void Renderer::render()
     clearBuffers();
     renderOpaqueObjects();
     renderOutlinedObject();
-
+    renderTransparentObjects();
 }
 
 void Renderer::renderOpaqueObjects()
@@ -86,6 +86,54 @@ void Renderer::renderOutlinedObject()
 
     glStencilMask(0xFF);
     glEnable(GL_DEPTH_TEST);
+}
+
+void Renderer::renderTransparentObjects()
+{
+    m_shader.use();
+
+    for (auto& object : m_scene->getSceneTransparentObjects())
+    {
+        glm::mat4 model = glm::mat4(1.0f);
+        Transformations::translate(model, object->m_pos);
+        Transformations::rotateEuler(model, object->m_rotation, object->m_rotationAxis);
+        Transformations::scale(model, glm::vec3(1.0f));
+
+        if (object == m_scene->getSceneObjects()[Rendering::selectedObject])
+            glStencilFunc(GL_ALWAYS, 1, 0xFF);
+        else
+            glStencilFunc(GL_ALWAYS, 0, 0xFF);
+
+        m_shader.setMat4("projection", projection);
+        m_shader.setMat4("view", view);
+        m_shader.setMat4("model", model);
+
+        int pointLightIndex{ 0 };
+        for (auto& l : m_scene->getSceneLights())
+        {
+            std::visit(overloaded
+                {
+                    [&](Light::PointLight light)
+                    {
+
+                        m_shader.setLight("pointLights[" + std::to_string(pointLightIndex) + "]", light);
+                        ++pointLightIndex;
+                    },
+                    [&](Light::DirectionalLight light)
+                    {
+                        m_shader.setLight("dirLight", light);
+                    },
+                    [&](Light::SpotLight light)
+                    {
+                        m_shader.setLight("spotLight", light);
+                    }
+                }, *l);
+        }
+
+        m_shader.setInt("numberOfPointLights", pointLightIndex);
+        m_shader.setVec3("viewPos", m_scene->getSceneCamera().Position);
+        object->getObjectModel().Draw(*m_rgbaAlphaTransparentShader);
+    }
 }
 
 void Renderer::clearBuffers()

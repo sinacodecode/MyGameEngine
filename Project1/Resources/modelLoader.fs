@@ -4,7 +4,7 @@
 
 out vec4 FragColor;
 
-vec3 gray = vec3(0.0f,0.0f,0.0f);
+vec4 gray = vec4(0.0f,0.0f,0.0f,0.0f);
 uniform int numberOfPointLights;
 struct Material
 {
@@ -66,19 +66,19 @@ uniform bool hasPointLights;
 uniform bool hasDirLight;
 
 
-vec3 calcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
+vec4 calcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
 {
-    vec3 ambient = light.ambient * vec3(texture(material.diffuse, TexCoords));
+    vec4 ambient = vec4(light.ambient, 1.0f) * vec4(texture(material.diffuse, TexCoords));
 
     vec3 lightDir = normalize(light.position - fragPos);
     float diff = max(dot(normal, lightDir), 0.0);
-    vec3 diffuse = light.diffuse * diff * vec3(texture(material.diffuse, TexCoords));
+    vec4 diffuse = vec4(light.diffuse, 1.0f) * diff * vec4(texture(material.diffuse, TexCoords));
 
     vec3 reflectDir = reflect(-lightDir, normal);
     //need to add material shininess
     //float spec = pow(max(dot(viewDir, reflectDir), 0.0), material.shininess);
     float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);
-    vec3 specular = light.specular * spec * vec3(texture(material.specular, TexCoords));
+    vec4 specular = vec4(light.specular, 1.0f) * spec * vec4(texture(material.specular, TexCoords));
 
     float distance = length(light.position - fragPos);
     float attenuation = 1.0/(light.constant + light.linear * distance + light.quadratic * (distance * distance));
@@ -90,24 +90,25 @@ vec3 calcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
     return (ambient+diffuse+specular);
 }
 
-vec3 calcDirLight(DirectionalLight light, vec3 normal, vec3 viewDir)
+vec4 calcDirLight(DirectionalLight light, vec3 normal, vec3 viewDir)
 {
-    vec3 ambient = light.ambient * vec3(texture(material.diffuse, TexCoords));
+    vec4 ambient = vec4(light.ambient, 1.0f) * vec4(texture(material.diffuse, TexCoords));
 
     vec3 lightDir = normalize(-light.direction);
     float diff = max(dot(normal, lightDir), 0.0);
-    vec3 diffuse = light.diffuse * diff * vec3(texture(material.diffuse, TexCoords));
+    vec4 diffuse = vec4(light.diffuse, 1.0f) * diff * vec4(texture(material.diffuse, TexCoords));
 
     vec3 reflectDir = reflect(-lightDir, normal);
     //need to add material shininess
     //float spec = pow(max(dot(viewDir, reflectDir), 0.0), material.shininess);
     float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);
-    vec3 specular = light.specular * spec * vec3(texture(material.specular, TexCoords));
+    vec4 specular = vec4(light.specular, 1.0f) * spec * vec4(texture(material.specular, TexCoords));
+
 
     return (ambient+diffuse+specular);
 }
 
-vec3 calcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
+vec4 calcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
 {
     vec3 lightDir = normalize(light.position - fragPos);
     float diff = max(dot(normal, lightDir), 0.0);
@@ -125,12 +126,13 @@ vec3 calcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
     float epsilon = light.cutOff - light.outerCutOff;
     float intensity = clamp((theta - light.outerCutOff) / epsilon, 0.0, 1.0);
 
-    vec3 ambient = light.ambient * vec3(texture(material.diffuse, TexCoords));
-    vec3 diffuse = light.diffuse * diff * vec3(texture(material.diffuse, TexCoords));
-    vec3 specular = light.specular * spec * vec3(texture(material.specular, TexCoords));
+    vec4 ambient = vec4(light.ambient, 1.0f) * vec4(texture(material.diffuse, TexCoords));
+    vec4 diffuse = vec4(light.diffuse, 1.0f) * diff * vec4(texture(material.diffuse, TexCoords));
+    vec4 specular = vec4(light.specular, 1.0f) * spec * vec4(texture(material.specular, TexCoords));
     ambient *= attenuation * intensity;
     diffuse *= attenuation * intensity;
     specular *= attenuation * intensity;
+    
     return (ambient + diffuse + specular);
 
 }
@@ -139,7 +141,7 @@ void main()
 {
     vec3 norm = normalize(Normal);
     vec3 viewDir = normalize(viewPos - FragPos);
-    vec3 result = gray;
+    vec4 result = gray;
 
 
     if(hasPointLights)
@@ -160,6 +162,8 @@ void main()
         result += calcDirLight(dirLight, norm, viewDir);
     }
 
-
-    FragColor = vec4(result, 1.0);
+    float alpha = texture(material.diffuse, TexCoords).a;
+    if(alpha < 0.1)
+        discard;
+    FragColor = vec4(result);
 }

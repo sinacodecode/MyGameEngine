@@ -51,12 +51,10 @@ int main()
     }
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, InputFunctions::framebuffer_size_callback);
-    //glfwSetCursorPosCallback(window, nullptr);
-    //glfwSetScrollCallback(window, nullptr);
+
     glfwSetKeyCallback(window, InputFunctions::key_callback);
     glfwSetCursorPosCallback(window, InputFunctions::mouse_callback);
     glfwSetScrollCallback(window, InputFunctions::scroll_callback);
-    // tell GLFW to capture our mouse
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 
     // glad: load all OpenGL function pointers
@@ -76,6 +74,9 @@ int main()
     glEnable(GL_STENCIL_TEST);
     glDepthMask(GL_TRUE);
     glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
+
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     Shader ourShader{ "../Resources/modelLoader.vs", "../Resources/modelLoader.fs"};
 

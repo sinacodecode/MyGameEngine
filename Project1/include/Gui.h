@@ -37,6 +37,8 @@ public:
 	void renderWindow();
 	bool m_closable_group{ true };
 private:
+	void lightsMenu(Renderer& renderer);
+	void objectsMenu(Renderer& renderer);
 	//ImGuiIO& io = ImGui::GetIO();
 	GLFWwindow* m_window;
 };
