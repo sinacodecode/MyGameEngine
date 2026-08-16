@@ -54,6 +54,13 @@ public:
 		std::cout << m_lights.size() << " objects left in scene\n";
 	}
 
+
+	void removeObjectAt(size_t index)
+	{
+		if (index < m_objects.size())
+			m_objects.erase(m_objects.begin() + static_cast<std::vector<std::unique_ptr<Object>>::difference_type>(index));
+	}
+
 	void removeLightAt(size_t index)
 	{
 		if(index < m_lights.size())

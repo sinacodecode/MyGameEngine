@@ -118,10 +118,19 @@ void Gui::objectsMenu(Renderer& renderer)
             ImGui::DragFloat3("rotation Axis:##03", &objects[j]->m_rotationAxis.x, 0.01F, 0.0F, 1.0F);
             ImGui::DragFloat("Rotation##03", &objects[j]->m_rotation, 1.0F, -360.0F, 360.0F);
 
-            ImGui::Separator();
+            ImGui::SameLine();
+
+            bool remove = ImGui::Button("Remove");
 
             ImGui::Separator();
+
+            if (remove)
+            {
+                renderer.getScene()->removeObjectAt(j);
+            }
+
             ImGui::PopID();
+
         }
         if (ImGui::Button("AddBackpack"))
         {
