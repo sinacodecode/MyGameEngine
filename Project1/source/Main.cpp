@@ -78,10 +78,15 @@ int main()
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    Shader ourShader{ "../Resources/modelLoader.vs", "../Resources/modelLoader.fs"};
+    std::vector<std::unique_ptr<Shader>> shaders;
 
-    Model ourModel{ std::string("../Resources/Models/Backpack/Backpack.obj")};
-    Model roomModel{ std::string("../Resources/Models/Room/Room.obj") };
+    shaders.emplace_back(std::make_unique<Shader>("../Resources/modelLoader.vs", "../Resources/modelLoader.fs"));
+    shaders.emplace_back(std::make_unique<Shader>("../Resources/outLine.vs", "../Resources/outLine.fs"));
+    shaders.emplace_back(std::make_unique<Shader>("../Resources/outLine.vs", "../Resources/rgbaAlphaTransparent.fs"));
+
+
+    Model ourModel{ std::string("../Resources/Models/Backpack/Backpack.obj"), 0};
+    Model roomModel{ std::string("../Resources/Models/Room/Room.obj"), 0};
 
     Light::Color color{ {0.2F, 0.3F, 0.4F}, {0.6F, 0.6F, 0.3F}, {1.0F, 1.0F, 1.0F} };
     Light::PointLight light1{color, glm::vec3(0.4F, 0.5F, 0.4F) };
@@ -107,14 +112,11 @@ int main()
     lights.emplace_back(std::make_unique<Light::LightVariant>(dirlight));
     lights.emplace_back(std::make_unique<Light::LightVariant>(spotlight));
 
-    //std::vector<Light::LightVariant> lights{ spotlight};
-
     std::unique_ptr<Scene> mainScene{ std::make_unique<Scene>(Rendering::camera, std::move(objects), std::move(lights)) };
     mainScene->m_pointLightCount = 4;
     Gui gui{window};
 
-    Renderer renderer{ std::move(mainScene), ourShader };
-
+    Renderer renderer{ std::move(mainScene), shaders };
 
     while (!glfwWindowShouldClose(window))
     {

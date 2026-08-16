@@ -14,8 +14,8 @@ public:
 	Renderer(Renderer&&) = default;
 	Renderer& operator = (Renderer&&) = default;
 
-	Renderer(std::unique_ptr<Scene> scene, Shader& shader)
-		:m_scene { std::move(scene) }, m_shader{ shader }
+	Renderer(std::unique_ptr<Scene> scene, std::vector<std::unique_ptr<Shader>>& shaders)
+		:m_scene { std::move(scene) }, m_shaders{ shaders }
 	{
 		
 	}
@@ -29,10 +29,8 @@ private:
 	void renderTransparentObjects();
 	void renderOutlinedObject();
 	std::unique_ptr<Scene> m_scene;
-	Shader& m_shader;
+	std::vector<std::unique_ptr<Shader>>& m_shaders;
 
-	std::unique_ptr<Shader> outlineShader = std::make_unique<Shader>("../Resources/outLine.vs", "../Resources/outLine.fs");
-	std::unique_ptr<Shader> m_rgbaAlphaTransparentShader = std::make_unique<Shader>("../Resources/outLine.vs", "../Resources/rgbaAlphaTransparent.fs");
 	glm::mat4 projection{ glm::mat4(1.0F) };
 	glm::mat4 view{ glm::mat4(1.0F) };
 };

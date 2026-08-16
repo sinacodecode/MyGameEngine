@@ -161,23 +161,6 @@ public:
     // ------------------------------------------------------------------------
     void setLight(const std::string& name, const Light::LightVariant& light) const;
 
-
-    //void setLight(const std::string& name,const Light::LightVariant& light) const
-    //{
-    //    glUniform3f(glGetUniformLocation(ID, (name + ".position").c_str()), light.position.x, light.position.y, light.position.z);
-    //    glUniform3f(glGetUniformLocation(ID, (name + ".direction").c_str()), light.getDirection().x, light.getDirection().y, light.getDirection().z);
-
-    //    glUniform3f(glGetUniformLocation(ID, (name + ".ambient").c_str()), light.getAmbient().x, light.getAmbient().y, light.getAmbient().z);
-    //    glUniform3f(glGetUniformLocation(ID, (name + ".diffuse").c_str()), light.getDiffuse().x, light.getDiffuse().y, light.getDiffuse().z);
-    //    glUniform3f(glGetUniformLocation(ID, (name + ".specular").c_str()), light.getSpecular().x, light.getSpecular().y, light.getSpecular().z);
-
-    //    glUniform1f(glGetUniformLocation(ID, (name + ".constant").c_str()), light.getLightAttenuation().m_constant);
-    //    glUniform1f(glGetUniformLocation(ID, (name + ".linear").c_str()), light.getLightAttenuation().m_linear);
-    //    glUniform1f(glGetUniformLocation(ID, (name + ".quadratic").c_str()), light.getLightAttenuation().m_quadratic);
-    //    glUniform1f(glGetUniformLocation(ID, (name + ".specularity").c_str()), light.getSpecularity());
-    //    glUniform1f(glGetUniformLocation(ID, (name + ".cutOff").c_str()), light.getCutOff());
-    //}
-
 private:
     std::string vertexCode;
     std::string fragmentCode;

@@ -73,11 +73,12 @@ public:
     // model data 
     vector<Texture> m_textures_loaded;	// stores all the textures loaded so far, optimization to make sure textures aren't loaded more than once.
     vector<Mesh>    m_meshes;
+    int m_shaderID{};
     string m_directory;
     bool m_gammaCorrection;
 
     // constructor, expects a filepath to a 3D model.
-    Model(string const& path, bool gamma = false) : m_gammaCorrection(gamma)
+    Model(string const& path, int shaderID, bool gamma = false) : m_shaderID{shaderID} ,m_gammaCorrection(gamma)
     {
         loadModel(path);
     }

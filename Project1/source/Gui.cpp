@@ -125,23 +125,17 @@ void Gui::objectsMenu(Renderer& renderer)
         }
         if (ImGui::Button("AddBackpack"))
         {
-            renderer.getScene()->pushObject(std::make_unique<Object>(
-                std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj", 1)
-            ));
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj", 0),0));
         }
 
         if (ImGui::Button("AddGrass"))
         {
-            renderer.getScene()->pushObject(std::make_unique<Object>(
-                std::make_unique<Model>("../Resources/Models/Grass/Grass.obj", 2)
-            ));
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../Resources/Models/Grass/Grass.obj", 0), 1));
         }
 
         if (ImGui::Button("AddGlassBottle"))
         {
-            renderer.getScene()->pushTransparentObject(std::make_unique<Object>(
-                std::make_unique<Model>("../Resources/Models/GlassBottle/GlassBottle.obj", 2)
-            ));
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../Resources/Models/GlassBottle/GlassBottle.obj", 2), 2));
         }
     }
 }

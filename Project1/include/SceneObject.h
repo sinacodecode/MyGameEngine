@@ -11,7 +11,6 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-//#include <glm/gtx/string_cast.hpp>
 
 #include "ConfigValues.h"
 
@@ -21,14 +20,9 @@ public:
 
     Object() = default;
 
-    //Object(Object&) = delete;
-    //Object& operator =(Object&) = delete;
-
     Object(std::unique_ptr<Model> model, int id = 0)
-        : m_ourModel(std::move(model)), m_ID{id}
+        : m_ID{id}, m_ourModel(std::move(model))
     {
-        //setShaderUniforms();
-        std::cout << "object made\n";
     }
 
     [[nodiscard]] const Model& getObjectModel() const
