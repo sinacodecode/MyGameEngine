@@ -5,10 +5,10 @@
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
 
-#include "Scene.h"
-#include "SceneObject.h"
-#include "camera.h"
-#include "Renderer.h"
+#include <Scene/Scene.h>
+#include <Scene/SceneObject.h>
+#include <Renderer/camera.h>
+#include <Renderer/Renderer.h>
 
 class Gui
 {

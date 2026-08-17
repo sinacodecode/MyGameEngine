@@ -1,4 +1,4 @@
-#include "include/camera.h"
+#include <Renderer/camera.h>
 
 void Camera::ProcessKeyboard(Camera_Movement direction, float deltaTime)
 {

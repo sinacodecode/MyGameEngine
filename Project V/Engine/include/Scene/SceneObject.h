@@ -3,16 +3,16 @@
 
 #include <utility>
 #include <memory>
-#include "shader_s.h"
-#include "Model.h"
+#include <Renderer/shader_s.h>
+#include <Renderer/Model.h>
 
-#include "camera.h"
-#include "Light.h"
+#include <Renderer/camera.h>
+#include <Renderer/Light.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "ConfigValues.h"
+#include <Core/ConfigValues.h>
 
 class Object {
 

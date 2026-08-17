@@ -1,13 +1,12 @@
 #include <variant>
 #include <charconv>
 
-#include "include/Gui.h"
-
+#include <Editor/Gui.h>
 #include <GLFW/glfw3.h>
 
-#include "include/SceneObject.h"
-#include "include/InputFunctions.h"
-#include "include/Scene.h"
+#include <Scene/SceneObject.h>
+#include <Core/InputFunctions.h>
+#include <Scene/Scene.h>
 
 void attenuationGUI(Light::Attenuation& atten)
 {
@@ -134,17 +133,17 @@ void Gui::objectsMenu(Renderer& renderer)
         }
         if (ImGui::Button("AddBackpack"))
         {
-            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../Resources/Models/Backpack/Backpack.obj", 0),0));
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/Backpack/Backpack.obj", 0),0));
         }
 
         if (ImGui::Button("AddGrass"))
         {
-            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../Resources/Models/Grass/Grass.obj", 0), 1));
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/Grass/Grass.obj", 0), 1));
         }
 
         if (ImGui::Button("AddGlassBottle"))
         {
-            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../Resources/Models/GlassBottle/GlassBottle.obj", 2), 2));
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/GlassBottle/GlassBottle.obj", 2), 2));
         }
     }
 }

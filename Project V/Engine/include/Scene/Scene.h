@@ -1,8 +1,8 @@
 #ifndef SCENE_H
 #define SCENE_H
 
-#include "SceneObject.h"
-#include "Light.h"
+#include <Scene/SceneObject.h>
+#include <Renderer/Light.h>
 
 #include <vector>
 

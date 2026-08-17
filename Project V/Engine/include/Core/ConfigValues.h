@@ -1,8 +1,8 @@
 #ifndef CONFIGVALUES_H
 #define CONFIGVALUES_H
 
-#include "camera.h"
-#include "shader_s.h"
+#include <Renderer/camera.h>
+#include <Renderer/shader_s.h>
 namespace Rendering {
 
 	extern bool isBackpackRendered;

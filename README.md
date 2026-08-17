@@ -1,1 +1,11 @@
-a work in progress... this engine is powered by OpenGL and supports a scene system, rendering, imported 3D models, animations, a nice UI and an audio system...
+a work in progress... a 3D game engine designed with customization and modularity in mind.
+
+Features:
+-OpenGL
+-Enitity Component System
+-PBR Materials
+-3D model support
+-Animations and ragdoll physics
+-Audio
+-Editor UI
+-and more...

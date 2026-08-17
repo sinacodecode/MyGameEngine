@@ -1,4 +1,4 @@
-#include "include/ConfigValues.h"
+#include <Core/ConfigValues.h>
 
 namespace Rendering {
 	extern bool isBackpackRendered = false;

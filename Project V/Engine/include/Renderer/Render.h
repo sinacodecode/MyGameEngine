@@ -1,7 +1,7 @@
 #ifndef RENDER_H
 #define RENDER_H
 
-#include "Scene.h"
+#include <Scene/Scene.h>
 
 class Render
 {

@@ -9,21 +9,20 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "include/Model.h"
+#include <Renderer/Model.h>
 #include <string>
-#include "include/shader_s.h"
-#include "include/camera.h"
+#include <Renderer/shader_s.h>
+#include <Renderer/camera.h>
 #include <iostream>
-#include "stb_image.h"
-#include "include/SceneObject.h"
-#include "include/Scene.h"
-#include "include/Renderer.h"
+#include <stb_image.h>
+#include <Scene/SceneObject.h>
+#include <Scene/Scene.h>
+#include <Renderer/Renderer.h>
 #include <array>
 
 //#include "ConfigValues.h"
-#include "include/InputFunctions.h"
-#include "include/Gui.h"
-
+#include <Core/InputFunctions.h>
+#include <Editor/Gui.h>
 
 int main()
 {
@@ -80,13 +79,12 @@ int main()
 
     std::vector<std::unique_ptr<Shader>> shaders;
 
-    shaders.emplace_back(std::make_unique<Shader>("../Resources/modelLoader.vs", "../Resources/modelLoader.fs"));
-    shaders.emplace_back(std::make_unique<Shader>("../Resources/outLine.vs", "../Resources/outLine.fs"));
-    shaders.emplace_back(std::make_unique<Shader>("../Resources/outLine.vs", "../Resources/rgbaAlphaTransparent.fs"));
+    shaders.emplace_back(std::make_unique<Shader>("../../Resources/modelLoader.vs", "../../Resources/modelLoader.fs"));
+    shaders.emplace_back(std::make_unique<Shader>("../../Resources/outLine.vs", "../../Resources/outLine.fs"));
+    shaders.emplace_back(std::make_unique<Shader>("../../Resources/outLine.vs", "../../Resources/rgbaAlphaTransparent.fs"));
 
-
-    Model ourModel{ std::string("../Resources/Models/Backpack/Backpack.obj"), 0};
-    Model roomModel{ std::string("../Resources/Models/Room/Room.obj"), 0};
+    Model ourModel{ std::string("../../Resources/Models/Backpack/Backpack.obj"), 0};
+    Model roomModel{ std::string("../../Resources/Models/Room/Room.obj"), 0};
 
     Light::Color color{ {0.2F, 0.3F, 0.4F}, {0.6F, 0.6F, 0.3F}, {1.0F, 1.0F, 1.0F} };
     Light::PointLight light1{color, glm::vec3(0.4F, 0.5F, 0.4F) };
