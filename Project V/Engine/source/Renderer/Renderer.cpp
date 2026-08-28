@@ -1,6 +1,7 @@
 #include <Renderer/Renderer.h>
 #include <Renderer/Transformations.h>
 #include <variant>
+#include <map>
 //NEEDS REFACTORING !!!
 
 void Renderer::render()
@@ -9,13 +10,49 @@ void Renderer::render()
     view = m_scene->getSceneCamera().GetViewMatrix();
 
     clearBuffers();
+
+    updateScene();
     renderOpaqueObjects();
     renderOutlinedObject();
     renderTransparentObjects();
 }
 
+void Renderer::updateScene()
+{
+
+    for (auto& lights : m_scene->getSceneLights())
+    {
+        
+        std::visit(overloaded
+            {
+                [&](Light::PointLight& light)
+                {
+                    glm::mat4 lightMatrix = glm::mat4(1.0f);
+                    Transformations::translate(lightMatrix, light.position);
+                },
+                [&](Light::DirectionalLight& light)
+                {
+                    glm::mat4 lightMatrix = glm::mat4(1.0f);
+                    Transformations::rotateEuler(lightMatrix, light.rotationX, glm::vec3(1.0f, 0.0f, 0.0f));
+                    Transformations::rotateEuler(lightMatrix, light.rotationY, glm::vec3(0.0f, 1.0f, 0.0f));
+                    Transformations::rotateEuler(lightMatrix, light.rotationZ, glm::vec3(0.0f, 0.0f, 1.0f));
+                },
+                [&](Light::SpotLight& light)
+                {
+                    glm::mat4 lightMatrix = glm::mat4(1.0f);
+                    Transformations::translate(lightMatrix, light.position);
+                    Transformations::rotateEuler(lightMatrix, light.rotationX, glm::vec3(1.0f, 0.0f, 0.0f));
+                    Transformations::rotateEuler(lightMatrix, light.rotationY, glm::vec3(0.0f, 1.0f, 0.0f));
+                    Transformations::rotateEuler(lightMatrix, light.rotationZ, glm::vec3(0.0f, 0.0f, 1.0f));
+                }
+            }, *lights);
+    }
+}
+
 void Renderer::renderOpaqueObjects()
 {
+
+
     for (auto& object : m_scene->getSceneObjects())
     {
         Shader& shader = *m_shaders[object->getObjectModel().m_shaderID];
@@ -23,7 +60,12 @@ void Renderer::renderOpaqueObjects()
 
         glm::mat4 model = glm::mat4(1.0f);
         Transformations::translate(model, object->m_pos);
-        Transformations::rotateEuler(model, object->m_rotation, object->m_rotationAxis);
+        //Transformations::rotateEuler(model, object->m_rotation, object->m_rotationAxis);
+        Transformations::rotateEuler(model, object->m_rotationX, glm::vec3(1.0f, 0.0f, 0.0f));
+        Transformations::rotateEuler(model, object->m_rotationY, glm::vec3(0.0f, 1.0f, 0.0f));
+        Transformations::rotateEuler(model, object->m_rotationZ, glm::vec3(0.0f, 0.0f, 1.0f));
+
+
         Transformations::scale(model, glm::vec3(1.0f));
 
         if (object == m_scene->getSceneObjects()[Rendering::selectedObject])
@@ -77,7 +119,9 @@ void Renderer::renderOutlinedObject()
 
     glm::mat4 outlineModel(1.0f);
     Transformations::translate(outlineModel, m_scene->getSceneObjects()[Rendering::selectedObject]->m_pos);
-    Transformations::rotateEuler(outlineModel, m_scene->getSceneObjects()[Rendering::selectedObject]->m_rotation, m_scene->getSceneObjects()[Rendering::selectedObject]->m_rotationAxis);
+    Transformations::rotateEuler(outlineModel, m_scene->getSceneObjects()[Rendering::selectedObject]->m_rotationX, glm::vec3(1.0f, 0.0f, 0.0f));
+    Transformations::rotateEuler(outlineModel, m_scene->getSceneObjects()[Rendering::selectedObject]->m_rotationY, glm::vec3(0.0f, 1.0f, 0.0f));
+    Transformations::rotateEuler(outlineModel, m_scene->getSceneObjects()[Rendering::selectedObject]->m_rotationZ, glm::vec3(0.0f, 0.0f, 1.0f));
     Transformations::scale(outlineModel, glm::vec3(Shaders::outlineScale));
 
     m_shaders[1]->setMat4("projection", projection);
@@ -92,14 +136,25 @@ void Renderer::renderOutlinedObject()
 
 void Renderer::renderTransparentObjects()
 {
-    for (auto& object : m_scene->getSceneTransparentObjects())
+	auto& transparentObjects = m_scene->getSceneTransparentObjects();
+    std::sort(transparentObjects.begin(), transparentObjects.end(),
+        [&](const auto& a, const auto& b)
+        {
+            float distanceA = glm::length(m_scene->getSceneCamera().Position - a->m_pos);
+            float distanceB = glm::length(m_scene->getSceneCamera().Position - b->m_pos);
+            return distanceA > distanceB;
+        }
+    );
+    for (auto& object : transparentObjects)
     {
         Shader& shader = *m_shaders[object->getObjectModel().m_shaderID];
         shader.use();
 
         glm::mat4 model = glm::mat4(1.0f);
         Transformations::translate(model, object->m_pos);
-        Transformations::rotateEuler(model, object->m_rotation, object->m_rotationAxis);
+        Transformations::rotateEuler(model, object->m_rotationX, glm::vec3(1.0f, 0.0f, 0.0f));
+        Transformations::rotateEuler(model, object->m_rotationY, glm::vec3(0.0f, 1.0f, 0.0f));
+        Transformations::rotateEuler(model, object->m_rotationZ, glm::vec3(0.0f, 0.0f, 1.0f));
         Transformations::scale(model, glm::vec3(1.0f));
 
         if (object == m_scene->getSceneObjects()[Rendering::selectedObject])

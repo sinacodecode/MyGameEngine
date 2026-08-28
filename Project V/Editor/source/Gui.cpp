@@ -113,9 +113,14 @@ void Gui::objectsMenu(Renderer& renderer)
             ImGui::PushID(static_cast<int>(j));
 
             ImGui::Text("Model ID: (%g)", objects[j]->m_ID);
-            ImGui::DragFloat3("Position:##03", &objects[j]->m_pos.x);
-            ImGui::DragFloat3("rotation Axis:##03", &objects[j]->m_rotationAxis.x, 0.01F, 0.0F, 1.0F);
-            ImGui::DragFloat("Rotation##03", &objects[j]->m_rotation, 1.0F, -360.0F, 360.0F);
+            ImGui::DragFloat3("Position:##02", &objects[j]->m_pos.x);
+            //ImGui::DragFloat3("rotation Axis:##03", &objects[j]->m_rotationAxis.x, 0.01F, 0.0F, 1.0F);
+            //ImGui::DragFloat("Rotation##03", &objects[j]->m_rotation, 1.0F, -360.0F, 360.0F);
+            ImGui::DragFloat("X Rotation##02", &objects[j]->m_rotationX, 1.0F, -360.0F, 360.0F);
+            ImGui::DragFloat("Y Rotation##02", &objects[j]->m_rotationY, 1.0F, -360.0F, 360.0F);
+            ImGui::DragFloat("Z Rotation##02", &objects[j]->m_rotationZ, 1.0F, -360.0F, 360.0F);
+
+
 
             ImGui::SameLine();
 
@@ -175,7 +180,11 @@ void Gui::lightsMenu(Renderer& renderer)
                 [i](Light::DirectionalLight& dl)
                     {
                         ImGui::Text("Directional Light #%d", static_cast<int>(i + 1));
-                        ImGui::DragFloat3("direction:", &dl.direction.x);
+
+                        ImGui::DragFloat("X Rotation##03", &dl.rotationX, 1.0F, -360.0F, 360.0F);
+                        ImGui::DragFloat("Y Rotation##03", &dl.rotationY, 1.0F, -360.0F, 360.0F);
+                        ImGui::DragFloat("Z Rotation##03", &dl.rotationZ, 1.0F, -360.0F, 360.0F);
+
                         ImGui::ColorEdit3("Ambient Light Color", &dl.color.ambient.x);
                         ImGui::ColorEdit3("diffuse Light Color", &dl.color.diffuse.x);
                         ImGui::ColorEdit3("specular Light Color", &dl.color.specular.x);
@@ -184,8 +193,16 @@ void Gui::lightsMenu(Renderer& renderer)
                     {
                         ImGui::Text("Spot Light #%d", static_cast<int>(i + 1));
                         ImGui::DragFloat3("Position:", &sl.position.x);
-                        ImGui::DragFloat3("Direction:", &sl.direction.x);
+                        //ImGui::DragFloat3("Direction:", &sl.direction.x);
 
+                        ImGui::DragFloat("X Rotation##03", &sl.rotationX, 1.0F, -360.0F, 360.0F);
+                        ImGui::DragFloat("Y Rotation##03", &sl.rotationY, 1.0F, -360.0F, 360.0F);
+                        ImGui::DragFloat("Z Rotation##03", &sl.rotationZ, 1.0F, -360.0F, 360.0F);
+
+                        std::cout << sl.rotationX << '\n';
+                        std::cout << sl.rotationY << '\n';
+                        std::cout << sl.rotationZ << '\n';
+                        std::cout << "---------------------" << '\n';
                         ImGui::ColorEdit3("Ambient Light Color:", &sl.color.ambient.x);
                         ImGui::ColorEdit3("diffuse Light Color:", &sl.color.diffuse.x);
                         ImGui::ColorEdit3("specular Light Color:", &sl.color.specular.x);

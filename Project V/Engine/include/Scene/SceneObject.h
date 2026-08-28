@@ -36,6 +36,9 @@ public:
     glm::vec3 m_pos = glm::vec3{ 0.0F ,0.0F , 0.0F };
     glm::vec3 m_rotationAxis = glm::vec3{ 0.0F ,0.0F , 0.0F };
     float m_rotation = 0.0F;
+    float m_rotationX = 0.0F;
+    float m_rotationY = 0.0F;
+    float m_rotationZ = 0.0F;
     int m_ID;
 private:
     std::unique_ptr<Model> m_ourModel;

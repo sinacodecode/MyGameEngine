@@ -33,7 +33,9 @@ namespace Light
 	{
 		Color color;
 
-		glm::vec3 direction;
+		float rotationX{};
+		float rotationY{};
+		float rotationZ{};
 	};
 
 	struct SpotLight
@@ -41,7 +43,9 @@ namespace Light
 		Color color;
 
 		glm::vec3 position;
-		glm::vec3 direction;
+		float rotationX{};
+		float rotationY{};
+		float rotationZ{};
 		Attenuation attenuation;
 
 		//float cutOff;

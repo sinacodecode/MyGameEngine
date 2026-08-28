@@ -23,7 +23,7 @@ public:
 	std::unique_ptr<Scene>& getScene() { return m_scene; };
 	void render();
 private:
-
+	void updateScene();
 	void clearBuffers();
 	void renderOpaqueObjects();
 	void renderTransparentObjects();

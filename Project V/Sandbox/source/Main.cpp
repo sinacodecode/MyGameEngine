@@ -81,7 +81,7 @@ int main()
 
     shaders.emplace_back(std::make_unique<Shader>("../../Resources/modelLoader.vs", "../../Resources/modelLoader.fs"));
     shaders.emplace_back(std::make_unique<Shader>("../../Resources/outLine.vs", "../../Resources/outLine.fs"));
-    shaders.emplace_back(std::make_unique<Shader>("../../Resources/outLine.vs", "../../Resources/rgbaAlphaTransparent.fs"));
+    shaders.emplace_back(std::make_unique<Shader>("../../Resources/modelLoader.vs", "../../Resources/rgbaAlphaTransparent.fs"));
 
     Model ourModel{ std::string("../../Resources/Models/Backpack/Backpack.obj"), 0};
     Model roomModel{ std::string("../../Resources/Models/Room/Room.obj"), 0};
@@ -94,8 +94,8 @@ int main()
     
     Light::Attenuation atten{};
 
-    Light::DirectionalLight dirlight{ color, {1.0F, 1.0F, 1.0F} };
-    Light::SpotLight spotlight{ color, {1.0F, 1.0F, 1.0F}, {1.0F, -1.0F, -1.0F}, atten, 1.0F, 2.0F};
+    Light::DirectionalLight dirlight{ color, 1.0F, 1.0F, 1.0F };
+    Light::SpotLight spotlight{ color, {1.0F, 1.0F, 1.0F}, 1.0F, -1.0F, -1.0F, atten, 1.0F, 2.0F};
 
     std::vector<std::unique_ptr<Object>> objects;
     objects.emplace_back(

@@ -1,6 +1,5 @@
 #include <Renderer/shader_s.h>
 #include <string>
-//#include <variant>
 
 std::string compileShaderWithMacros(const Light::LightVariant& light, const std::string& rawSourceCode) {
     std::string macroInjection = "#version 330 core\n"; // Ensure version is first!
@@ -14,6 +13,11 @@ std::string compileShaderWithMacros(const Light::LightVariant& light, const std:
 
     // Strip out any original "#version" line from rawSourceCode, then combine them
     return macroInjection + rawSourceCode;
+}
+
+glm::vec3 getDirectionFromRotation(float x, float y, float z)
+{
+    return glm::normalize(glm::vec3());
 }
 
 void Shader::setLight(const std::string& name, const Light::LightVariant& light) const
@@ -35,7 +39,10 @@ void Shader::setLight(const std::string& name, const Light::LightVariant& light)
         [&](const Light::DirectionalLight& l)
         {
             setBool("hasDirLight", true);
-            setVec3(name + ".direction", l.direction);
+
+            
+
+            setVec3(name + ".direction", glm::normalize(glm::vec3(l.rotationX, l.rotationY, l.rotationZ)));
 
             setVec3(name + ".ambient", l.color.ambient);
             setVec3(name + ".diffuse", l.color.diffuse);
@@ -45,7 +52,8 @@ void Shader::setLight(const std::string& name, const Light::LightVariant& light)
         {
             setBool("hasSpotLight", true);
             setVec3(name + ".position", l.position);
-            setVec3(name + ".direction", l.direction);
+
+            setVec3(name + ".direction", glm::normalize(glm::vec3(l.rotationX, l.rotationY, l.rotationZ)));
 
             setFloat(name + ".cutOff", glm::cos(glm::radians(l.cutOff)));
             setFloat(name + ".outerCutOff", glm::cos(glm::radians(l.outerCutOff)));
@@ -58,3 +66,4 @@ void Shader::setLight(const std::string& name, const Light::LightVariant& light)
         }
         }, light);
 }
+
