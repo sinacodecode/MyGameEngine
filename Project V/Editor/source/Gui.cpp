@@ -83,7 +83,7 @@ void Gui::objectsMenu(Renderer& renderer)
         ImGui::Text("Window Pos: (%g, %g)", ImGui::GetWindowPos().x, ImGui::GetWindowPos().y);
 
         auto& objects = renderer.getScene()->getSceneObjects();
-
+        auto& transparentObjects = renderer.getScene()->getSceneTransparentObjects();
         ImGui::Text("Full-width:");
         if (ImGui::BeginListBox("##listbox 2", ImVec2(-FLT_MIN, 5 * ImGui::GetTextLineHeightWithSpacing())))
         {
@@ -108,17 +108,48 @@ void Gui::objectsMenu(Renderer& renderer)
             ImGui::EndListBox();
         }
         
+
         for (size_t j = 0; j < objects.size(); j++)
         {
-            ImGui::PushID(static_cast<int>(j));
+
+            ImGui::PushID(static_cast<int>(objects[j]->m_ID));
 
             ImGui::Text("Model ID: (%g)", objects[j]->m_ID);
-            ImGui::DragFloat3("Position:##02", &objects[j]->m_pos.x);
+            ImGui::DragFloat3("Position:##05", &objects[j]->m_pos.x);
             //ImGui::DragFloat3("rotation Axis:##03", &objects[j]->m_rotationAxis.x, 0.01F, 0.0F, 1.0F);
             //ImGui::DragFloat("Rotation##03", &objects[j]->m_rotation, 1.0F, -360.0F, 360.0F);
-            ImGui::DragFloat("X Rotation##02", &objects[j]->m_rotationX, 1.0F, -360.0F, 360.0F);
-            ImGui::DragFloat("Y Rotation##02", &objects[j]->m_rotationY, 1.0F, -360.0F, 360.0F);
-            ImGui::DragFloat("Z Rotation##02", &objects[j]->m_rotationZ, 1.0F, -360.0F, 360.0F);
+            ImGui::DragFloat("X Rotation##05", &objects[j]->m_rotationX, 1.0F, -360.0F, 360.0F);
+            ImGui::DragFloat("Y Rotation##05", &objects[j]->m_rotationY, 1.0F, -360.0F, 360.0F);
+            ImGui::DragFloat("Z Rotation##05", &objects[j]->m_rotationZ, 1.0F, -360.0F, 360.0F);
+
+
+
+            ImGui::SameLine();
+
+            bool remove = ImGui::Button("Remove");
+
+            ImGui::Separator();
+
+            if (remove)
+            {
+                renderer.getScene()->removeObjectAt(j);
+            }
+
+            ImGui::PopID();
+
+        }
+        for (size_t j = 0; j < transparentObjects.size(); j++)
+        {
+
+            ImGui::PushID(static_cast<int>(transparentObjects[j]->m_ID));
+
+            ImGui::Text("Model ID: (%g)", transparentObjects[j]->m_ID);
+            ImGui::DragFloat3("Position:##06", &transparentObjects[j]->m_pos.x);
+            //ImGui::DragFloat3("rotation Axis:##03", &objects[j]->m_rotationAxis.x, 0.01F, 0.0F, 1.0F);
+            //ImGui::DragFloat("Rotation##03", &objects[j]->m_rotation, 1.0F, -360.0F, 360.0F);
+            ImGui::DragFloat("X Rotation##06", &transparentObjects[j]->m_rotationX, 1.0F, -360.0F, 360.0F);
+            ImGui::DragFloat("Y Rotation##06", &transparentObjects[j]->m_rotationY, 1.0F, -360.0F, 360.0F);
+            ImGui::DragFloat("Z Rotation##06", &transparentObjects[j]->m_rotationZ, 1.0F, -360.0F, 360.0F);
 
 
 
@@ -138,21 +169,21 @@ void Gui::objectsMenu(Renderer& renderer)
         }
         if (ImGui::Button("AddBackpack"))
         {
-            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/Backpack/Backpack.obj", 0),0));
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/Backpack/Backpack.obj", 0), renderer.getScene()->m_nextID++));
         }
 
         if (ImGui::Button("AddGrass"))
         {
-            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/Grass/Grass.obj", 0), 1));
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/Grass/Grass.obj", 0), renderer.getScene()->m_nextID++));
         }
 
         if (ImGui::Button("AddGlassBottle"))
         {
-            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/GlassBottle/GlassBottle.obj", 2), 2));
+            renderer.getScene()->pushTransparentObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/GlassBottle/GlassBottle.obj", 2), renderer.getScene()->m_nextID++));
         }
+
     }
 }
-
 void Gui::lightsMenu(Renderer& renderer)
 {
 

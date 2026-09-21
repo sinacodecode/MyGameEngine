@@ -72,6 +72,8 @@ public:
 		m_lights.erase(m_lights.begin() + static_cast<std::vector<std::unique_ptr<Light::LightVariant>>::difference_type>(index));
 	}
 
+
+	int m_nextID{};
 	int m_pointLightCount{};
 	std::vector< std::unique_ptr<Object>>& getSceneObjects() { return m_objects; }
 	std::vector< std::unique_ptr<Object>>& getSceneTransparentObjects() { return m_transparentObjects; }

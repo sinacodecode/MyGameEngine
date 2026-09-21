@@ -136,10 +136,16 @@ void Renderer::renderOutlinedObject()
 
 void Renderer::renderTransparentObjects()
 {
+    std::cout << "calling: Renderer::renderTransparentObjects\n";
+    
 	auto& transparentObjects = m_scene->getSceneTransparentObjects();
+
+    std::cout << "NO transparent Objects in the scene: " << transparentObjects.size() << '\n';
+
     std::sort(transparentObjects.begin(), transparentObjects.end(),
         [&](const auto& a, const auto& b)
         {
+            std::cout<<"sorting transparent objects!\n";
             float distanceA = glm::length(m_scene->getSceneCamera().Position - a->m_pos);
             float distanceB = glm::length(m_scene->getSceneCamera().Position - b->m_pos);
             return distanceA > distanceB;
@@ -192,6 +198,7 @@ void Renderer::renderTransparentObjects()
         shader.setVec3("viewPos", m_scene->getSceneCamera().Position);
         object->getObjectModel().Draw(shader);
     }
+    std::cout << "______________________________\n";
 }
 
 void Renderer::clearBuffers()
