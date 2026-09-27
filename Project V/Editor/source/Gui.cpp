@@ -21,7 +21,7 @@ void Gui::renderScene(Renderer& renderer)
     ImGui::SetNextWindowSize(ImVec2(400.0F, 600.0F), ImGuiCond_FirstUseEver);
 
     ImGuiIO& m_io = ImGui::GetIO();
-    m_io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
+    m_io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
     auto& lights = renderer.getScene()->getSceneLights();
 
     if (ImGui::TreeNode("Scene"))
@@ -31,11 +31,8 @@ void Gui::renderScene(Renderer& renderer)
     }
 
     ImGui::Text("mouse Pos: (%g, %g)", ImGui::GetMousePos().x, ImGui::GetMousePos().y);
-
-    //renderer.render();
 }
 
-//#include "InputFunctions.h"
 void Gui::newWindow()
 {
     ImGui_ImplOpenGL3_NewFrame();
@@ -55,12 +52,13 @@ void Gui::objectsMenu(Renderer& renderer)
 
     static int item_selected_idx = 0;
     static bool item_highlight = false;
-    static const char* modelTypes[32]{};
+    static const char* modelTypes[32]{"Object"};
     int item_highlighted_idx = -1;
 
     static char stringBuffer[32 * 16];
     char* currentBufferPos = stringBuffer;
     std::size_t i = 0;
+
     for (const auto& ID : renderer.getScene()->getSceneObjects())
     {
         if (i >= 32) break; // Prevent array overflow
@@ -73,6 +71,7 @@ void Gui::objectsMenu(Renderer& renderer)
             modelTypes[i] = currentBufferPos;
             currentBufferPos = ptr + 1; // Move pointer past the null terminator
         }
+
         i++;
     }
 
@@ -83,19 +82,17 @@ void Gui::objectsMenu(Renderer& renderer)
         ImGui::Text("Window Pos: (%g, %g)", ImGui::GetWindowPos().x, ImGui::GetWindowPos().y);
 
         auto& objects = renderer.getScene()->getSceneObjects();
-        auto& transparentObjects = renderer.getScene()->getSceneTransparentObjects();
         ImGui::Text("Full-width:");
         if (ImGui::BeginListBox("##listbox 2", ImVec2(-FLT_MIN, 5 * ImGui::GetTextLineHeightWithSpacing())))
         {
             for (int n = 0; n < objects.size(); n++)
             {
-                ImGui::PushID(n);
+                ImGui::PushID(objects[n]->m_ID);
                 bool is_selected = (item_selected_idx == n);
                 ImGuiSelectableFlags flags = (item_highlighted_idx == n) ? ImGuiSelectableFlags_Highlight : 0;
-                if (ImGui::Selectable(modelTypes[n], is_selected, flags))
+                if (ImGui::Selectable(objects[n]->m_name.c_str(), is_selected, flags))
                     item_selected_idx = n;
 
-                // Set the initial focus when opening the combo (scrolling + keyboard navigation focus)
                 if (is_selected)
                 {
                     ImGui::SetItemDefaultFocus();
@@ -107,14 +104,13 @@ void Gui::objectsMenu(Renderer& renderer)
             }
             ImGui::EndListBox();
         }
-        
 
         for (size_t j = 0; j < objects.size(); j++)
         {
 
             ImGui::PushID(static_cast<int>(objects[j]->m_ID));
 
-            ImGui::Text("Model ID: (%g)", objects[j]->m_ID);
+            ImGui::Text(std::string(std::string("Model name: ") + objects[j]->m_name + '[' + std::to_string(objects[j]->m_ID) + ']').c_str());
             ImGui::DragFloat3("Position:##05", &objects[j]->m_pos.x);
             //ImGui::DragFloat3("rotation Axis:##03", &objects[j]->m_rotationAxis.x, 0.01F, 0.0F, 1.0F);
             //ImGui::DragFloat("Rotation##03", &objects[j]->m_rotation, 1.0F, -360.0F, 360.0F);
@@ -138,52 +134,30 @@ void Gui::objectsMenu(Renderer& renderer)
             ImGui::PopID();
 
         }
-        for (size_t j = 0; j < transparentObjects.size(); j++)
+
+        if (ImGui::Button("AddRoom"))
         {
-
-            ImGui::PushID(static_cast<int>(transparentObjects[j]->m_ID));
-
-            ImGui::Text("Model ID: (%g)", transparentObjects[j]->m_ID);
-            ImGui::DragFloat3("Position:##06", &transparentObjects[j]->m_pos.x);
-            //ImGui::DragFloat3("rotation Axis:##03", &objects[j]->m_rotationAxis.x, 0.01F, 0.0F, 1.0F);
-            //ImGui::DragFloat("Rotation##03", &objects[j]->m_rotation, 1.0F, -360.0F, 360.0F);
-            ImGui::DragFloat("X Rotation##06", &transparentObjects[j]->m_rotationX, 1.0F, -360.0F, 360.0F);
-            ImGui::DragFloat("Y Rotation##06", &transparentObjects[j]->m_rotationY, 1.0F, -360.0F, 360.0F);
-            ImGui::DragFloat("Z Rotation##06", &transparentObjects[j]->m_rotationZ, 1.0F, -360.0F, 360.0F);
-
-
-
-            ImGui::SameLine();
-
-            bool remove = ImGui::Button("Remove");
-
-            ImGui::Separator();
-
-            if (remove)
-            {
-                renderer.getScene()->removeObjectAt(j);
-            }
-
-            ImGui::PopID();
-
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/Room/Room.obj", 0), renderer.getScene()->m_nextID++, "room"));
         }
+
         if (ImGui::Button("AddBackpack"))
         {
-            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/Backpack/Backpack.obj", 0), renderer.getScene()->m_nextID++));
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/Backpack/Backpack.obj", 0), renderer.getScene()->m_nextID++, "Backpack"));
         }
 
         if (ImGui::Button("AddGrass"))
         {
-            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/Grass/Grass.obj", 0), renderer.getScene()->m_nextID++));
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/Grass/Grass.obj", 0), renderer.getScene()->m_nextID++, "Grass"));
         }
 
         if (ImGui::Button("AddGlassBottle"))
         {
-            renderer.getScene()->pushTransparentObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/GlassBottle/GlassBottle.obj", 2), renderer.getScene()->m_nextID++));
+            renderer.getScene()->pushObject(std::make_unique<Object>(std::make_unique<Model>("../../Resources/Models/GlassBottle/GlassBottle.obj", 2), renderer.getScene()->m_nextID++, "GlassBottle", true));
         }
 
     }
 }
+
 void Gui::lightsMenu(Renderer& renderer)
 {
 

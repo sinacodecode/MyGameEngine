@@ -68,7 +68,9 @@ void Renderer::renderOpaqueObjects()
 
         Transformations::scale(model, glm::vec3(1.0f));
 
-        if (object == m_scene->getSceneObjects()[Rendering::selectedObject])
+        bool selected = (Rendering::selectedObject >= 0 && Rendering::selectedObject < m_scene->getSceneObjects().size() && object == m_scene->getSceneObjects()[Rendering::selectedObject]);
+
+        if (selected)
             glStencilFunc(GL_ALWAYS, 1, 0xFF);
         else
             glStencilFunc(GL_ALWAYS, 0, 0xFF);
@@ -108,9 +110,11 @@ void Renderer::renderOpaqueObjects()
 
 void Renderer::renderOutlinedObject()
 {
-    if (Rendering::selectedObject >= m_scene->getSceneObjects().size())
+    if (Rendering::selectedObject >= m_scene->getSceneObjects().size() && Rendering::selectedObject >= m_scene->getSceneObjects().size())
         return;
     
+    auto& selectedTransparent = m_scene->getSceneObjects()[Rendering::selectedObject];
+
     glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
     glStencilMask(0x00);
     glDisable(GL_DEPTH_TEST);
@@ -136,21 +140,28 @@ void Renderer::renderOutlinedObject()
 
 void Renderer::renderTransparentObjects()
 {
-    std::cout << "calling: Renderer::renderTransparentObjects\n";
     
-	auto& transparentObjects = m_scene->getSceneTransparentObjects();
-
-    std::cout << "NO transparent Objects in the scene: " << transparentObjects.size() << '\n';
-
-    std::sort(transparentObjects.begin(), transparentObjects.end(),
-        [&](const auto& a, const auto& b)
+    std::vector<std::unique_ptr<Object>> transparentObjects{};
+    for (auto& object : m_scene->getSceneObjects())
+    {
+        std::cout << object->m_isTransparent<<'\n';
+        if (object->m_isTransparent)
         {
-            std::cout<<"sorting transparent objects!\n";
-            float distanceA = glm::length(m_scene->getSceneCamera().Position - a->m_pos);
-            float distanceB = glm::length(m_scene->getSceneCamera().Position - b->m_pos);
-            return distanceA > distanceB;
+            transparentObjects.push_back(std::move(object));
         }
-    );
+    }
+    if (transparentObjects.size() >= 2)
+    {
+        std::sort(transparentObjects.begin(), transparentObjects.end(),
+            [&](const auto& a, const auto& b)
+            {
+                std::cout << "sorting transparent objects!\n";
+                float distanceA = glm::length(m_scene->getSceneCamera().Position - a->m_pos);
+                float distanceB = glm::length(m_scene->getSceneCamera().Position - b->m_pos);
+                return distanceA > distanceB;
+            }
+        );
+    }
     for (auto& object : transparentObjects)
     {
         Shader& shader = *m_shaders[object->getObjectModel().m_shaderID];
@@ -163,7 +174,9 @@ void Renderer::renderTransparentObjects()
         Transformations::rotateEuler(model, object->m_rotationZ, glm::vec3(0.0f, 0.0f, 1.0f));
         Transformations::scale(model, glm::vec3(1.0f));
 
-        if (object == m_scene->getSceneObjects()[Rendering::selectedObject])
+        bool selected = (Rendering::selectedObject >= 0 && Rendering::selectedObject < transparentObjects.size() && object == m_scene->getSceneObjects()[Rendering::selectedObject]);
+
+        if (selected)
             glStencilFunc(GL_ALWAYS, 1, 0xFF);
         else
             glStencilFunc(GL_ALWAYS, 0, 0xFF);
@@ -198,7 +211,6 @@ void Renderer::renderTransparentObjects()
         shader.setVec3("viewPos", m_scene->getSceneCamera().Position);
         object->getObjectModel().Draw(shader);
     }
-    std::cout << "______________________________\n";
 }
 
 void Renderer::clearBuffers()

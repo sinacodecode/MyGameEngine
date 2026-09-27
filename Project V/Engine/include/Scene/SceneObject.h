@@ -20,8 +20,8 @@ public:
 
     Object() = default;
 
-    Object(std::unique_ptr<Model> model, int id = 0)
-        : m_ID{id}, m_ourModel(std::move(model))
+    Object(std::unique_ptr<Model> model, int id = 0, std::string name="none", bool trasparent = false)
+        : m_ID{id}, m_ourModel(std::move(model)), m_name{name}, m_isTransparent{ trasparent }
     {
     }
 
@@ -40,6 +40,8 @@ public:
     float m_rotationY = 0.0F;
     float m_rotationZ = 0.0F;
     int m_ID;
+    bool m_isTransparent{false};
+    std::string m_name{"none"};
 private:
     std::unique_ptr<Model> m_ourModel;
 };

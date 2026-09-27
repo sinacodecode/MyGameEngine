@@ -27,17 +27,6 @@ public:
 		std::cout << m_objects.size() << " objects left in scene\n";
 	}
 
-	void pushTransparentObject(std::unique_ptr<Object> object)
-	{
-		m_transparentObjects.emplace_back(std::move(object));
-	}
-	void poppushTransparentObject()
-	{
-		if (!m_transparentObjects.empty())
-			m_transparentObjects.pop_back();
-		std::cout << m_transparentObjects.size() << " Transparent objects left in scene\n";
-	}
-
 	void pushLight(std::unique_ptr<Light::LightVariant> light)
 	{
 		if (light->index() == 0)
@@ -76,12 +65,10 @@ public:
 	int m_nextID{};
 	int m_pointLightCount{};
 	std::vector< std::unique_ptr<Object>>& getSceneObjects() { return m_objects; }
-	std::vector< std::unique_ptr<Object>>& getSceneTransparentObjects() { return m_transparentObjects; }
 	std::vector< std::unique_ptr<Light::LightVariant>>& getSceneLights() { return m_lights; }
 	Camera& getSceneCamera() { return m_camera; }
 private:
 	std::vector<std::unique_ptr<Object>> m_objects{};
-	std::vector<std::unique_ptr<Object>> m_transparentObjects{};
 	std::vector<std::unique_ptr<Light::LightVariant>> m_lights{};
 	Camera& m_camera;
 

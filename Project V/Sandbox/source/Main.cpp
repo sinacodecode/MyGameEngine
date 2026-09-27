@@ -97,12 +97,7 @@ int main()
     Light::DirectionalLight dirlight{ color, 1.0F, 1.0F, 1.0F };
     Light::SpotLight spotlight{ color, {1.0F, 1.0F, 1.0F}, 1.0F, -1.0F, -1.0F, atten, 1.0F, 2.0F};
 
-    std::vector<std::unique_ptr<Object>> objects;
-    objects.emplace_back(
-        std::make_unique<Object>(
-            std::make_unique<Model>(std::move(roomModel)),0
-        )
-    );
+    std::vector<std::unique_ptr<Object>> objects{};
 
     std::vector<std::unique_ptr<Light::LightVariant>> lights;
     lights.emplace_back(std::make_unique<Light::LightVariant>(light1));
