@@ -107,6 +107,7 @@ int main()
 
     std::unique_ptr<Scene> mainScene{ std::make_unique<Scene>(Rendering::camera, std::move(objects), std::move(lights)) };
     mainScene->m_pointLightCount = 4;
+
     Gui gui{window};
 
     Renderer renderer{ std::move(mainScene), shaders };

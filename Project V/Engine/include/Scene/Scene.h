@@ -65,7 +65,7 @@ public:
 	int m_nextID{};
 	int m_pointLightCount{};
 	std::vector< std::unique_ptr<Object>>& getSceneObjects() { return m_objects; }
-	std::vector< std::unique_ptr<Light::LightVariant>>& getSceneLights() { return m_lights; }
+	const std::vector< std::unique_ptr<Light::LightVariant>>& getSceneLights() const { return m_lights; }
 	Camera& getSceneCamera() { return m_camera; }
 private:
 	std::vector<std::unique_ptr<Object>> m_objects{};

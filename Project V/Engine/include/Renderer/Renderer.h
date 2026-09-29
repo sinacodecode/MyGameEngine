@@ -20,7 +20,7 @@ public:
 		
 	}
 
-	std::unique_ptr<Scene>& getScene() { return m_scene; };
+	const std::unique_ptr<Scene>& getScene() const { return m_scene; };
 	void render();
 private:
 	void updateScene();

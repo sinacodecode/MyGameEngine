@@ -15,14 +15,14 @@ void attenuationGUI(Light::Attenuation& atten)
     ImGui::DragFloat("quadratic:", &atten.quadratic);
 }
 
-void Gui::renderScene(Renderer& renderer)
+void Gui::renderScene(const Renderer& renderer)
 {
     ImGui::SetNextWindowPos(ImVec2(0.0F, 0.0F), ImGuiCond_FirstUseEver);
     ImGui::SetNextWindowSize(ImVec2(400.0F, 600.0F), ImGuiCond_FirstUseEver);
 
     ImGuiIO& m_io = ImGui::GetIO();
     m_io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
-    auto& lights = renderer.getScene()->getSceneLights();
+    const auto& lights = renderer.getScene()->getSceneLights();
 
     if (ImGui::TreeNode("Scene"))
     {
@@ -47,7 +47,7 @@ void Gui::renderWindow()
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 }
 
-void Gui::objectsMenu(Renderer& renderer)
+void Gui::objectsMenu(const Renderer& renderer)
 {
 
     static int item_selected_idx = 0;
@@ -58,13 +58,14 @@ void Gui::objectsMenu(Renderer& renderer)
     static char stringBuffer[32 * 16];
     char* currentBufferPos = stringBuffer;
     std::size_t i = 0;
-
-    for (const auto& ID : renderer.getScene()->getSceneObjects())
+    std::cout << renderer.getScene()->getSceneObjects().size() << '\n';
+    for (const auto& Object : renderer.getScene()->getSceneObjects())
     {
+        auto x = Object->m_ID;
         if (i >= 32) break; // Prevent array overflow
 
         // 2. Call std::to_chars by passing the buffer bounds
-        auto [ptr, ec] = std::to_chars(currentBufferPos, currentBufferPos + 15, ID->m_ID);
+        auto [ptr, ec] = std::to_chars(currentBufferPos, currentBufferPos + 15, Object->m_ID);
 
         if (ec == std::errc{}) {
             *ptr = '\0'; // 3. Manually null-terminate for const char* compatibility
@@ -158,7 +159,7 @@ void Gui::objectsMenu(Renderer& renderer)
     }
 }
 
-void Gui::lightsMenu(Renderer& renderer)
+void Gui::lightsMenu(const Renderer& renderer)
 {
 
     static int selectedLight = 0;

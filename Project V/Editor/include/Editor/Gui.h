@@ -32,13 +32,13 @@ public:
 	}
 	//void drawScene(Scene& scene);
 	//void drawObject(Object& object, Camera& camera, Light& light);
-	void renderScene(Renderer& renderer);
+	void renderScene(const Renderer& renderer);
 	void newWindow();
 	void renderWindow();
 	bool m_closable_group{ true };
 private:
-	void lightsMenu(Renderer& renderer);
-	void objectsMenu(Renderer& renderer);
+	void lightsMenu(const Renderer& renderer);
+	void objectsMenu(const Renderer& renderer);
 	//ImGuiIO& io = ImGui::GetIO();
 	GLFWwindow* m_window;
 };

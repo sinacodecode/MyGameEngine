@@ -2,6 +2,7 @@
 #include <Renderer/Transformations.h>
 #include <variant>
 #include <map>
+
 //NEEDS REFACTORING !!!
 
 void Renderer::render()
@@ -55,6 +56,8 @@ void Renderer::renderOpaqueObjects()
 
     for (auto& object : m_scene->getSceneObjects())
     {
+        if (object->m_isTransparent)
+            continue;
         Shader& shader = *m_shaders[object->getObjectModel().m_shaderID];
         shader.use();
 
@@ -141,19 +144,19 @@ void Renderer::renderOutlinedObject()
 void Renderer::renderTransparentObjects()
 {
     
-    std::vector<std::unique_ptr<Object>> transparentObjects{};
+    std::vector<Object*> transparentObjects{};
     for (auto& object : m_scene->getSceneObjects())
     {
         std::cout << object->m_isTransparent<<'\n';
         if (object->m_isTransparent)
         {
-            transparentObjects.push_back(std::move(object));
+            transparentObjects.push_back(object.get());
         }
     }
-    if (transparentObjects.size() >= 2)
+    if (2 <= transparentObjects.size())
     {
         std::sort(transparentObjects.begin(), transparentObjects.end(),
-            [&](const auto& a, const auto& b)
+            [&](const Object* a, const Object* b)
             {
                 std::cout << "sorting transparent objects!\n";
                 float distanceA = glm::length(m_scene->getSceneCamera().Position - a->m_pos);
@@ -174,7 +177,7 @@ void Renderer::renderTransparentObjects()
         Transformations::rotateEuler(model, object->m_rotationZ, glm::vec3(0.0f, 0.0f, 1.0f));
         Transformations::scale(model, glm::vec3(1.0f));
 
-        bool selected = (Rendering::selectedObject >= 0 && Rendering::selectedObject < transparentObjects.size() && object == m_scene->getSceneObjects()[Rendering::selectedObject]);
+        bool selected = (Rendering::selectedObject >= 0 && Rendering::selectedObject < transparentObjects.size() && object == m_scene->getSceneObjects()[Rendering::selectedObject].get());
 
         if (selected)
             glStencilFunc(GL_ALWAYS, 1, 0xFF);
